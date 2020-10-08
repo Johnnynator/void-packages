@@ -1,0 +1,35 @@
+# Template file for 'qt6-wayland'
+pkgname=qt6-wayland
+version=6.0.0
+revision=1
+wrksrc="qtwayland-everywhere-src-${version}"
+build_style=cmake
+configure_args="-DQT_HOST_PATH=/usr -DQT_BUILD_TOOLS_WHEN_CROSSCOMPILING=true
+ -DQT_USE_CCACHE=ON -GNinja"
+make_cmd=ninja
+hostmakedepends="qt6-base-devel perl pkg-config wayland-devel ninja"
+# XXX: Qml as optional dep
+makedepends="qt6-base-devel wayland-devel libxkbcommon-devel
+ libXcomposite-devel MesaLib-devel Vulkan-Headers libdrm-devel"
+short_desc="Cross-platform application and UI framework (QT6) - Wayland component"
+maintainer="John <me@johnnynator.dev>"
+license="GPL-3.0-only with Qt-GPL-exception-1.0, LGPL-3.0-only, GPL-2.0-or-later"
+homepage="https://www.qt.io"
+distfiles="https://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtwayland-everywhere-src-${version}.tar.xz"
+checksum=fa3a3110d5a584213fa7f12ee1f6abc19d31907433925b9e2449dee8fba1c588
+
+if [ "$CROSS_BUILD" ]; then
+	hostmakedepends+=" qt6-wayland-devel"
+fi
+
+qt6-wayland-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision} qt6-base-devel>=${version}_1"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/cmake
+		vmove usr/lib/qt6/mkspecs
+		vmove "usr/lib/*.so"
+		vmove "usr/lib/*.prl"
+	}
+}
