@@ -54,7 +54,7 @@ SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
 SET(wxWidgets_CONFIG_EXECUTABLE ${XBPS_WRAPPERDIR}/${wx_config:=wx-config})
 _EOF
-		cmake_args+=" -DCMAKE_TOOLCHAIN_FILE=cross_${XBPS_CROSS_TRIPLET}.cmake"
+		cmake_args+=" -DCMAKE_TOOLCHAIN_FILE=${wrksrc}/${cmake_builddir}/cross_${XBPS_CROSS_TRIPLET}.cmake"
 	fi
 	cmake_args+=" -DCMAKE_INSTALL_PREFIX=/usr"
 	cmake_args+=" -DCMAKE_BUILD_TYPE=Release"
