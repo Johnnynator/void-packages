@@ -1,0 +1,28 @@
+# Template file for 'qt6-svg'
+pkgname=qt6-svg
+version=6.0.0
+revision=1
+wrksrc="qtsvg-everywhere-src-${version}"
+build_style=cmake
+configure_args="-DQT_HOST_PATH=/usr -DQT_USE_CCACHE=ON -GNinja"
+make_cmd=ninja
+hostmakedepends="ninja qt6-base-devel perl"
+makedepends="qt6-base-devel"
+short_desc="Cross-platform application and UI framework (QT6) - qt6-svg component"
+maintainer="John <johnz@posteo.net>"
+license="GPL-3.0-only with Qt-GPL-exception-1.0, GPL-2.0-or-later, LGPL-3.0-only"
+homepage="https://qt.io/"
+distfiles="http://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtsvg-everywhere-src-${version}.tar.xz"
+checksum=9703c9a69e21ad373fb52d0107338da7ef0a46966f69107b0d879e9c366dd91b
+
+qt6-svg-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision} qt6-base-devel"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/cmake
+		vmove usr/lib/qt6/mkspecs
+		vmove "usr/lib/*.so"
+		vmove "usr/lib/*.prl"
+	}
+}
