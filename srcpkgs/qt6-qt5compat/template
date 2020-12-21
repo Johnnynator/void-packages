@@ -1,0 +1,28 @@
+# Template file for 'qt6-qt5compat'
+pkgname=qt6-qt5compat
+version=6.0.0
+revision=1
+wrksrc="qt5compat-everywhere-src-${version}"
+build_style=cmake
+configure_args="-DQT_HOST_PATH=/usr -DQT_USE_CCACHE=ON -GNinja"
+make_cmd=ninja
+hostmakedepends="qt6-base-devel ninja perl"
+makedepends="qt6-base-devel"
+short_desc="Cross-platform application and UI framework (QT6) - qt6-qt5compat component"
+maintainer="John <johnz@posteo.net>"
+license="GPL-3.0-only with Qt-GPL-exception-1.0, LGPL-3.0-only, GPL-2.0-or-later"
+homepage="https://qt.io/"
+distfiles="http://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qt5compat-everywhere-src-${version}.tar.xz"
+checksum=13b9d78aa698609d07376e3e9e9d1a82a96084236aba0642f8ac695c181ab25f
+
+qt6-qt5compat-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision} qt6-base-devel"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/cmake
+		vmove usr/lib/qt6/mkspecs
+		vmove "usr/lib/*.so"
+		vmove "usr/lib/*.prl"
+	}
+}
