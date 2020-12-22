@@ -1,0 +1,29 @@
+# Template file for 'qt6-quick3d'
+pkgname=qt6-quick3d
+version=6.0.0
+revision=1
+wrksrc="qtquick3d-everywhere-src-${version}"
+build_style=cmake
+configure_args="-DQT_HOST_PATH=/usr -DQT_USE_CCACHE=ON -GNinja"
+make_cmd=ninja
+hostmakedepends="ninja perl qt6-base-devel qt6-declarative-devel"
+makedepends="qt6-base-devel qt6-declarative-devel qt6-shadertools-devel
+ libassimp-devel"
+short_desc="Cross-platform application and UI framework (QT6) - qt6-quick3d component"
+maintainer="John <johnz@posteo.net>"
+license="GPL-3.0-or-later"
+homepage="https://qt.io/"
+distfiles="http://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtquick3d-everywhere-src-${version}.tar.xz"
+checksum=0a9a3e765c343b55511900b173f9591df88b0787f67b9ecfb8f25203bfdb0aa8
+
+qt6-quick3d-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision} qt6-base-devel"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/cmake
+		vmove usr/lib/qt6/mkspecs
+		vmove "usr/lib/*.so"
+		vmove "usr/lib/*.prl"
+	}
+}
