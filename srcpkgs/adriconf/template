@@ -1,7 +1,7 @@
 # Template file for 'adriconf'
 pkgname=adriconf
 version=2.4.1
-revision=1
+revision=2
 wrksrc="${pkgname}-v${version}"
 build_style=cmake
 configure_args="-DENABLE_UNIT_TESTS=false"
