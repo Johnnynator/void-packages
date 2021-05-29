@@ -1,0 +1,10 @@
+--- components/detournavigator/offmeshconnectionsmanager.hpp	2020-06-08 11:11:24.000000000 +0200
++++ -	2021-05-30 14:42:38.583913245 +0200
+@@ -13,6 +13,7 @@
+ 
+ #include <boost/optional.hpp>
+ 
++#include <algorithm>
+ #include <map>
+ #include <mutex>
+ #include <unordered_map>
