@@ -1,0 +1,157 @@
+From 0723bf78587eb9c36fa304e33e53b0dfae112589 Mon Sep 17 00:00:00 2001
+From: "Alex Xu (Hello71)" <alex_y_xu@yahoo.ca>
+Date: Tue, 15 Sep 2020 20:27:59 -0400
+Subject: [PATCH] use std::placeholders everywhere
+
+before this was silently relying on boost placeholders, but those
+default off now.
+---
+ src/config.cc                                 |  2 +-
+ src/main_window.cc                            | 20 +++++++++----------
+ src/modes/keybindings.cc                      |  2 +-
+ .../thread_index/thread_index_list_view.cc    | 14 ++++++-------
+ 4 files changed, 19 insertions(+), 19 deletions(-)
+
+diff --git a/src/config.cc b/src/config.cc
+index bb967b4e..5d62ee5c 100644
+--- src/config.cc
++++ src/config.cc
+@@ -488,7 +488,7 @@ namespace Astroid {
+   void Config::merge_ptree(const ptree &pt)   {
+     function<void(const ptree &,
+       const ptree::path_type &,
+-      const ptree&)> method = bind (&Config::merge, this, _1, _2, _3);
++      const ptree&)> method = bind (&Config::merge, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
+ 
+     traverse(pt, method);
+   }
+diff --git a/src/main_window.cc b/src/main_window.cc
+index 7b5b826d..2b885c70 100644
+--- src/main_window.cc
++++ src/main_window.cc
+@@ -260,52 +260,52 @@ namespace Astroid {
+     keys.register_key ("M-1",
+         "main_window.jump_to_page_1",
+         "Jump to page 1",
+-        bind (&MainWindow::jump_to_page, this, _1, 1));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 1));
+ 
+     keys.register_key ("M-2",
+         "main_window.jump_to_page_2",
+         "Jump to page 2",
+-        bind (&MainWindow::jump_to_page, this, _1, 2));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 2));
+ 
+     keys.register_key ("M-3",
+         "main_window.jump_to_page_3",
+         "Jump to page 3",
+-        bind (&MainWindow::jump_to_page, this, _1, 3));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 3));
+ 
+     keys.register_key ("M-4",
+         "main_window.jump_to_page_4",
+         "Jump to page 4",
+-        bind (&MainWindow::jump_to_page, this, _1, 4));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 4));
+ 
+     keys.register_key ("M-5",
+         "main_window.jump_to_page_5",
+         "Jump to page 5",
+-        bind (&MainWindow::jump_to_page, this, _1, 5));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 5));
+ 
+     keys.register_key ("M-6",
+         "main_window.jump_to_page_6",
+         "Jump to page 6",
+-        bind (&MainWindow::jump_to_page, this, _1, 6));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 6));
+ 
+     keys.register_key ("M-7",
+         "main_window.jump_to_page_7",
+         "Jump to page 7",
+-        bind (&MainWindow::jump_to_page, this, _1, 7));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 7));
+ 
+     keys.register_key ("M-8",
+         "main_window.jump_to_page_8",
+         "Jump to page 8",
+-        bind (&MainWindow::jump_to_page, this, _1, 8));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 8));
+ 
+     keys.register_key ("M-9",
+         "main_window.jump_to_page_9",
+         "Jump to page 9",
+-        bind (&MainWindow::jump_to_page, this, _1, 9));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 9));
+ 
+     keys.register_key ("M-0",
+         "main_window.jump_to_page_0",
+         "Jump to page 0",
+-        bind (&MainWindow::jump_to_page, this, _1, 0));
++        bind (&MainWindow::jump_to_page, this, std::placeholders::_1, 0));
+ 
+     keys.register_key ("C-w", "main_window.close_page",
+         "Close mode (or window if other windows are open)",
+diff --git a/src/modes/keybindings.cc b/src/modes/keybindings.cc
+index 65e8cd8d..08f1e40b 100644
+--- src/modes/keybindings.cc
++++ src/modes/keybindings.cc
+@@ -561,7 +561,7 @@ namespace Astroid {
+       register_key (b->first,
+                     b->first.name,
+                     ustring::compose ("Run hook: %1,%2", b->second.first, b->second.second),
+-                    bind (cb, _1, b->second.first, b->second.second)
++                    bind (cb, std::placeholders::_1, b->second.first, b->second.second)
+                     );
+ 
+       b++;
+diff --git a/src/modes/thread_index/thread_index_list_view.cc b/src/modes/thread_index/thread_index_list_view.cc
+index d716db11..b32c3787 100644
+--- src/modes/thread_index/thread_index_list_view.cc
++++ src/modes/thread_index/thread_index_list_view.cc
+@@ -477,38 +477,38 @@ namespace Astroid {
+     multi_keys.register_key ("N",
+                              "thread_index.multi.mark_unread",
+                              "Toggle unread",
+-                             bind (&ThreadIndexListView::multi_key_handler, this, MUnread, _1));
++                             bind (&ThreadIndexListView::multi_key_handler, this, MUnread, std::placeholders::_1));
+ 
+     multi_keys.register_key ("*",
+                              "thread_index.multi.flag",
+                              "Toggle flagged",
+-                             bind (&ThreadIndexListView::multi_key_handler, this, MFlag, _1));
++                             bind (&ThreadIndexListView::multi_key_handler, this, MFlag, std::placeholders::_1));
+ 
+     multi_keys.register_key ("a",
+                              "thread_index.multi.archive",
+                              "Toggle archive",
+-                             bind (&ThreadIndexListView::multi_key_handler, this, MArchive, _1));
++                             bind (&ThreadIndexListView::multi_key_handler, this, MArchive, std::placeholders::_1));
+ 
+     multi_keys.register_key ("S",
+                              "thread_index.multi.mark_spam",
+                              "Toggle spam",
+-                             bind (&ThreadIndexListView::multi_key_handler, this, MSpam, _1));
++                             bind (&ThreadIndexListView::multi_key_handler, this, MSpam, std::placeholders::_1));
+ 
+     multi_keys.register_key ("+",
+                              "thread_index.multi.tag",
+                              "Tag",
+-                             bind (&ThreadIndexListView::multi_key_handler, this, MTag, _1));
++                             bind (&ThreadIndexListView::multi_key_handler, this, MTag, std::placeholders::_1));
+ 
+ 
+     multi_keys.register_key ("C-m",
+                              "thread_index.multi.mute",
+                              "Toggle mute",
+-                             bind (&ThreadIndexListView::multi_key_handler, this, MMute, _1));
++                             bind (&ThreadIndexListView::multi_key_handler, this, MMute, std::placeholders::_1));
+ 
+     multi_keys.register_key ("t",
+                              "thread_index.multi.toggle",
+                              "Toggle marked",
+-                             bind (&ThreadIndexListView::multi_key_handler, this, MToggle, _1));
++                             bind (&ThreadIndexListView::multi_key_handler, this, MToggle, std::placeholders::_1));
+ 
+     keys->register_key (Key (GDK_KEY_semicolon),
+           "thread_index.multi",
