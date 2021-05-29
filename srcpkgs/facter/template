@@ -1,6 +1,6 @@
 # Template file for 'facter'
 pkgname=facter
-version=3.14.16
+version=3.14.17
 revision=3
 build_style=cmake
 configure_args="-DRUBY_CONFIG_INCLUDE_DIR=${XBPS_CROSS_BASE}/usr/include
@@ -14,7 +14,7 @@ maintainer="Orphaned <orphan@voidlinux.org>"
 license="Apache-2.0"
 homepage="https://puppet.com/docs/puppet/latest/facter.html"
 distfiles="https://downloads.puppetlabs.com/${pkgname}/${pkgname}-${version}.tar.gz"
-checksum=196c69b1ae325dbf11f68025eb12b9c53c054bee9112bd4f3e2ece8c5fe76571
+checksum=d8e965d32e35ae352f166dca388f6f7dc0851cb458e8aff6cc4cfdd9556b3a65
 
 pre_configure() {
 	case "$XBPS_TARGET_MACHINE" in
