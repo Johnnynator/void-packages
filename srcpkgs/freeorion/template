@@ -15,8 +15,12 @@ license="GPL-2.0-or-later"
 homepage="https://freeorion.org/index.php/Main_Page"
 changelog="https://raw.githubusercontent.com/freeorion/freeorion/master/ChangeLog.md"
 distfiles="https://github.com/freeorion/freeorion/releases/download/v${version}/FreeOrion_v${_release}_Source.tar.gz"
+<<<<<<< HEAD
 checksum=f6056ee97edd46dee8076cc1cdb11c711652f1e26f03cec1244a01a3cd5b0d70
 replaces="freeorion-data>=0"
+=======
+checksum=0006191adb5046d51116f6e5a657773f2015af7c23684f29e2a7dff7daf5e4e7
+>>>>>>> 2c66f71c3a (freeorion: update to 0.4.10.1.)
 
 post_extract() {
 	_build_no=${_release/*_/}

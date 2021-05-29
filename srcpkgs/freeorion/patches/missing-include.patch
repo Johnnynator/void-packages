@@ -1,0 +1,21 @@
+--- universe/Conditions.h	2020-09-25 14:42:23.000000000 +0200
++++ -	2021-05-30 00:10:48.542260689 +0200
+@@ -15,7 +15,7 @@
+ #include <memory>
+ #include <string>
+ #include <vector>
+-
++#include <cfloat>
+ 
+ namespace ValueRef {
+     template <typename T>
+--- util/CheckSums.h	2020-09-25 14:42:23.000000000 +0200
++++ -	2021-05-30 00:11:08.571259043 +0200
+@@ -9,6 +9,7 @@
+ #include <set>
+ #include <map>
+ #include <vector>
++#include <cfloat>
+ 
+ namespace CheckSums {
+     const unsigned int CHECKSUM_MODULUS = 10000000U;    // reasonably big number that should be well below UINT_MAX, which is ~4.29x10^9 for 32 bit unsigned int
