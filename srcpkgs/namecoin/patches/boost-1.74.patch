@@ -1,0 +1,18 @@
+--- src/names/main.cpp	2019-08-05 07:23:46.000000000 +0200
++++ -	2021-05-30 14:36:23.897994932 +0200
+@@ -366,13 +366,13 @@
+   : txNameConflicts(std::make_shared<std::vector<CTransactionRef>>()), pool(p)
+ {
+   pool.NotifyEntryRemoved.connect (
+-    boost::bind (&ConflictTrackerNotifyEntryRemoved, this, _1, _2));
++    boost::bind (&ConflictTrackerNotifyEntryRemoved, this, std::placeholders::_1, std::placeholders::_2));
+ }
+ 
+ CNameConflictTracker::~CNameConflictTracker ()
+ {
+   pool.NotifyEntryRemoved.disconnect (
+-    boost::bind (&ConflictTrackerNotifyEntryRemoved, this, _1, _2));
++    boost::bind (&ConflictTrackerNotifyEntryRemoved, this, std::placeholders::_1, std::placeholders::_2));
+ }
+ 
+ void
