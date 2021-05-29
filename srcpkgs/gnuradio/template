@@ -1,7 +1,7 @@
 # Template file for 'gnuradio'
 pkgname=gnuradio
 version=3.8.0.0
-revision=8
+revision=9
 build_style=cmake
 conf_files="/etc/gnuradio/conf.d/*"
 configure_args="-DENABLE_INTERNAL_VOLK=OFF -DGR_PYTHON_DIR=/${py3_sitelib}"
@@ -19,6 +19,8 @@ homepage="https://www.gnuradio.org"
 distfiles="https://github.com/gnuradio/gnuradio/archive/v${version}.tar.gz"
 checksum=03fd01f0b27033befb91709b3d56f95e0869b5fb8bc71bec2662266a3f0dedf5
 python_version=3
+
+broken="please update"
 
 post_install() {
 	rm ${DESTDIR}/usr/share/gnuradio/examples/audio/dial_tone \
