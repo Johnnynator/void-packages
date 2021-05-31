@@ -1,7 +1,7 @@
 # Template file for 'supercollider'
 pkgname=supercollider
-version=3.11.1
-revision=3
+version=3.11.2
+revision=1
 wrksrc="SuperCollider-${version}-Source"
 build_style=cmake
 make_cmd=make
@@ -17,7 +17,7 @@ maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-3.0-or-later"
 homepage="https://github.com/supercollider/supercollider"
 distfiles="https://github.com/supercollider/supercollider/releases/download/Version-${version}/SuperCollider-${version}-Source.tar.bz2"
-checksum=2dd2f8179a55de4735ac940e2e2d0df4e68cc3a33172628e4dd99ae89c74856b
+checksum=c22c32c6bc482671d4fb8f51672df712d97a6a6277235c4da2312910303a0506
 
 export CMAKE_GENERATOR="Unix Makefiles"
 
