@@ -142,7 +142,7 @@ index 8e335a09..b2a0f155 100644
    SignalFloatContext64  fp_regs;
    SignalVectorContext64 *v_regs;
 +#ifdef __GLIBC__
-  int64_t vmx_reserve[69];
+   int64_t vmx_reserve[69];
 +#else
 +  int64_t vmx_reserve[101];
 +#endif
