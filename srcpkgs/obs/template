@@ -1,13 +1,13 @@
 # Template file for 'obs'
 pkgname=obs
 version=28.1.2
-revision=2
+revision=3
 archs="i686* x86_64* ppc64le* aarch64*"
 build_style=cmake
 configure_args="-DOBS_VERSION_OVERRIDE=${version} -DENABLE_BROWSER=OFF
  -DENABLE_JACK=ON -DENABLE_VST=OFF -DENABLE_AJA=OFF"
 hostmakedepends="pkg-config swig python3-devel qt6-base-devel"
-makedepends="LuaJIT-devel fdk-aac-devel ffmpeg-devel glu-devel jack-devel
+makedepends="LuaJIT-devel fdk-aac-devel ffmpeg4-devel glu-devel jack-devel
  libXcomposite-devel libcurl-devel pulseaudio-devel python3-devel
  speexdsp-devel v4l-utils-devel vlc-devel qt6-svg-devel x264-devel
  mbedtls-devel jansson-devel wayland-devel pipewire-devel libxkbcommon-devel
