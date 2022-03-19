@@ -2,7 +2,7 @@
 pkgname=chromium
 # See https://chromiumdash.appspot.com/releases?platform=Linux for the latest version
 version=108.0.5359.124
-revision=1
+revision=2
 archs="i686* x86_64* aarch64* armv7l* ppc64le*"
 hostmakedepends="
  $(vopt_if clang "clang lld llvm12")
@@ -10,7 +10,7 @@ hostmakedepends="
  bison git gperf hwids ninja nodejs perl pkg-config python3
  libatomic-devel libepoxy-devel libevent-devel libglib-devel wayland-devel"
 makedepends="
- alsa-lib-devel libdav1d-devel brotli-devel cups-devel elfutils-devel ffmpeg-devel
+ alsa-lib-devel libdav1d-devel brotli-devel cups-devel elfutils-devel ffmpeg4-devel
  fontconfig-devel freetype-devel gtk+3-devel jsoncpp-devel libXScrnSaver-devel
  libXcomposite-devel libXcursor-devel libXdamage-devel libXi-devel libXrandr-devel
  libatomic-devel libavif-devel libcap-devel libcurl-devel libdrm-devel libevent-devel
@@ -48,7 +48,7 @@ if [ "$CROSS_BUILD" ]; then
 	hostmakedepends+=" libX11-devel libxcb-devel pciutils-devel libXext-devel libglvnd-devel
 	 libjpeg-turbo-devel libXi-devel nss-devel libpng-devel libwebp-devel
 	 libxml2-devel $(vopt_if pulseaudio pulseaudio-devel) libxslt-devel libxkbcommon-devel
-	 $(vopt_if pipewire pipewire-devel) ffmpeg-devel opus-devel pango-devel libva-devel
+	 $(vopt_if pipewire pipewire-devel) ffmpeg4-devel opus-devel pango-devel libva-devel
 	 libcurl-devel snappy-devel re2-devel libXrandr-devel libXcomposite-devel cups-devel
 	 mit-krb5-devel alsa-lib-devel libXdamage-devel libepoxy-devel
 	 libavif-devel libaom-devel jsoncpp-devel woff2-devel libdav1d-devel"
