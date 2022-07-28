@@ -1,6 +1,6 @@
 # Template file for 'qt6-networkauth'
 pkgname=qt6-networkauth
-version=6.3.0
+version=6.3.1
 revision=1
 wrksrc="qtnetworkauth-everywhere-src-${version}"
 build_style=cmake
@@ -12,7 +12,7 @@ maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-only"
 homepage="https://qt.io/"
 distfiles="http://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtnetworkauth-everywhere-src-${version}.tar.xz"
-checksum=203a98942919028520038f90a20cd7ee32b537233545d11e429c3e2c1ad9069f
+checksum=d60f54b9d4509fa8bdbf1990bc91f6e260e38cdb57a7b8119fa3861bc5d2fb2a
 
 if [ "$XBPS_CHECK_PKGS" ]; then
 	configure_args+=" -DQT_BUILD_TESTS=ON"
