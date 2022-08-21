@@ -1,6 +1,6 @@
 # Template file for 'krita'
 pkgname=krita
-version=5.0.8
+version=5.1.0
 revision=1
 build_style=cmake
 configure_args="-Wno-dev -DBUILD_TESTING=OFF"
@@ -22,7 +22,7 @@ maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-only"
 homepage="https://krita.org/"
 distfiles="${KDE_SITE}/krita/${version}/krita-${version}.tar.xz"
-checksum=4c221a3c7bbbb8d3297ffe9032c8946cbd835623f22b27f08f617aaa4e496083
+checksum=700a4b82da6c9565141eb5cf5377ec6c57878b7043812b6fc48ab8355a5d0954
 python_version=3
 replaces="calligra-krita>=0"
 make_check=no
@@ -48,6 +48,32 @@ krita-devel_package() {
 	short_desc+=" - development files"
 	pkg_install() {
 		vmove usr/include
-		vmove "usr/lib/*.so"
+		vmove usr/lib/libkritabasicflakes.so
+		vmove usr/lib/libkritacolor.so
+		vmove usr/lib/libkritacolord.so
+		vmove usr/lib/libkritacommand.so
+		vmove usr/lib/libkritaflake.so
+		vmove usr/lib/libkritaglobal.so
+		vmove usr/lib/libkritaimage.so
+		vmove usr/lib/libkritaimpex.so
+		vmove usr/lib/libkritalibbrush.so
+		vmove usr/lib/libkritalibkis.so
+		vmove usr/lib/libkritalibkra.so
+		vmove usr/lib/libkritalibpaintop.so
+		vmove usr/lib/libkritametadata.so
+		vmove usr/lib/libkritapigment.so
+		vmove usr/lib/libkritaplugin.so
+		vmove usr/lib/libkritapsd.so
+		vmove usr/lib/libkritapsdutils.so
+		vmove usr/lib/libkritaqmicinterface.so
+		vmove usr/lib/libkritaqml.so
+		vmove usr/lib/libkritaresources.so
+		vmove usr/lib/libkritaresourcewidgets.so
+		vmove usr/lib/libkritastore.so
+		vmove usr/lib/libkritaui.so
+		vmove usr/lib/libkritaversion.so
+		vmove usr/lib/libkritawidgets.so
+		vmove usr/lib/libkritawidgetutils.so
+		#vmove "usr/lib/*.so"
 	}
 }
