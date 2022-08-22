@@ -1,11 +1,12 @@
 # Template file for 'libkleo'
 pkgname=libkleo
 version=22.04.3
-revision=1
+revision=2
 build_style=cmake
 hostmakedepends="extra-cmake-modules python3 qt5-qmake qt5-host-tools
  gettext kcoreaddons"
-makedepends="kitemmodels-devel kpimtextedit-devel gpgmeqt-devel gpgmepp-devel"
+makedepends="kitemmodels-devel kpimtextedit-devel gpgmeqt-devel gpgmepp-devel
+ boost-devel"
 short_desc="KDE PIM cryptographic library"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
