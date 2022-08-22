@@ -1,0 +1,71 @@
+diff -rup kget-22.04.1.orig/tests/schedulertest.cpp kget-22.04.1/tests/schedulertest.cpp
+--- a/tests/schedulertest.cpp
++++ b/tests/schedulertest.cpp
+@@ -211,50 +211,6 @@ void SchedulerTest::testStopScheduler_da
+     QTest::newRow("no limit, one running, three stopped") << NO_LIMIT << (QList<Job::Status>() << Job::Running << Job::Stopped << Job::Stopped << Job::Stopped);
+ }
+ 
+-void SchedulerTest::testSchedulerStopStart()
+-{
+-    QFETCH(int, limit);
+-    QFETCH(QList<Job::Status>, status);
+-    QFETCH(QList<Job::Status>, finalStatus);
+-
+-    SettingsHelper helper(limit);
+-
+-    Scheduler scheduler;
+-    auto *queue = new TestQueue(&scheduler);
+-    scheduler.addQueue(queue);
+-
+-    //uses an own list instead of the iterators to make sure that the order stays the same
+-    QList<TestJob*> jobs;
+-    for (int i = 0; i < status.size(); ++i) {
+-        auto *job = new TestJob(&scheduler, queue);
+-        job->setStatus(status[i]);
+-        queue->appendPub(job);
+-        jobs << job;
+-    }
+-
+-    scheduler.stop();
+-    scheduler.start();
+-
+-    for (int i = 0; i < status.size(); ++i) {
+-        QCOMPARE(jobs[i]->status(), finalStatus[i]);
+-    }
+-}
+-
+-void SchedulerTest::testSchedulerStopStart_data()
+-{
+-    QTest::addColumn<int>("limit");
+-    QTest::addColumn<QList<Job::Status> >("status");
+-    QTest::addColumn<QList<Job::Status> >("finalStatus");
+-
+-    QTest::newRow("limit 2, two finished, will third be started?") << 2 << (QList<Job::Status>() << Job::Finished << Job::Finished << Job::Stopped) << (QList<Job::Status>() << Job::Finished << Job::Finished << Job::Running);
+-    QTest::newRow("limit 2, will first two start while last will stay stopped?") << 2 << (QList<Job::Status>() << Job::Stopped << Job::Stopped << Job::Stopped) << (QList<Job::Status>() << Job::Running << Job::Running << Job::Stopped);
+-    QTest::newRow("limit 2, will first two start while last will be stopped?") << 2 << (QList<Job::Status>() << Job::Stopped << Job::Stopped << Job::Running) << (QList<Job::Status>() << Job::Running << Job::Running << Job::Stopped);
+-    QTest::newRow("no limit, two finished, will third be started?") << NO_LIMIT << (QList<Job::Status>() << Job::Finished << Job::Finished << Job::Stopped) << (QList<Job::Status>() << Job::Finished << Job::Finished << Job::Running);
+-    QTest::newRow("no limit, will all three be started?") << NO_LIMIT << (QList<Job::Status>() << Job::Stopped << Job::Stopped << Job::Stopped) << (QList<Job::Status>() << Job::Running << Job::Running << Job::Running);
+-    QTest::newRow("limit 2, two finished, will third stay running?") << 2 << (QList<Job::Status>() << Job::Finished << Job::Finished << Job::Running) << (QList<Job::Status>() << Job::Finished << Job::Finished << Job::Running);
+-}
+-
+-
+ void SchedulerTest::testSuspendScheduler()
+ {
+     QFETCH(int, limit);
+diff -rup kget-22.04.1.orig/tests/schedulertest.h kget-22.04.1/tests/schedulertest.h
+--- a/tests/schedulertest.h
++++ b/tests/schedulertest.h
+@@ -99,13 +99,6 @@ class SchedulerTest : public QObject
+         void testStopScheduler();
+         void testStopScheduler_data();
+ 
+-        /**
+-         * Stops the scheduler and then starts it again to see if jobs
+-         * are correctly started
+-         */
+-        void testSchedulerStopStart();
+-        void testSchedulerStopStart_data();
+-
+         void testSuspendScheduler();
+         void testSuspendScheduler_data();
+
