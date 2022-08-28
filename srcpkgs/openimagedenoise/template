@@ -1,7 +1,7 @@
 # Template file for 'openimagedenoise'
 pkgname=openimagedenoise
 version=1.4.3
-revision=1
+revision=2
 archs="x86_64*"
 wrksrc=oidn-${version}
 build_style=cmake
@@ -24,7 +24,7 @@ openimagedenoise-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
 		vmove usr/include
-		vmove usr/lib/*.so
+		vmove "usr/lib/*.so"
 		vmove usr/lib/cmake
 	}
 }
