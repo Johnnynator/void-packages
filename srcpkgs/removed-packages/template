@@ -234,6 +234,7 @@ replaces="
  icecat-i18n-zh-CN<=78.6.1_1
  icecat-i18n-zh-TW<=78.6.1_1
  icecat<=78.6.1_1
+ ilmbase-devel<=2.4.2_2
  ioquake3-rpi<=20130506_2
  isl16<=0.16_2
  js<=1.8.5_11
