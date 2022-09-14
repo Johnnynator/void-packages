@@ -15,7 +15,6 @@ homepage="https://community.kde.org/KDE_PIM"
 distfiles="${KDE_SITE}/release-service/${version}/src/mailcommon-${version}.tar.xz"
 checksum=eb3b2b848574f086c6e9642adfbb61fa0e69e6f857f368d0fa0ec6a9ce15396e
 make_check_pre="dbus-run-session"
-make_check=no # Akonadi: Cannot mix incompatible Qt library (5.15.4) with this library (5.15.5) ( "Process crashed" )
 
 mailcommon-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} ${makedpends}"
