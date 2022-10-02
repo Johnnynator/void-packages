@@ -1,8 +1,6 @@
-diff --git ./include/c11/threads_posix.h ./include/c11/threads_posix.h
-index 45cb6075e6..1a2ea1a450 100644
---- a/include/c11/threads_posix.h
-+++ b/include/c11/threads_posix.h
-@@ -281,15 +281,29 @@ static inline int
+--- a/src/c11/impl/threads_posix.c	2022-09-20 23:01:37.000000000 +0200
++++ -	2022-10-01 16:41:13.982877073 +0200
+@@ -255,12 +255,23 @@
  thrd_create(thrd_t *thr, thrd_start_t func, void *arg)
  {
      struct impl_thrd_param *pack;
@@ -27,9 +25,3 @@ index 45cb6075e6..1a2ea1a450 100644
          free(pack);
          return thrd_error;
      }
-+#ifndef __GLIBC__
-+    pthread_attr_destroy(&attr);
-+#endif
-     return thrd_success;
- }
- 
