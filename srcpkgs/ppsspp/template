@@ -1,9 +1,9 @@
 # Template file for 'ppsspp'
 pkgname=ppsspp
-version=1.14.1
-revision=2
-_glslang_commit=dc11adde23c455a24e13dd54de9b4ede8bdd7db8
-_SPIRV_Cross_commit=9acb9ec31f5a8ef80ea6b994bb77be787b08d3d1
+version=1.14.4
+revision=1
+_glslang_commit=77551c429f86c0e077f26552b7c1c0f12a9f235e
+_SPIRV_Cross_commit=c77b09b57c27837dc2d41aa371ed3d236ce9ce47
 _armips_commit=6719edebaae03330ee5441d9b28280672edf00d5
 _discord_rpc_commit=963aa9f3e5ce81a4682c6ca3d136cddda614db33
 _miniupnp_commit=3a87be33e797ba947b2b2a5f8d087f6c3ff4d93e
@@ -29,9 +29,9 @@ distfiles="
  https://github.com/Kingcom/armips/archive/${_armips_commit}.tar.gz
  https://github.com/discordapp/discord-rpc/archive/${_discord_rpc_commit}.tar.gz
  https://github.com/hrydgard/miniupnp/archive/${_miniupnp_commit}.tar.gz"
-checksum="0cea760987e06ed5acb1140901d182feaef1c79341fbd5947ce7f474a306b670
- 32edc362238d5b1136b2b40b0abdeef5a832e599554d2fcf75d7b08e4b0ed0bb
- 9423aebd6ea4251c6ea736f0291066eb2b99b6f923151edd1a78ce9c29b46757
+checksum="b270e93e50a7808b27432ef680c6056fccefe47acd3ba2b722156f69584037c5
+ 2d1d9c6fed0a1a651bf920a21c8f137bf67d373e05297e37bea37a26335d6199
+ 1c5eb74f293dfaf564939143d96424db905d66975f34389c101eb5e659fe5ef8
  8e266119740f93ea593eab1fb37393160926892d91da77ede69e3d6bd4e9eed8
  8f4115999391f95f443615fc5b13cb2398926ac4c418d3d34ff5735f71c6faea
  1b1d2897f66835ea5eeec5851fe8757aca5afd86984107dcdc0e4b1ce2f2f8be"

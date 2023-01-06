@@ -1,0 +1,77 @@
+From 396d8893267939549ef0a9de06ac10cdc0ef17a8 Mon Sep 17 00:00:00 2001
+From: John Zimmermann <me@johnnynator.dev>
+Date: Fri, 6 Jan 2023 22:28:46 +0100
+Subject: [PATCH 1/3] AVIDump: fix compatibility with ffmpeg 5
+
+in ffmpeg>5 avcodec_find_encoder now returns a pointer to a const AVCodec
+---
+ Core/AVIDump.cpp         | 2 +-
+ Core/HLE/sceMpeg.cpp     | 2 +-
+ Core/HW/MediaEngine.cpp  | 4 ++--
+ Core/HW/SimpleAudioDec.h | 2 +-
+ 4 files changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/Core/AVIDump.cpp b/Core/AVIDump.cpp
+index 99c74af7b..a7d72071f 100644
+--- a/Core/AVIDump.cpp
++++ b/Core/AVIDump.cpp
+@@ -91,7 +91,7 @@ bool AVIDump::Start(int w, int h)
+ 
+ bool AVIDump::CreateAVI() {
+ #ifdef USE_FFMPEG
+-	AVCodec *codec = nullptr;
++	const AVCodec *codec = nullptr;
+ 
+ 	// Use gameID_EmulatedTimestamp for filename
+ 	std::string discID = g_paramSFO.GetDiscID();
+diff --git a/Core/HLE/sceMpeg.cpp b/Core/HLE/sceMpeg.cpp
+index e96ae6ebe..8df0859c6 100644
+--- a/Core/HLE/sceMpeg.cpp
++++ b/Core/HLE/sceMpeg.cpp
+@@ -801,7 +801,7 @@ static bool InitPmp(MpegContext * ctx){
+ 	pmp_want_pix_fmt = AV_PIX_FMT_RGBA;
+ 
+ 	// Create H264 video codec
+-	AVCodec * pmp_Codec = avcodec_find_decoder(AV_CODEC_ID_H264);
++	const AVCodec * pmp_Codec = avcodec_find_decoder(AV_CODEC_ID_H264);
+ 	if (pmp_Codec == NULL){
+ 		ERROR_LOG(ME, "Can not find H264 codec, please update ffmpeg");
+ 		return false;
+diff --git a/Core/HW/MediaEngine.cpp b/Core/HW/MediaEngine.cpp
+index 9028c6dee..8e6870f0b 100644
+--- a/Core/HW/MediaEngine.cpp
++++ b/Core/HW/MediaEngine.cpp
+@@ -521,7 +521,7 @@ bool MediaEngine::setVideoStream(int streamNum, bool force) {
+ 
+ 		AVStream *stream = m_pFormatCtx->streams[streamNum];
+ #if LIBAVFORMAT_VERSION_INT >= AV_VERSION_INT(57, 33, 100)
+-		AVCodec *pCodec = avcodec_find_decoder(stream->codecpar->codec_id);
++		const AVCodec *pCodec = avcodec_find_decoder(stream->codecpar->codec_id);
+ 		if (!pCodec) {
+ 			WARN_LOG_REPORT(ME, "Could not find decoder for %d", (int)stream->codecpar->codec_id);
+ 			return false;
+@@ -535,7 +535,7 @@ bool MediaEngine::setVideoStream(int streamNum, bool force) {
+ #else
+ 		AVCodecContext *m_pCodecCtx = stream->codec;
+ 		// Find the decoder for the video stream
+-		AVCodec *pCodec = avcodec_find_decoder(m_pCodecCtx->codec_id);
++		const AVCodec *pCodec = avcodec_find_decoder(m_pCodecCtx->codec_id);
+ 		if (pCodec == nullptr) {
+ 			return false;
+ 		}
+diff --git a/Core/HW/SimpleAudioDec.h b/Core/HW/SimpleAudioDec.h
+index ec792c903..c96715bf2 100644
+--- a/Core/HW/SimpleAudioDec.h
++++ b/Core/HW/SimpleAudioDec.h
+@@ -78,7 +78,7 @@ class SimpleAudio {
+ 	int wanted_resample_freq; // wanted resampling rate/frequency
+ 
+ 	AVFrame *frame_;
+-	AVCodec *codec_;
++	const AVCodec *codec_;
+ 	AVCodecContext  *codecCtx_;
+ 	SwrContext      *swrCtx_;
+ 
+-- 
+2.39.0
+
