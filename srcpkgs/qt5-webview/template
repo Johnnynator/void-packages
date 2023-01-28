@@ -16,7 +16,10 @@ checksum=263646015be03b1bc8828ce84c9ab278e7ff3fed8f9cceb271aa262da1f312aa
 
 build_options="webengine"
 if [ "$XBPS_TARGET_ENDIAN" = "le" ] && [ "$XBPS_WORDSIZE" = "$XBPS_TARGET_WORDSIZE" ]; then
-	build_options_default="webengine"
+	case "$XBPS_TARGET_MACHINE" in
+		armv5tel*|riscv*);;
+		*) build_options_default="webengine";;
+	esac
 fi
 
 post_extract() {
