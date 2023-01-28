@@ -6,6 +6,8 @@ _version=${version##*+}
 _path="fs-repo-${version#*+}"
 _path="${_path%+*}"
 _path="${_path/"~"/-to-}"
+# Many things don't seem to be ported to riscv (yet)
+archs="~riscv64*"
 build_style=go
 # go_import_path="github.com/ipfs/fs-repo-migrations/fs-repo-migrations"
 hostmakedepends="git"
