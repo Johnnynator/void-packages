@@ -16,6 +16,11 @@ post_build() {
 	pandoc --standalone --to man MANPAGE.md -o hex.1
 }
 
+pre_build() {
+	# Newer libc needed for riscv64
+	cargo update --package libc --precise 0.2.139
+}
+
 post_install() {
 	# avoid conflict with helix
 	mv ${DESTDIR}/usr/bin/hx ${DESTDIR}/usr/bin/hex
