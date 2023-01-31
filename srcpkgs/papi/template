@@ -25,6 +25,7 @@ case "$XBPS_TARGET_MACHINE" in
 	ppc64*) configure_args+=" --with-CPU=PPC970" ;;
 	ppc*) configure_args+=" --with-CPU=ppc" ;;
 	mips*) configure_args+=" --with-CPU=mips" ;;
+	riscv*) broken="unsupported by papi"
 esac
 
 pre_build() {
