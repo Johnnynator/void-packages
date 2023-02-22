@@ -54,7 +54,8 @@ case "$XBPS_TARGET_MACHINE" in
 	ppc*) configure_args+=" -DCLANG_ENABLE_CLANGD=OFF" ;;
 esac
 
-_enabled_projects="clang;clang-tools-extra;compiler-rt;libcxx;libcxxabi;libunwind;lld"
+_enabled_projects="clang;clang-tools-extra;lld"
+_enabled_runtimes="compiler-rt;libcxx;libcxxabi;libunwind"
 
 _lldb_enable=yes
 _libomp_enable=no
@@ -72,7 +73,7 @@ subpackages="clang-tools-extra"
 
 # must go before clang
 if [ "$_libomp_enable" = "yes" ]; then
-	_enabled_projects+=";openmp"
+	_enabled_runtimes+=";openmp"
 	subpackages+=" libomp libomp-devel"
 	# because of cmake nonsense referencing libomptarget.so.*
 	depends+=" libomp>=${version}_${revision}"
@@ -96,6 +97,7 @@ fi
 subpackages+=" lld lld-devel"
 
 configure_args+=" -DLLVM_ENABLE_PROJECTS=${_enabled_projects}"
+configure_args+=" -DLLVM_ENABLE_RUNTIMES=${_enabled_runtimes}"
 
 post_patch() {
 	if [ "$_lldb_enable" = "yes" ]; then
@@ -111,12 +113,6 @@ post_patch() {
 	# update config.guess for better platform detection
 	cp $XBPS_COMMONDIR/environment/configure/automake/config.guess \
 		${wrksrc}/llvm/cmake
-
-	# fix linker failures on some archs
-	vsed -i 's,check_library_exists(gcc_s .*,set(LIBCXXABI_HAS_GCC_S_LIB ON),' \
-		${wrksrc}/libcxxabi/cmake/config-ix.cmake
-	vsed -i 's,check_library_exists(gcc .*,set(LIBCXXABI_HAS_GCC_LIB ON),' \
-		${wrksrc}/libcxxabi/cmake/config-ix.cmake
 
 	# need libssp_nonshared on some musl platforms (because of nodefaultlibs)
 	case "$XBPS_TARGET_MACHINE" in
@@ -160,6 +156,7 @@ pre_configure() {
 		CC="$BUILD_CC" CXX="$BUILD_CXX" CFLAGS="$BUILD_CFLAGS" \
 			CXXFLAGS="$BUILD_CXXFLAGS" LDFLAGS="$BUILD_LDFLAGS" \
 			cmake ../.. -DCMAKE_BUILD_TYPE=Release \
+			-DLLVM_ENABLE_RUNTIMES=${_enabled_runtimes} \
 			-DLLVM_ENABLE_PROJECTS=${_enabled_projects}
 		make ${makejobs} -C utils/TableGen
 		make ${makejobs} -C tools/clang/utils/TableGen

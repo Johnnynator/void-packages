@@ -1,0 +1,59 @@
+From 9c2700dfa51a3f10e47f902939bbbe0a5b6b9c9b Mon Sep 17 00:00:00 2001
+From: Petr Hosek <phosek@google.com>
+Date: Fri, 11 Nov 2022 22:50:14 +0000
+Subject: [PATCH] [CMake][compiler-rt] Don't load LLVM config in the runtimes
+ build
+
+LLVM runtimes build already loads the LLVM config and sets all
+appropriate variables, no need to do it again.
+
+Differential Revision: https://reviews.llvm.org/D137870
+---
+ compiler-rt/CMakeLists.txt              | 4 +++-
+ compiler-rt/lib/builtins/CMakeLists.txt | 4 +++-
+ runtimes/CMakeLists.txt                 | 1 +
+ 3 files changed, 7 insertions(+), 2 deletions(-)
+
+diff --git a/compiler-rt/CMakeLists.txt b/compiler-rt/CMakeLists.txt
+index f6b1f1a2ee040..e43017da56da9 100644
+--- llvm15-15.0.7/compiler-rt/CMakeLists.txt	2023-01-12 08:12:30.000000000 +0100
++++ -	2023-02-22 17:35:40.662368408 +0100
+@@ -68,7 +68,9 @@
+   "Build for a bare-metal target.")
+ 
+ if (COMPILER_RT_STANDALONE_BUILD)
+-  load_llvm_config()
++  if (NOT LLVM_RUNTIMES_BUILD)
++    load_llvm_config()
++  endif()
+   if (TARGET intrinsics_gen)
+     # Loading the llvm config causes this target to be imported so place it
+     # under the appropriate folder in an IDE.
+diff --git a/compiler-rt/lib/builtins/CMakeLists.txt b/compiler-rt/lib/builtins/CMakeLists.txt
+index 42015ef8f36d6..3eefba8c358b6 100644
+--- a/compiler-rt/lib/builtins/CMakeLists.txt
++++ b/compiler-rt/lib/builtins/CMakeLists.txt
+@@ -25,7 +25,9 @@ if (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
+   include(base-config-ix)
+   include(CompilerRTUtils)
+ 
+-  load_llvm_config()
++  if (NOT LLVM_RUNTIMES_BUILD)
++    load_llvm_config()
++  endif()
+   construct_compiler_rt_default_triple()
+ 
+   include(SetPlatformToolchainTools)
+diff --git a/runtimes/CMakeLists.txt b/runtimes/CMakeLists.txt
+index af1e3dbb82235..3f3ef4e648c00 100644
+--- a/runtimes/CMakeLists.txt
++++ b/runtimes/CMakeLists.txt
+@@ -54,6 +54,7 @@ if (NOT LLVM_BINARY_DIR)
+ endif()
+ if (NOT LLVM_FOUND)
+   set(LLVM_TOOLS_BINARY_DIR ${LLVM_BINARY_DIR}/bin)
++  set(LLVM_INCLUDE_DIR ${CMAKE_CURRENT_BINARY_DIR}/include)
+   set(LLVM_LIBRARY_DIR ${CMAKE_CURRENT_BINARY_DIR}/lib)
+ endif()
+ 
+
