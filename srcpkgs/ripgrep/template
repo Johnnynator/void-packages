@@ -19,6 +19,10 @@ post_patch() {
 	rm -f .cargo/config.toml   # tries to do weird things on musl
 }
 
+case $XBPS_TARGET_MACHINE in
+	riscv64-musl) broken="jemalloc";;
+esac
+
 pre_build() {
 	# Newer libc needed for riscv64
 	cargo update --package libc --precise 0.2.139
