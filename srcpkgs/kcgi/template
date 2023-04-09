@@ -19,6 +19,10 @@ checksum=1c13538e21511086a6ba1a87f40543de257fc3d8871840b17626c16d714d2f5a
 
 export CFLAGS="-DENABLE_SECCOMP_FILTER=1"
 
+case "$XBPS_TARGET_MACHINE" in
+	riscv64*) broken=" #error Unknown seccomp arch: please contact us with your uname -m";;
+esac
+
 seccomp_audit_get_suffix() {
 	case "$1" in
 		i686*) echo "X86" ;;
