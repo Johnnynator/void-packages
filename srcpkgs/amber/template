@@ -10,6 +10,10 @@ homepage="https://github.com/dalance/amber"
 distfiles="https://github.com/dalance/amber/archive/refs/tags/v${version}.tar.gz"
 checksum=41908502077197f55ec86b3a4dd4059a78deae9833e9ba33302b1146cc1ec3f5
 
+case $XBPS_TARGET_MACHINE in
+	riscv64*) broken=":shrug:";;
+esac
+
 post_install() {
 	vlicense LICENSE
 }
