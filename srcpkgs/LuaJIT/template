@@ -4,7 +4,6 @@ version=2.1.0beta3
 revision=2
 _so_version=2.1.0
 _dist_version=${_so_version}-beta3
-archs="~riscv64*"
 hostmakedepends="lua52-BitOp"
 short_desc="Just-In-Time Compiler for Lua"
 maintainer="Orphaned <orphan@voidlinux.org>"
@@ -33,6 +32,7 @@ post_patch() {
 	case "$XBPS_TARGET_MACHINE" in
 		ppc64*) patchdir="ppc64";;
 		ppc*) patchdir="ppc";;
+		riscv64*) patchdir="riscv64";;
 		*) return;;
 	esac
 
