@@ -1,9 +1,10 @@
 # Template file for 'PrismLauncher'
 pkgname=PrismLauncher
 version=8.0
-revision=1
+revision=2
 build_style=cmake
-configure_args="-DLauncher_BUILD_PLATFORM=Void -DLauncher_QT_VERSION_MAJOR='5'"
+configure_args="-DLauncher_BUILD_PLATFORM=Void -DLauncher_QT_VERSION_MAJOR='5'
+ -DLauncher_GLFW_LIBRARY_NAME=libglfw.so.3 -DLauncher_OPENAL_LIBRARY_NAME=libopenal.so.1"
 hostmakedepends="extra-cmake-modules openjdk17 pkg-config qt5-host-tools
  qt5-qmake scdoc"
 makedepends="qt5-devel"
