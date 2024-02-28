@@ -1,5 +1,5 @@
-# Template file for 'krunner'
-pkgname=krunner
+# Template file for 'krunner5'
+pkgname=krunner5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,7 +10,7 @@ short_desc="KDE Framework for Plasma runners"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/krunner"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=15e239bfeedaec305a2d8707db7d4f8982c2c181eb0c116ce51205d187c6fa29
 
 do_check() {
@@ -21,7 +21,7 @@ do_check() {
 runnermanagertest|runnercontexttest"
 }
 
-krunner-devel_package() {
+krunner5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
