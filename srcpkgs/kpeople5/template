@@ -1,5 +1,5 @@
-# Template file for 'kpeople'
-pkgname=kpeople
+# Template file for 'kpeople5'
+pkgname=kpeople5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -11,7 +11,7 @@ short_desc="Provides access to all contacts and aggregates them by person"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kpeople"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=b8c1812ced1b5d58e3728defa1c9eab4376e3fd5684ae9441f2564129a96712f
 
 do_check() {
@@ -19,7 +19,7 @@ do_check() {
 	ctest -E 'personsproxymodeltest|personsmodeltest'
 }
 
-kpeople-devel_package() {
+kpeople5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

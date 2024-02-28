@@ -9,7 +9,7 @@ hostmakedepends="extra-cmake-modules pkg-config kcoreaddons5 kdoctools5
  kconfig5-devel kcoreaddons5-devel kded5 kpackage5-devel kcmutils5-devel
  plasma-framework intltool gettext qt5-qmake qt5-host-tools
  wayland-protocols plasma-wayland-protocols"
-makedepends="ibus-devel kactivities5-stats5-devel kpeople-devel libcanberra-devel
+makedepends="ibus-devel kactivities5-stats5-devel kpeople5-devel libcanberra-devel
  plasma-workspace-devel pulseaudio-devel xf86-input-evdev-devel
  xf86-input-synaptics-devel xf86-input-libinput-devel ksolid-devel
  kaccounts-integration-devel libaccounts-qt5-devel"
