@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules kconfig5 libxslt qt5-qmake
  gettext qt5-host-tools python3 kgendesignerplugin"
 makedepends="mailimporter-devel messagelib-devel kdesignerplugin-devel
- pimcommon-devel libkleo-devel qt5-multimedia-devel kcontacts-devel"
+ pimcommon-devel libkleo-devel qt5-multimedia-devel kcontacts5-devel"
 checkdepends="dbus"
 short_desc="KDE PIM library providing support for mail applications"
 maintainer="John <me@johnnynator.dev>"

@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules kcoreaddons kdoctools qt5-host-tools qt5-qmake
  gettext"
-makedepends="kcontacts-devel mailcommon-devel mailimporter-devel messagelib-devel
+makedepends="kcontacts5-devel mailcommon-devel mailimporter-devel messagelib-devel
  kcalutils-devel"
 short_desc="Import data from other mail clients to KMail"
 maintainer="John <me@johnnynator.dev>"

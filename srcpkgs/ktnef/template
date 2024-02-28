@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
  gettext kcoreaddons"
-makedepends="kcalutils-devel kcontacts-devel"
+makedepends="kcalutils-devel kcontacts5-devel"
 short_desc="API for handling TNEF data"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"

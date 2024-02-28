@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-host-tools qt5-qmake python3
  gettext kcoreaddons"
-makedepends="kcalendarcore5-devel kcontacts-devel kio-devel qt5-location-devel"
+makedepends="kcalendarcore5-devel kcontacts5-devel kio-devel qt5-location-devel"
 short_desc="KDE-based library for accessing various Google services"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"

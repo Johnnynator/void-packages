@@ -1,5 +1,5 @@
-# Template file for 'kcontacts'
-pkgname=kcontacts
+# Template file for 'kcontacts5'
+pkgname=kcontacts5
 reverts="19.08.2_1 19.08.1_1 19.08.0_1 19.04.3_1"
 version=5.115.0
 revision=1
@@ -11,16 +11,16 @@ short_desc="Address book API for KDE"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kcontacts"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=271f1e0405a856cbd17266c3edccd169ef1f5661ce7f5c4f9ab94bf6ed3997f7
 
 do_check() {
 	cd build
 	# Skip failing tests
-	ctest -E "kcontacts-addresstest"
+	ctest -E "kcontacts5-addresstest"
 }
 
-kcontacts-devel_package() {
+kcontacts5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
