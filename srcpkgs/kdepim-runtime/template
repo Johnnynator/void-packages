@@ -9,7 +9,7 @@ hostmakedepends="extra-cmake-modules python3 kdoctools5 kdesignerplugin5
 makedepends="akonadi-calendar-devel akonadi-notes-devel knotifyconfig-devel
  pimcommon-devel kdav5-devel libkgapi-devel kmbox-devel
  qt5-networkauth-devel qca-qt5-devel qt5-webengine-devel
- kholidays-devel qt5-webchannel-devel"
+ kholidays5-devel qt5-webchannel-devel"
 checkdepends="dbus"
 short_desc="KDE PIM runtime applications/libraries"
 maintainer="John <me@johnnynator.dev>"

@@ -4,7 +4,7 @@ version=3.3.0
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kdoctools5"
-makedepends="kinit-devel kcmutils5-devel kdiagram-devel kholidays-devel
+makedepends="kinit-devel kcmutils5-devel kdiagram-devel kholidays5-devel
  khtml-devel kactivities5-devel akonadi5-devel kcontacts5-devel
  threadweaver-devel akonadi-contacts-devel"
 short_desc="Project Management"

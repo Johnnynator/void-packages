@@ -9,7 +9,7 @@ hostmakedepends="extra-cmake-modules kconfig5 kcoreaddons5 kdoctools5 pkg-config
  python3 qt5-host-tools qt5-qmake gettext"
 makedepends="akonadi5-devel aqbanking-devel gmp-devel gmpxx-devel gpgmeqt-devel
  gwenhywfar-devel gwenhywfar-qt5 kactivities5-devel kcmutils5-devel
- kcontacts5-devel kdewebkit5-devel kdiagram-devel kholidays-devel
+ kcontacts5-devel kdewebkit5-devel kdiagram-devel kholidays5-devel
  kidentitymanagement-devel kross-devel libalkimia-devel libical-devel
  libofx-devel kio-devel kbookmarks5-devel kwidgetsaddons-devel
  akonadi5-devel"

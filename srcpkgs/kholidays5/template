@@ -1,5 +1,5 @@
-# Template file for 'kholidays'
-pkgname=kholidays
+# Template file for 'kholidays5'
+pkgname=kholidays5
 reverts="17.12.3_1 17.12.1_1 17.12.0_1 17.04.3_1"
 version=5.115.0
 revision=1
@@ -10,14 +10,14 @@ short_desc="KDE library for regional holiday information"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kholidays"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=cdf0d732cf0fa85971961803f0d1be5a78f3f45536fc7c22231b953349b641a4
 
 if [ "$CROSS_BUILD" ]; then
 	hostmakedepends+=" qt5-host-tools qt5-qmake"
 fi
 
-kholidays-devel_package() {
+kholidays5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

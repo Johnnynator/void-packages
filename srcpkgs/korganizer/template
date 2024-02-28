@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools5
  kcmutils5 kcoreaddons5 kconfig5 gettext"
 makedepends="akonadi-calendar-devel akonadi-notes-devel incidenceeditor-devel
- qt5-multimedia-devel kholidays-devel kontactinterface-devel"
+ qt5-multimedia-devel kholidays5-devel kontactinterface-devel"
 short_desc="Calendar and scheduling Program"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later"
