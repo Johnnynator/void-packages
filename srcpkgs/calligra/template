@@ -14,7 +14,7 @@ makedepends="akonadi-contacts-devel akonadi5-devel ecm-devel eigen3.2
  libopenexr-devel libspnav-devel libvisio-devel libwpg-devel libwps-devel
  poppler-qt5-devel qca-qt5-devel threadweaver-devel marble5-devel
  knotifyconfig5-devel sonnet-devel kcodecs5-devel
- kauth5-devel kparts-devel kxmlgui-devel kconfigwidgets5-devel kconfig5-devel
+ kauth5-devel kparts5-devel kxmlgui-devel kconfigwidgets5-devel kconfig5-devel
  ktextwidgets-devel kservice-devel kcrash5-devel kio5-devel kiconthemes5-devel"
 depends="calligra-filters calligra-libs calligra-plugins calligra-karbon
  calligra-kexi calligra-stage calligra-sheets calligra-extras

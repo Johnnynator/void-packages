@@ -4,7 +4,7 @@ version=5.0.2
 revision=3
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 pkg-config qt5-host-tools qt5-qmake"
-makedepends="exiv2-devel freetype-devel kjs5-devel kparts-devel libpodofo-devel
+makedepends="exiv2-devel freetype-devel kjs5-devel kparts5-devel libpodofo-devel
  taglib-devel"
 short_desc="Powerful batch renamer for KDE"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"

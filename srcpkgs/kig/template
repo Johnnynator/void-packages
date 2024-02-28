@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules kcoreaddons5 kdoctools5 gettext
  pkg-config qt5-host-tools qt5-qmake"
-makedepends="boost-devel kparts-devel ktexteditor-devel python3-devel"
+makedepends="boost-devel kparts5-devel ktexteditor-devel python3-devel"
 short_desc="KDE education tool for interactive geometry"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-only"

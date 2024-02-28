@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kconfig5 kdoctools5
  pkg-config qt5-host-tools qt5-qmake"
-makedepends="kparts-devel qt5-devel"
+makedepends="kparts5-devel qt5-devel"
 short_desc="Bookmarks editor"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later, GFDL-1.2-only"

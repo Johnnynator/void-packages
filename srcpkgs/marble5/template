@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_MARBLE_TESTS=NO -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules kconfig5-devel kcoreaddons5-devel kdoctools5
  kpackage5-devel perl qt5-host-tools qt5-qmake gettext"
-makedepends="gpsd-devel knewstuff5-devel kparts-devel krunner-devel phonon-qt5-devel
+makedepends="gpsd-devel knewstuff5-devel kparts5-devel krunner-devel phonon-qt5-devel
  qt5-location-devel qt5-serialport-devel qt5-webkit-devel shapelib-devel
  protobuf-devel"
 short_desc="Virtual globe and world atlas"

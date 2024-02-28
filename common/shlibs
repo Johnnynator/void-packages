@@ -2787,7 +2787,7 @@ libKF5NewStuff.so.5 knewstuff5-5.115.0_1
 libKF5NewStuffCore.so.5 knewstuff5-5.115.0_1
 libKF5NewStuffWidgets.so.5 knewstuff5-5.115.0_1
 libKF5NotifyConfig.so.5 knotifyconfig5-5.115.0_1
-libKF5Parts.so.5 kparts-5.26.0_1
+libKF5Parts.so.5 kparts5-5.115.0_1
 libKF5Activities.so.5 kactivities5-5.26.0_1
 libkdeinit5_kded5.so kded5-5.115.0_1
 libKF5WebKit.so.5 kdewebkit5-5.115.0_1

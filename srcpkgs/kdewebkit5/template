@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons5 extra-cmake-modules
  qt5-host-tools qt5-qmake python3 gettext"
-makedepends="kparts-devel qt5-webkit-devel"
+makedepends="kparts5-devel qt5-webkit-devel"
 short_desc="KDE Integration of the HTML rendering engine WebKit"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"

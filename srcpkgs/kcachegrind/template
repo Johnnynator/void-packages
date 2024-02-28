@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kdoctools5
  pkg-config qt5-host-tools qt5-qmake"
-makedepends="kparts-devel qt5-devel"
+makedepends="kparts5-devel qt5-devel"
 depends="python3 hicolor-icon-theme"
 short_desc="Visualization of Performance Profiling Data"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"

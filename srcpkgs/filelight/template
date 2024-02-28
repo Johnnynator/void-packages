@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kdoctools5
  kpackage5 qt5-host-tools qt5-qmake"
-makedepends="kparts-devel kdeclarative5-devel qt5-devel qt5-quickcontrols2-devel"
+makedepends="kparts5-devel kdeclarative5-devel qt5-devel qt5-quickcontrols2-devel"
 depends="kirigami2 kquickcharts"
 short_desc="Interactive map that helps visualize disk usage on your computer"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"

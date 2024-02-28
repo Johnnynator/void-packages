@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons5 kdoctools5
  pkg-config qt5-host-tools qt5-qmake"
-makedepends="kparts-devel"
+makedepends="kparts5-devel"
 short_desc="Screen Ruler"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"

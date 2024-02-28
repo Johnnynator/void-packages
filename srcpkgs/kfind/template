@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 qt5-host-tools qt5-qmake
  kdoctools5"
-makedepends="kfilemetadata5-devel kparts-devel"
+makedepends="kfilemetadata5-devel kparts5-devel"
 short_desc="Find files and folders"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"

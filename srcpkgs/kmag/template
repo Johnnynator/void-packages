@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kdoctools5
  qt5-host-tools qt5-qmake"
-makedepends="kparts-devel libqaccessibilityclient-devel qt5-devel"
+makedepends="kparts5-devel libqaccessibilityclient-devel qt5-devel"
 short_desc="Screen Magnifier"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"

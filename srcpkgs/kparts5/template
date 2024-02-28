@@ -1,5 +1,5 @@
-# Template file for 'kparts'
-pkgname=kparts
+# Template file for 'kparts5'
+pkgname=kparts5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,14 +10,14 @@ short_desc="KDE Plugin framework for user interface components"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kparts"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=a2ad3379d71843d3efeac3e98b6416509c024eff1135e45724fe5c1722cb7d94
 
 do_check() {
 	: # test can not find packages assets?!
 }
 
-kparts-devel_package() {
+kparts5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
