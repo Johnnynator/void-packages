@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools qt5-tools
  kcmutils5 kcoreaddons5 kdevelop-pg-qt plasma-framework gettext tar which"
 makedepends="apr-util-devel llvm17-devel grantlee5-devel kcmutils5-devel kdevelop-pg-qt
- kitemmodels5-devel knewstuff5-devel knotifyconfig-devel krunner-devel
+ kitemmodels5-devel knewstuff5-devel knotifyconfig5-devel krunner-devel
  ktexteditor-devel libkomparediff2-devel libksysguard-devel okteta-devel
  purpose-devel qt5-location-devel qt5-webchannel-devel subversion-devel clang-tools-extra
  qt5-devel $(vopt_if webengine 'qt5-webengine-devel' 'qt5-webkit-devel')"

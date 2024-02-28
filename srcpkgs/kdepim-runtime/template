@@ -6,7 +6,7 @@ build_style=cmake
 # XXX KolabLibraries, Kolabxml
 hostmakedepends="extra-cmake-modules python3 kdoctools5 kdesignerplugin5
  gettext qt5-qmake qt5-host-tools"
-makedepends="akonadi-calendar-devel akonadi-notes-devel knotifyconfig-devel
+makedepends="akonadi-calendar-devel akonadi-notes-devel knotifyconfig5-devel
  pimcommon-devel kdav5-devel libkgapi-devel kmbox-devel
  qt5-networkauth-devel qca-qt5-devel qt5-webengine-devel
  kholidays5-devel qt5-webchannel-devel"

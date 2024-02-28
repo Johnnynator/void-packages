@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules python3 qt5-host-tools qt5-qmake
  gettext kcmutils5 kdoctools5 kconfig5 kcoreaddons5"
-makedepends="kcalutils-devel knotifyconfig-devel kontactinterface-devel
+makedepends="kcalutils-devel knotifyconfig5-devel kontactinterface-devel
  kparts-devel ktnef-devel libkleo-devel libksieve-devel mailcommon-devel
  messagelib-devel qt5-location-devel qt5-webchannel-devel qt5-webengine-devel"
 depends="kdepim-runtime kmail-account-wizard mariadb akonadi-import-wizard

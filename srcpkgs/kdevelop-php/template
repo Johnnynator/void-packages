@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules qt5-qmake gettext tar
  qt5-host-tools kcoreaddons5 kdevelop-pg-qt kconfig5"
 makedepends="qt5-devel knewstuff5-devel kitemmodels5-devel
  threadweaver-devel ktexteditor-devel kcmutils5-devel
- knotifyconfig-devel grantlee5-devel kdevelop-pg-qt kdevelop-devel"
+ knotifyconfig5-devel grantlee5-devel kdevelop-pg-qt kdevelop-devel"
 short_desc="PHP language support for KDevelop"
 maintainer="yopito <pierre.bourgin@free.fr>"
 license="GPL-2.0-or-later, LGPL-2.0-or-later"

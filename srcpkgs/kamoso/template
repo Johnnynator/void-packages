@@ -8,10 +8,10 @@ hostmakedepends="
  pkg-config python3 qt5-host-tools qt5-qmake qt5-quickcontrols"
 makedepends="
  glib-devel gst-plugins-base1-devel gst-plugins-bad1-devel gstreamer1-devel
- kirigami2-devel knotifyconfig-devel purpose-devel qt5-multimedia-devel
+ kirigami2-devel knotifyconfig5-devel purpose-devel qt5-multimedia-devel
  qt5-quickcontrols2-devel"
 depends="
- kconfigwidgets5 kcompletion5 ksolid knotifyconfig gst-plugins-good1
+ kconfigwidgets5 kcompletion5 ksolid knotifyconfig5 gst-plugins-good1
  gst-plugins-bad1 phonon-qt5 qt5-graphicaleffects qt5-quickcontrols kirigami2
  purpose"
 short_desc="Simple and friendly program to use your webcam recorder"

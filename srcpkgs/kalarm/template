@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools libxslt kdoctools5
  kauth5 kconfig5 gettext"
 makedepends="mailcommon-devel messagelib-devel kidletime5-devel
- kcalutils-devel kholidays5-devel knotifyconfig-devel"
+ kcalutils-devel kholidays5-devel knotifyconfig5-devel"
 short_desc="Personal alarm scheduler"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later"

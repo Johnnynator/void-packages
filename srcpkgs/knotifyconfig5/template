@@ -1,5 +1,5 @@
-# Template file for 'knotifyconfig'
-pkgname=knotifyconfig
+# Template file for 'knotifyconfig5'
+pkgname=knotifyconfig5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,10 +10,10 @@ short_desc="KDE Configuration dialog for desktop notifications"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/knotifyconfig"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=0547982279856f716782a1218c597aa2bddeaaeb82b469000cb1b51e1dbc08d6
 
-knotifyconfig-devel_package() {
+knotifyconfig5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
