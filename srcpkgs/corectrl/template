@@ -5,9 +5,9 @@ revision=3
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="pkg-config extra-cmake-modules qt5-host-tools qt5-qmake
-kcoreaddons kauth"
+ kcoreaddons5 kauth5"
 makedepends="botan-devel kauth5-devel karchive5-devel qt5-charts-devel
-qt5-tools-devel libdrm-devel qt5-svg-devel"
+ qt5-tools-devel libdrm-devel qt5-svg-devel"
 depends="dbus hicolor-icon-theme qt5-quickcontrols2 qt5-svg glxinfo"
 short_desc="User-friendly hardware control application"
 maintainer="Orphaned <orphan@voidlinux.org>"
