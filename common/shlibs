@@ -514,8 +514,8 @@ libKPim5Tnef.so.5 ktnef-23.04.0_1
 libKPim5AkonadiCalendar.so.5 akonadi-calendar-23.04.0_1
 libKPim5CalendarSupport.so.5 calendarsupport-23.04.0_1
 libKPim5AkonadiNotes.so.5 akonadi-notes-23.04.0_1
-libKPimKDAV.so.5 kdav-5.72.0_1
-libKF5DAV.so.5 kdav-5.72.0_1
+libKPimKDAV.so.5 kdav5-5.115.0_1
+libKF5DAV.so.5 kdav5-5.115.0_1
 libakonadi-singlefileresource.so.5 kdepim-runtime-17.12.3_1
 libkmindexreader.so.5 kdepim-runtime-17.12.3_1
 libkdexoauth2.so.3 kdepim-runtime-17.12.3_1
