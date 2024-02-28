@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
  -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="extra-cmake-modules pkg-config kcoreaddons5 qt5-host-tools
- kpackage gettext qt5-qmake"
+ kpackage5 gettext qt5-qmake"
 makedepends="qt5-devel kio5-devel ki18n5-devel krunner-devel kactivities5-devel
  plasma-workspace-devel purpose-devel kfilemetadata5-devel"
 short_desc="Integration of web browsers with the KDE Plasma 5 desktop"

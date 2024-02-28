@@ -6,11 +6,11 @@ build_style=cmake
 configure_args="-DENABLE_KCM=ON -DENABLE_CONFIG_QT=ON -DENABLE_TEST=ON"
 hostmakedepends="cldr-emoji-annotation pkg-config gettext doxygen
  extra-cmake-modules glib-devel qt5-qmake qt5-host-tools xkeyboard-config
- AppStream kcoreaddons5 kpackage"
+ AppStream kcoreaddons5 kpackage5"
 makedepends="libfcitx5-devel fcitx5-gtk-devel fcitx5-qt5-devel
  libglib-devel qt5-devel qt5-x11extras-devel kitemviews5-devel
  qt5-quickcontrols2-devel qt5-declarative-devel kcoreaddons5-devel
- ki18n5-devel kpackage-devel kdeclarative5-devel kirigami2-devel
+ ki18n5-devel kpackage5-devel kdeclarative5-devel kirigami2-devel
  plasma-framework-devel kiconthemes5-devel kwidgetsaddons-devel
  libxkbcommon-devel iso-codes libX11-devel libxkbfile-devel"
 depends="qt5-svg"

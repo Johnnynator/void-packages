@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools
- kpackage-devel kconfig5-devel kcoreaddons5-devel gettext
+ kpackage5-devel kconfig5-devel kcoreaddons5-devel gettext
  kcmutils5-devel"
 makedepends="bluez-qt5-devel kded5-devel kio5-devel plasma-framework-devel
  kcmutils5-devel"

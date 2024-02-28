@@ -5,7 +5,7 @@ revision=3
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="pkg-config gettext extra-cmake-modules qt5-qmake qt5-host-tools
- kdoctools5 kcoreaddons5 kpackage"
+ kdoctools5 kcoreaddons5 kpackage5"
 makedepends="qt5-devel qt5-x11extras-devel qt5-declarative-devel
  plasma-workspace-devel libwacom-devel xf86-input-wacom-devel libinput-devel"
 depends="xf86-input-wacom"

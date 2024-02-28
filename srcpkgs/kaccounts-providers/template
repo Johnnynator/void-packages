@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules intltool qt5-qmake qt5-host-tools
- kpackage pkg-config kcoreaddons5 libaccounts-qt5-devel signond-devel"
+ kpackage5 pkg-config kcoreaddons5 libaccounts-qt5-devel signond-devel"
 makedepends="kparts-devel kaccounts-integration-devel glib-devel
  libaccounts-qt5-devel qt5-location-devel signond-devel"
 short_desc="KDE Accounts Providers"

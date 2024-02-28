@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="
  extra-cmake-modules kconfig5 kcoreaddons5 kdoctools5 pkg-config python3
- kpackage qt5-host-tools qt5-qmake gettext"
+ kpackage5 qt5-host-tools qt5-qmake gettext"
 makedepends="
  kdeclarative5-devel kfilemetadata5-devel knewstuff5-devel knotifyconfig5-devel
  kplotting-devel mlt7-devel qt5-multimedia-devel qt5-webkit-devel purpose-devel

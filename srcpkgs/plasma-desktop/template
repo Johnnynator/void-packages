@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
  -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules pkg-config kcoreaddons5 kdoctools5
- kconfig5-devel kcoreaddons5-devel kded5 kpackage-devel kcmutils5-devel
+ kconfig5-devel kcoreaddons5-devel kded5 kpackage5-devel kcmutils5-devel
  plasma-framework intltool gettext qt5-qmake qt5-host-tools
  wayland-protocols plasma-wayland-protocols"
 makedepends="ibus-devel kactivities5-stats5-devel kpeople-devel libcanberra-devel

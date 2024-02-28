@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- kpackage gettext kcoreaddons5 kconfig5 kdoctools5"
+ kpackage5 gettext kcoreaddons5 kconfig5 kdoctools5"
 makedepends="libkdegames-devel kplotting-devel plasma-framework-devel"
 short_desc="Chess board program for KDE"
 maintainer="John <me@johnnynator.dev>"

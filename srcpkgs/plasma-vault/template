@@ -6,7 +6,7 @@ build_style=cmake
 configure_args=" -DKF5_HOST_TOOLING=/usr/lib/cmake
  -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="extra-cmake-modules kcoreaddons5 qt5-qmake qt5-host-tools
- pkg-config gettext kpackage-devel kconfig5-devel kcoreaddons5-devel
+ pkg-config gettext kpackage5-devel kconfig5-devel kcoreaddons5-devel
  plasma-framework"
 makedepends="plasma-framework-devel libksysguard-devel networkmanager-qt5-devel"
 short_desc="Plasma applet and services for creating encrypted vaults"

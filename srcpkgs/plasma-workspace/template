@@ -8,7 +8,7 @@ configure_args="-DBUILD_TESTING=OFF
  -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules iso-codes pkg-config kdoctools5 kcoreaddons5
  qt5-wayland plasma-wayland-protocols gettext wayland-devel
- kcmutils5-devel kpackage-devel kconfig5-devel kcoreaddons5-devel plasma-framework"
+ kcmutils5-devel kpackage5-devel kconfig5-devel kcoreaddons5-devel plasma-framework"
 makedepends="qt5-devel qt5-declarative-devel qt5-script-devel plasma-framework-devel
  krunner-devel kjsembed5-devel knotifyconfig5-devel kdesu5-devel knewstuff5-devel
  kcmutils5-devel kidletime5-devel kdelibs4support5-devel libksysguard-devel

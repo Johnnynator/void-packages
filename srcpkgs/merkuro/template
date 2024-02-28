@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext qt5-host-tools qt5-qmake
- kcoreaddons5 kconfig5 kpackage"
+ kcoreaddons5 kconfig5 kpackage5"
 makedepends="qt5-devel qt5-declarative-devel qt5-quickcontrols2-devel
  qt5-svg-devel qt5-location-devel kirigami2-devel kdbusaddons5-devel ki18n5-devel
  kcalendarcore5-devel kconfigwidgets5-devel kwindowsystem-devel kcoreaddons5-devel
