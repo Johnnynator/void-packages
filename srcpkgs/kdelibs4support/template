@@ -6,11 +6,11 @@ build_style=cmake
 configure_args="-DBUILD_DESIGNERPLUGIN=ON
  -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="kcoreaddons5 extra-cmake-modules perl-URI pkg-config
- gettext qt5-host-tools qt5-qmake python kdoctools kgendesignerplugin kded"
-makedepends="kded-devel kemoticons-devel kitemmodels-devel kparts-devel
+ gettext qt5-host-tools qt5-qmake python kdoctools kgendesignerplugin kded5"
+makedepends="kded5-devel kemoticons-devel kitemmodels-devel kparts-devel
  kunitconversion-devel kdesignerplugin-devel networkmanager-qt5-devel
  kdoctools-devel libSM-devel ksolid-devel qt5-tools-devel"
-depends="kded"
+depends="kded5"
 checkdepends="$depends dbus plasma-workspace"
 short_desc="KDE Legacy support for kdelibs 4 compatibility"
 maintainer="John <me@johnnynator.dev>"

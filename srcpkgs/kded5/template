@@ -1,5 +1,5 @@
-# Template file for 'kded'
-pkgname=kded
+# Template file for 'kded5'
+pkgname=kded5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -9,7 +9,7 @@ short_desc="Central daemon of KDE workspaces"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kded"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=8ac22a0031b3fc60c2f2b75db529afef879b6aa10cd882b2fee4c2494baf23b3
 
 if [ "$CROSS_BUILD" ]; then
@@ -17,7 +17,7 @@ if [ "$CROSS_BUILD" ]; then
 	configure_args+=" -DMEINPROC5_EXECUTABLE=/usr/bin/meinproc5"
 fi
 
-kded-devel_package() {
+kded5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
