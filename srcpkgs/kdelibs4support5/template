@@ -7,7 +7,7 @@ configure_args="-DBUILD_DESIGNERPLUGIN=ON
  -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="kcoreaddons5 extra-cmake-modules perl-URI pkg-config
  gettext qt5-host-tools qt5-qmake python kdoctools5 kgendesignerplugin kded5"
-makedepends="kded5-devel kemoticons-devel kitemmodels-devel kparts-devel
+makedepends="kded5-devel kemoticons5-devel kitemmodels-devel kparts-devel
  kunitconversion-devel kdesignerplugin5-devel networkmanager-qt5-devel
  kdoctools5-devel libSM-devel ksolid-devel qt5-tools-devel"
 depends="kded5"

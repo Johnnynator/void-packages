@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules kconfig5 kdoctools5 kcoreaddons5
  qt5-host-tools qt5-qmake gettext"
-makedepends="kemoticons-devel kidletime-devel knotifyconfig-devel kparts-devel
+makedepends="kemoticons5-devel kidletime-devel knotifyconfig-devel kparts-devel
  knewstuff-devel qca-qt5-devel qt5-multimedia-devel"
 short_desc="User friendly IRC client for KDE"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
