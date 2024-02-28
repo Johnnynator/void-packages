@@ -1,5 +1,5 @@
-# Template file for 'prison'
-pkgname=prison
+# Template file for 'prison5'
+pkgname=prison5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -11,7 +11,7 @@ short_desc="Barcode API to produce QRCode barcodes and DataMatrix barcodes"
 maintainer="John <me@johnnynator.dev>"
 license="MIT"
 homepage="https://community.kde.org/Frameworks"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/prison-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=8964fc90ba2b3643d62cee9d01c46f4824670ed8c1bcd12ac3b129cebe4273de
 
 if [ "$XBPS_CHECK_PKGS" ]; then
@@ -25,7 +25,7 @@ post_install() {
 	vlicense LICENSES/MIT.txt
 }
 
-prison-devel_package() {
+prison5-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} ${makedepends}"
 	short_desc+=" - development files"
 	pkg_install() {
