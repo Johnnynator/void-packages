@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="KDE_INSTALL_USE_QT_SYS_PATHS=TRUE"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
  gettext kcoreaddons5"
-makedepends="grantlee5-devel ki18n5-devel kiconthemes-devel knewstuff-devel"
+makedepends="grantlee5-devel ki18n5-devel kiconthemes5-devel knewstuff-devel"
 short_desc="Library for Grantlee theming support"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"

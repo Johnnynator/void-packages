@@ -11,7 +11,7 @@ makedepends="libfcitx5-devel fcitx5-gtk-devel fcitx5-qt5-devel
  libglib-devel qt5-devel qt5-x11extras-devel kitemviews-devel
  qt5-quickcontrols2-devel qt5-declarative-devel kcoreaddons5-devel
  ki18n5-devel kpackage-devel kdeclarative5-devel kirigami2-devel
- plasma-framework-devel kiconthemes-devel kwidgetsaddons-devel
+ plasma-framework-devel kiconthemes5-devel kwidgetsaddons-devel
  libxkbcommon-devel iso-codes libX11-devel libxkbfile-devel"
 depends="qt5-svg"
 short_desc="Fcitx v5 - config tool"

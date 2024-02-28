@@ -1,5 +1,5 @@
-# Template file for 'kiconthemes'
-pkgname=kiconthemes
+# Template file for 'kiconthemes5'
+pkgname=kiconthemes5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -11,10 +11,10 @@ short_desc="KDE Icon GUI utilities"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, GPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kiconthemes"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=6925134bf76bb8bf6b3dabada008ded8f60fa196aa7a00c0c720c29008719d2f
 
-kiconthemes-devel_package() {
+kiconthemes5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

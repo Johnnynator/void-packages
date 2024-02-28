@@ -9,7 +9,7 @@ makedepends="qt5-devel qt5-declarative-devel qt5-quickcontrols2-devel
  qt5-svg-devel qt5-location-devel kirigami2-devel kdbusaddons5-devel ki18n5-devel
  kcalendarcore5-devel kconfigwidgets5-devel kwindowsystem-devel kcoreaddons5-devel
  kcontacts5-devel kitemmodels-devel kxmlgui-devel knotifications-devel
- kiconthemes-devel kservice-devel akonadi5-devel akonadi-contacts-devel
+ kiconthemes5-devel kservice-devel akonadi5-devel akonadi-contacts-devel
  calendarsupport-devel eventviews-devel qqc2-desktop-style-devel kio-devel
  messagelib-devel mailcommon-devel kirigami-addons"
 depends="qqc2-desktop-style kdepim-runtime qt5-location kirigami2>=5.26.0
