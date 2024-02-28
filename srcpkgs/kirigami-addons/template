@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DBUILD_QCH=ON"
 hostmakedepends="extra-cmake-modules gettext qt5-qmake qt5-host-tools"
-makedepends="ki18n-devel kirigami2-devel"
+makedepends="ki18n5-devel kirigami2-devel"
 depends="kirigami2"
 short_desc="Add-ons for the Kirigami framework"
 maintainer="José Santos <agarimos@tutanota.com>"

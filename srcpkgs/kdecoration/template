@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext qt5-qmake qt5-devel
  kcoreaddons5"
-makedepends="qt5-devel ki18n-devel kcoreaddons5-devel"
+makedepends="qt5-devel ki18n5-devel kcoreaddons5-devel"
 short_desc="KDE Plugin based library to create window decorations"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"

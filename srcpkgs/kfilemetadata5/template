@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons5 extra-cmake-modules pkg-config qt5-host-tools qt5-qmake
  gettext kcoreaddons5 python3"
-makedepends="karchive5-devel ki18n-devel poppler-qt5-devel kcoreaddons5-devel
+makedepends="karchive5-devel ki18n5-devel poppler-qt5-devel kcoreaddons5-devel
  taglib-devel exiv2-devel ffmpeg-devel attr-devel ebook-tools-devel
  libqmobipocket-devel"
 short_desc="Simple library for extracting the text and metadata"

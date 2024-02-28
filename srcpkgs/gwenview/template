@@ -7,7 +7,7 @@ build_helper=qemu
 hostmakedepends="extra-cmake-modules pkg-config qt5-qmake qt5-host-tools
  python3 kdoctools5 kconfig5 kcoreaddons5 gettext qt5-wayland wayland-devel"
 makedepends="qt5-devel qt5-svg-devel phonon-qt5-devel kio-devel kactivities5-devel
- kitemmodels-devel ki18n-devel kdoctools5-devel kparts-devel kwindowsystem-devel
+ kitemmodels-devel ki18n5-devel kdoctools5-devel kparts-devel kwindowsystem-devel
  kiconthemes-devel knotifications-devel ksolid-devel libjpeg-turbo-devel
  exiv2-devel libkipi5-devel lcms2-devel baloo5-devel libkdcraw5-devel cfitsio-devel
  kio-devel kwidgetsaddons-devel kImageAnnotator-devel kColorPicker-devel

@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DUTEMPTER_EXECUTABLE=/usr/lib/utempter/utempter"
 hostmakedepends="gettext kcoreaddons5 extra-cmake-modules kcoreaddons5-devel"
-makedepends="kcoreaddons5-devel ki18n-devel libutempter-devel"
+makedepends="kcoreaddons5-devel ki18n5-devel libutempter-devel"
 short_desc="KDE Interfacing with pseudo terminal devices"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"

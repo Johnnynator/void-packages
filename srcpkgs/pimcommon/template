@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3 libxslt
  gettext kconfig5 kgendesignerplugin"
-makedepends="karchive5-devel kcodecs5-devel ki18n-devel kdbusaddons5-devel knewstuff-devel
+makedepends="karchive5-devel kcodecs5-devel ki18n5-devel kdbusaddons5-devel knewstuff-devel
  kconfig5-devel kiconthemes-devel kjobwidgets-devel kpimtextedit-devel akonadi-contacts-devel
  kxmlgui-devel kservice-devel kdesignerplugin5-devel kimap-devel libkdepim-devel purpose-devel
  ktextaddons-devel"

@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="qt5-host-tools qt5-devel kcoreaddons5 extra-cmake-modules
  gettext"
 makedepends="qt5-devel qt5-declarative-devel qt5-svg-devel
- qt5-quickcontrols2-devel qt5-x11extras-devel kirigami2-devel ki18n-devel
+ qt5-quickcontrols2-devel qt5-x11extras-devel kirigami2-devel ki18n5-devel
  kcoreaddons5-devel kiconthemes-devel"
 depends="kirigami2"
 short_desc="Teleprompter software for all video creators"

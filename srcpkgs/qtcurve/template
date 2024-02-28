@@ -8,7 +8,7 @@ hostmakedepends="gettext pkg-config extra-cmake-modules perl
  qt5-qmake qt5-host-tools kcoreaddons5 gdk-pixbuf-devel"
 makedepends="libxcb-devel libX11-devel qt5-devel gtk+-devel
  qt5-svg-devel qt5-x11extras-devel frameworkintegration5-devel
- ki18n-devel kdelibs4support5-devel"
+ ki18n5-devel kdelibs4support5-devel"
 short_desc="Configurable set of widget styles for KDE and Gtk"
 maintainer="Helmut Pozimski <helmut@pozimski.eu>"
 license="LGPL-2.1-or-later"

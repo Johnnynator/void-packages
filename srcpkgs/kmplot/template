@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext qt5-host-tools qt5-qmake kcoreaddons5 kconfig5 kdoctools5"
 makedepends="kdoctools5-devel qt5-svg-devel kcompletion5-devel kconfig5-devel
- kguiaddons5-devel kdbusaddons5-devel kcrash5-devel ki18n-devel kjobwidgets-devel
+ kguiaddons5-devel kdbusaddons5-devel kcrash5-devel ki18n5-devel kjobwidgets-devel
  kio-devel kparts-devel kiconthemes-devel kxmlgui-devel kservice-devel
  kwindowsystem-devel kitemviews-devel knewstuff-devel"
 depends="kparts hicolor-icon-theme"

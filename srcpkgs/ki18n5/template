@@ -1,5 +1,5 @@
-# Template file for 'ki18n'
-pkgname=ki18n
+# Template file for 'ki18n5'
+pkgname=ki18n5
 version=5.115.1
 revision=1
 build_style=cmake
@@ -12,7 +12,7 @@ short_desc="KDE Gettext-based UI text internationalization"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/ki18n"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=7e373d054a1967f1705bc7b2dbd73748909080c32d632b1db17b9d3c25fa8074
 
 do_check() {
@@ -21,7 +21,7 @@ do_check() {
 	ctest -E "kcountrytest|kcountrysubdivisiontest"
 }
 
-ki18n-devel_package() {
+ki18n5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
