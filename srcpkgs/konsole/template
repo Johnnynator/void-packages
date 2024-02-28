@@ -8,7 +8,7 @@ configure_args="-DBUILD_TESTING=OFF
 hostmakedepends="pkg-config extra-cmake-modules kcoreaddons5 qt5-devel
  gettext qt5-qmake kdoctools5 kconfig5"
 makedepends="kinit5-devel knewstuff5-devel knotifyconfig5-devel kparts5-devel
- kpty-devel qt5-multimedia-devel"
+ kpty5-devel qt5-multimedia-devel"
 short_desc="KDE's Terminal Emulator"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.0-or-later, GFDL-1.2-or-later"

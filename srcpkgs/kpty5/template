@@ -1,5 +1,5 @@
-# Template file for 'kpty'
-pkgname=kpty
+# Template file for 'kpty5'
+pkgname=kpty5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,10 +10,10 @@ short_desc="KDE Interfacing with pseudo terminal devices"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kpty"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=844c03068b266fa0805a015af2752923b42d55e8d9d4d65b3e600a19a2805419
 
-kpty-devel_package() {
+kpty5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
