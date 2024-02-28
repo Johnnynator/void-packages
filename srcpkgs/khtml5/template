@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="kcoreaddons5 extra-cmake-modules gperf
  qt5-host-tools qt5-qmake python3 perl gettext"
-makedepends="kjs-devel kparts-devel jasper-devel giflib-devel libpng-devel"
+makedepends="kjs5-devel kparts-devel jasper-devel giflib-devel libpng-devel"
 short_desc="KDE HTML rendering engine"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
