@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools
  gettext kcmutils5-devel kpackage5-devel kconfig5-devel kcoreaddons5-devel"
 makedepends="frameworkintegration5-devel kcmutils5-devel kdecoration-devel
- fftw-devel plasma-framework-devel"
+ fftw-devel plasma-framework5-devel"
 depends="breeze-icons frameworkintegration5 breeze-snow-cursor-theme"
 short_desc="Breeze visual style for the Plasma Desktop"
 maintainer="John <me@johnnynator.dev>"

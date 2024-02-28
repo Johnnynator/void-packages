@@ -1,5 +1,5 @@
-# Template file for 'plasma-framework'
-pkgname=plasma-framework
+# Template file for 'plasma-framework5'
+pkgname=plasma-framework5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -14,7 +14,7 @@ short_desc="Foundational libraries, components, and tools of the Plasma workspac
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/plasma-framework"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=2c6f30bb11a6476b706f34d2f5af1c9e4c98177dc885f9c95d4a24752c9611f7
 
 do_check() {
@@ -26,7 +26,7 @@ plasma-dialogstatetest|plasma-iconitemtest|plasma-themetest|dialognativetest|ico
 build_options="wayland"
 build_options_default="wayland"
 
-plasma-framework-devel_package() {
+plasma-framework5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

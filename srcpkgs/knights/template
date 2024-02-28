@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
  kpackage5 gettext kcoreaddons5 kconfig5 kdoctools5"
-makedepends="libkdegames-devel kplotting5-devel plasma-framework-devel"
+makedepends="libkdegames-devel kplotting5-devel plasma-framework5-devel"
 short_desc="Chess board program for KDE"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"

@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools qt5-tools
- kcmutils5 kcoreaddons5 kdevelop-pg-qt plasma-framework gettext tar which"
+ kcmutils5 kcoreaddons5 kdevelop-pg-qt plasma-framework5 gettext tar which"
 makedepends="apr-util-devel llvm17-devel grantlee5-devel kcmutils5-devel kdevelop-pg-qt
  kitemmodels5-devel knewstuff5-devel knotifyconfig5-devel krunner5-devel
  ktexteditor5-devel libkomparediff2-devel libksysguard-devel okteta-devel
