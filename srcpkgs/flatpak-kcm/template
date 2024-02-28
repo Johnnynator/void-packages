@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules pkg-config qt5-devel qt5-qmake
  gettext kconfig5-devel kcmutils5-devel"
 makedepends="flatpak-devel kcmutils5-devel kdeclarative5-devel
- ki18n5-devel kconfig5-devel kitemmodels-devel"
+ ki18n5-devel kconfig5-devel kitemmodels5-devel"
 short_desc="KDE Config Module for Flatpak Permissions"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"

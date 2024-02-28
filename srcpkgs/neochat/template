@@ -8,10 +8,10 @@ hostmakedepends="extra-cmake-modules gettext pkg-config qt5-qmake
 makedepends="kquickimageeditor-devel libQuotient-devel qtkeychain-qt5-devel
  qt5-multimedia-devel kirigami2-devel ki18n5-devel cmark-devel
  knotifications-devel kconfig5-devel kcoreaddons5-devel qqc2-desktop-style-devel
- sonnet-devel kitemmodels-devel kirigami-addons kconfigwidgets5-devel kio5-devel
+ sonnet-devel kitemmodels5-devel kirigami-addons kconfigwidgets5-devel kio5-devel
  qcoro-qt5-devel olm-devel qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql
  qt5-plugin-sqlite qt5-plugin-tds"
-depends="kquickimageeditor kitemmodels kirigami2 kirigami-addons kquickcharts
+depends="kquickimageeditor kitemmodels5 kirigami2 kirigami-addons kquickcharts
  qt5-location"
 short_desc="Client for matrix from KDE"
 maintainer="Orphaned <orphan@voidlinux.org>"

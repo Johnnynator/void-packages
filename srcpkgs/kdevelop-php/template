@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules qt5-qmake gettext tar
  qt5-host-tools kcoreaddons5 kdevelop-pg-qt kconfig5"
-makedepends="qt5-devel knewstuff-devel kitemmodels-devel
+makedepends="qt5-devel knewstuff-devel kitemmodels5-devel
  threadweaver-devel ktexteditor-devel kcmutils5-devel
  knotifyconfig-devel grantlee5-devel kdevelop-pg-qt kdevelop-devel"
 short_desc="PHP language support for KDevelop"
