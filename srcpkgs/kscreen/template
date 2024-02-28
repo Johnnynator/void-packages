@@ -5,9 +5,9 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules qt5-devel qt5-qmake
- kpackage-devel kconfig-devel kcoreaddons-devel gettext kcmutils-devel"
+ kpackage-devel kconfig-devel kcoreaddons-devel gettext kcmutils5-devel"
 makedepends="kxmlgui-devel libkscreen-devel plasma-framework-devel
- layer-shell-qt-devel qt5-sensors-devel kcmutils-devel"
+ layer-shell-qt-devel qt5-sensors-devel kcmutils5-devel"
 depends="hicolor-icon-theme"
 short_desc="KDE screen management software"
 maintainer="John <me@johnnynator.dev>"

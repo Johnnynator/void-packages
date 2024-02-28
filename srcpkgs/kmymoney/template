@@ -8,7 +8,7 @@ configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson
 hostmakedepends="extra-cmake-modules kconfig kcoreaddons kdoctools pkg-config
  python3 qt5-host-tools qt5-qmake gettext"
 makedepends="akonadi5-devel aqbanking-devel gmp-devel gmpxx-devel gpgmeqt-devel
- gwenhywfar-devel gwenhywfar-qt5 kactivities5-devel kcmutils-devel
+ gwenhywfar-devel gwenhywfar-qt5 kactivities5-devel kcmutils5-devel
  kcontacts-devel kdewebkit-devel kdiagram-devel kholidays-devel
  kidentitymanagement-devel kross-devel libalkimia-devel libical-devel
  libofx-devel kio-devel kbookmarks5-devel kwidgetsaddons-devel

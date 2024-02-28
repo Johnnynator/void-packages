@@ -6,8 +6,8 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules gettext pkg-config qt5-host-tools qt5-qmake
  kauth5 kpackage-devel kconfig-devel kcoreaddons-devel kdoctools-devel
- kcmutils-devel"
-makedepends="kdoctools plasma-framework-devel kdesignerplugin-devel kcmutils-devel
+ kcmutils5-devel"
+makedepends="kdoctools plasma-framework-devel kdesignerplugin-devel kcmutils5-devel
  kdelibs4support-devel kwayland-devel glu-devel pciutils-devel libraw1394-devel
  ksolid-devel"
 depends="hwids"

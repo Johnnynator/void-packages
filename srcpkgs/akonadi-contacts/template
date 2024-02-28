@@ -3,7 +3,7 @@ pkgname=akonadi-contacts
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kcoreaddons kcmutils"
+hostmakedepends="extra-cmake-modules gettext kcoreaddons kcmutils5"
 makedepends="kio-devel kcontacts-devel kmime-devel akonadi-mime-devel prison-devel
  libkleo-devel grantlee5-devel grantleetheme-devel"
 short_desc="Libraries and daemons to implement Contact Management in Akonadi"

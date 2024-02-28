@@ -1,5 +1,5 @@
-# Template file for 'kcmutils'
-pkgname=kcmutils
+# Template file for 'kcmutils5'
+pkgname=kcmutils5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -11,10 +11,10 @@ short_desc="Utilities for KDE System Settings modules"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.0-only"
 homepage="https://invent.kde.org/frameworks/kcmutils"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=039352afcc31b5414d961b3fc94f0eae54c6b83d9d7b768beca9018198175d1e
 
-kcmutils-devel_package() {
+kcmutils5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

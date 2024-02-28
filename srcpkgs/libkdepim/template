@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
  gettext kcoreaddons"
-makedepends="akonadi5-devel akonadi-contacts-devel kcmutils-devel
+makedepends="akonadi5-devel akonadi-contacts-devel kcmutils5-devel
  kldap-devel akonadi-search-devel"
 short_desc="Libraries for KDE PIM applications"
 maintainer="John <me@johnnynator.dev>"

@@ -4,7 +4,7 @@ version=1.7.0
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext pkg-config"
-makedepends="kcmutils-devel kdewebkit-devel kemoticons-devel knotifyconfig-devel
+makedepends="kcmutils5-devel kdewebkit-devel kemoticons-devel knotifyconfig-devel
  kparts-devel qca-qt5-devel qt5-networkauth-devel qt5-devel purpose-devel telepathy-qt5-devel"
 short_desc="Twitter, Pump.io, GNU social client for KDE"
 maintainer="Orphaned <orphan@voidlinux.org>"

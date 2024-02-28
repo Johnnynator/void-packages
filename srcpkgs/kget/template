@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="extra-cmake-modules python3 qt5-qmake qt5-host-tools
  pkg-config kdoctools kconfig kcoreaddons gettext"
-makedepends="gpgmeqt-devel kcmutils-devel kdelibs4support-devel
+makedepends="gpgmeqt-devel kcmutils5-devel kdelibs4support-devel
  knotifyconfig-devel libktorrent-devel qca-qt5-devel qt5-plugin-mysql
  qt5-plugin-odbc qt5-plugin-pgsql qt5-plugin-sqlite qt5-plugin-tds"
 short_desc="KDE Download Manager"

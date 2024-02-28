@@ -4,8 +4,8 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules pkg-config qt5-host-tools qt5-qmake
- kcoreaddons libaccounts-qt5-devel signond-devel gettext kpackage kcmutils"
-makedepends="kcmutils-devel kparts-devel libaccounts-qt5-devel signond-devel qcoro-qt5-devel"
+ kcoreaddons libaccounts-qt5-devel signond-devel gettext kpackage kcmutils5"
+makedepends="kcmutils5-devel kparts-devel libaccounts-qt5-devel signond-devel qcoro-qt5-devel"
 depends="kinit signon-ui signon-plugin-oauth2 signon-kwallet-extension"
 short_desc="Administer web accounts for sites and services across the KDE desktop"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"

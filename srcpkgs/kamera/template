@@ -5,8 +5,8 @@ revision=1
 build_style=cmake
 configure_args="-DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules intltool pkg-config kdoctools-devel
- kcoreaddons-devel kcmutils-devel qt5-qmake qt5-host-tools"
-makedepends="qt5-devel kio-devel ki18n-devel libgphoto2-devel kcmutils-devel
+ kcoreaddons-devel kcmutils5-devel qt5-qmake qt5-host-tools"
+makedepends="qt5-devel kio-devel ki18n-devel libgphoto2-devel kcmutils5-devel
  kcoreaddons-devel kdoctools-devel"
 short_desc="KDE integration for gphoto2 cameras"
 maintainer="Kenneth Raplee <kenrap@kennethraplee.com>"

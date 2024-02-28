@@ -6,9 +6,9 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools
  kpackage-devel kconfig-devel kcoreaddons-devel gettext
- kcmutils-devel"
+ kcmutils5-devel"
 makedepends="bluez-qt5-devel kded-devel kio-devel plasma-framework-devel
- kcmutils-devel"
+ kcmutils5-devel"
 short_desc="KDE Bluetooth integration"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"

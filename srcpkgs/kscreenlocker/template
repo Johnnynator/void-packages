@@ -5,8 +5,8 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules pkg-config kcoreaddons-devel
- qt5-qmake wayland-devel qt5-host-tools gettext kcmutils-devel"
-makedepends="kdeclarative-devel kidletime-devel kcmutils-devel
+ qt5-qmake wayland-devel qt5-host-tools gettext kcmutils5-devel"
+makedepends="kdeclarative-devel kidletime-devel kcmutils5-devel
  libSM-devel kwayland-devel libXi-devel pam-devel libXcursor-devel
  layer-shell-qt-devel libkscreen-devel"
 short_desc="KDE Library and components for secure lock screen architecture"

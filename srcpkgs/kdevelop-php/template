@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules qt5-qmake gettext tar
  qt5-host-tools kcoreaddons kdevelop-pg-qt kconfig"
 makedepends="qt5-devel knewstuff-devel kitemmodels-devel
- threadweaver-devel ktexteditor-devel kcmutils-devel
+ threadweaver-devel ktexteditor-devel kcmutils5-devel
  knotifyconfig-devel grantlee5-devel kdevelop-pg-qt kdevelop-devel"
 short_desc="PHP language support for KDevelop"
 maintainer="yopito <pierre.bourgin@free.fr>"

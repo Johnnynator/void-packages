@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kauth5 kdoctools pkg-config
  qt5-host-tools qt5-qmake"
-makedepends="kcmutils-devel kparts-devel qt5-devel"
+makedepends="kcmutils5-devel kparts-devel qt5-devel"
 short_desc="KDE Wallet Management Tools"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-only"

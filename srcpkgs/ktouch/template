@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules kconfig kcoreaddons kdoctools
  pkg-config qt5-declarative qt5-qmake qt5-host-tools gettext"
-makedepends="libxkbfile-devel kdeclarative-devel kcmutils-devel
+makedepends="libxkbfile-devel kdeclarative-devel kcmutils5-devel
  qt5-xmlpatterns-devel qt5-tools-devel kio-devel qt5-plugin-mysql qt5-plugin-tds
  qt5-declarative-devel qt5-plugin-odbc qt5-plugin-pgsql qt5-plugin-sqlite
  qt5-quickcontrols2-devel"
