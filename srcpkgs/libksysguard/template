@@ -27,8 +27,8 @@ fi
 
 libksysguard-devel_package() {
 	short_desc+=" - development"
-	depends="plasma-framework-devel qt5-devel libsensors-devel ki18n-devel
-	 kconfig-devel kiconthemes-devel
+	depends="plasma-framework5-devel qt5-devel libsensors-devel ki18n5-devel
+	 kconfig5-devel kiconthemes5-devel
 	 ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
 		vmove usr/include
