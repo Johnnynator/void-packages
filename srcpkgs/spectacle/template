@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules kdoctools5 python3 qt5-host-tools qt5-qmake
  qt5-wayland kconfig5 gettext kcoreaddons5 wayland-devel"
 makedepends="kColorPicker-devel kImageAnnotator-devel kdeclarative5-devel
- knewstuff5-devel kwayland5-devel libkipi5-devel purpose-devel
+ knewstuff5-devel kwayland5-devel libkipi5-devel purpose5-devel
  xcb-util-cursor-devel xcb-util-image-devel kpipewire-devel
  pipewire-devel wayland-devel"
 depends="qt5-tools"

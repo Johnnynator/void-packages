@@ -9,7 +9,7 @@ hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools qt5-tools
 makedepends="apr-util-devel llvm17-devel grantlee5-devel kcmutils5-devel kdevelop-pg-qt
  kitemmodels5-devel knewstuff5-devel knotifyconfig5-devel krunner5-devel
  ktexteditor5-devel libkomparediff2-devel libksysguard-devel okteta-devel
- purpose-devel qt5-location-devel qt5-webchannel-devel subversion-devel clang-tools-extra
+ purpose5-devel qt5-location-devel qt5-webchannel-devel subversion-devel clang-tools-extra
  qt5-devel $(vopt_if webengine 'qt5-webengine-devel' 'qt5-webkit-devel')"
 # khelpcenter is required to display documentation
 depends="khelpcenter"

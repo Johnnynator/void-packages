@@ -8,12 +8,12 @@ hostmakedepends="
  pkg-config python3 qt5-host-tools qt5-qmake qt5-quickcontrols"
 makedepends="
  glib-devel gst-plugins-base1-devel gst-plugins-bad1-devel gstreamer1-devel
- kirigami2-devel knotifyconfig5-devel purpose-devel qt5-multimedia-devel
+ kirigami2-devel knotifyconfig5-devel purpose5-devel qt5-multimedia-devel
  qt5-quickcontrols2-devel"
 depends="
  kconfigwidgets5 kcompletion5 ksolid5 knotifyconfig5 gst-plugins-good1
  gst-plugins-bad1 phonon-qt5 qt5-graphicaleffects qt5-quickcontrols kirigami2
- purpose"
+ purpose5"
 short_desc="Simple and friendly program to use your webcam recorder"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later"

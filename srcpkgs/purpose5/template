@@ -1,5 +1,5 @@
-# Template file for 'purpose'
-pkgname=purpose
+# Template file for 'purpose5'
+pkgname=purpose5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -8,11 +8,11 @@ hostmakedepends="kcoreaddons5 qt5-qmake qt5-host-tools extra-cmake-modules
 makedepends="qt5-devel qt5-declarative-devel kcoreaddons5-devel kconfig5-devel
  kaccounts-integration-devel kio5-devel kirigami2-devel"
 depends="accounts-qml-module kaccounts-providers"
-short_desc="Offers available actions for a specific purpose"
+short_desc="Offers available actions for a specific purpose5"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/purpose"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=ba06a5debb1e1e9f403c897075ba8e1ab670e6e472da2075ad84080111dee00f
 
 do_check() {
@@ -21,7 +21,7 @@ do_check() {
 	ctest -E 'menutest'
 }
 
-purpose-devel_package() {
+purpose5-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"
 	short_desc+=" - development files"
 	pkg_install() {

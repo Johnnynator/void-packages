@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules intltool pkg-config qt5-qmake qt5-host-tools
  kcoreaddons5 libaccounts-qt5-devel kdoctools5"
 makedepends="libaccounts-qt5-devel kaccounts-integration-devel kparts5-devel
- libkgapi-devel purpose-devel"
+ libkgapi-devel purpose5-devel"
 depends="kaccounts-providers"
 short_desc="KIO slave that enables access and edit Google Drive files"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
