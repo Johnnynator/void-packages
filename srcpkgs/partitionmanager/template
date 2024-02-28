@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="qt5-devel kdoctools5 kconfig5 qt5-qmake cmake python3
  extra-cmake-modules pkg-config gettext kcoreaddons5"
 makedepends="qt5-devel kconfig5-devel kpmcore-devel kdoctools5-devel
- kservice5-devel kio5-devel kxmlgui-devel kiconthemes5-devel kconfigwidgets5-devel"
+ kservice5-devel kio5-devel kxmlgui5-devel kiconthemes5-devel kconfigwidgets5-devel"
 depends="hicolor-icon-theme"
 short_desc="KDE utility that allows you to manage disks"
 maintainer="jambonmcyeah <jambonmcyeah@gmail.com>"

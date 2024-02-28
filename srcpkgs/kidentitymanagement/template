@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
  kcoreaddons5 gettext"
 makedepends="qt5-devel kcoreaddons5-devel kcompletion5-devel ktextwidgets5-devel
- kxmlgui-devel kio5-devel kpimtextedit-devel"
+ kxmlgui5-devel kio5-devel kpimtextedit-devel"
 short_desc="KDE PIM libraries"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"

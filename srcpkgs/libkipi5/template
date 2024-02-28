@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules kdoctools5 qt5-host-tools qt5-qmake
  gettext kcoreaddons5"
-makedepends="kxmlgui-devel"
+makedepends="kxmlgui5-devel"
 short_desc="Interface to use kipi-plugins from a KDE application"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"

@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext qt5-host-tools qt5-qmake kcoreaddons5 kconfig5 kdoctools5"
 makedepends="kdoctools5-devel qt5-svg-devel kcompletion5-devel kconfig5-devel
  kguiaddons5-devel kdbusaddons5-devel kcrash5-devel ki18n5-devel kjobwidgets5-devel
- kio5-devel kparts5-devel kiconthemes5-devel kxmlgui-devel kservice5-devel
+ kio5-devel kparts5-devel kiconthemes5-devel kxmlgui5-devel kservice5-devel
  kwindowsystem5-devel kitemviews5-devel knewstuff5-devel"
 depends="kparts5 hicolor-icon-theme"
 short_desc="Mathematical Function Plotter"

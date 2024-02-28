@@ -9,7 +9,7 @@ makedepends="alsa-lib-devel appstream-glib-devel audiofile-devel doxygen
  fftw-devel id3lib-devel ImageMagick karchive5-devel kcompletion5-devel
  kconfig5-devel kconfigwidgets5-devel kcoreaddons5-devel kcrash5-devel
  kdbusaddons5-devel kdoctools5-devel ki18n5-devel kiconthemes5-devel kio5-devel
- kservice5-devel ktexteditor5-devel ktextwidgets5-devel kxmlgui-devel libmad-devel
+ kservice5-devel ktexteditor5-devel ktextwidgets5-devel kxmlgui5-devel libmad-devel
  libogg-devel librsvg-devel libsamplerate-devel libvorbis-devel opus-devel
  pulseaudio-devel qt5-multimedia-devel samurai"
 depends="audiofile fftw hicolor-icon-theme id3lib lame libmad libsamplerate

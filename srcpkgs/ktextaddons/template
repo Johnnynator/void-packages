@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools
  kcoreaddons5 kconfig5 gettext"
-makedepends="kxmlgui-devel syntax-highlighting-devel kio5-devel
+makedepends="kxmlgui5-devel syntax-highlighting-devel kio5-devel
  qtkeychain-qt5-devel qt5-speech-devel"
 checkdepends="speech-dispatcher"
 short_desc="Various text handling addon"

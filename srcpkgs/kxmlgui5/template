@@ -1,5 +1,5 @@
-# Template file for 'kxmlgui'
-pkgname=kxmlgui
+# Template file for 'kxmlgui5'
+pkgname=kxmlgui5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,7 +10,7 @@ short_desc="KDE Framework for managing menu and toolbar actions"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kxmlgui"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=6b712d22d444210f803511daa7792b37ad1f8b29b7bcafee940ef0c06cb3783d
 
 do_check() {
@@ -18,7 +18,7 @@ do_check() {
 	ctest -E 'ktoolbar_unittest'
 }
 
-kxmlgui-devel_package() {
+kxmlgui5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

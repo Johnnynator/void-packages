@@ -12,7 +12,7 @@ makedepends="qt5-devel qt5-svg-devel phonon-qt5-devel kio5-devel kactivities5-de
  exiv2-devel libkipi5-devel lcms2-devel baloo5-devel libkdcraw5-devel cfitsio-devel
  kio5-devel kwidgetsaddons5-devel kImageAnnotator-devel kColorPicker-devel
  kparts5-devel kcoreaddons5-devel kconfig5-devel kservice5-devel kcompletion5-devel
- kitemviews5-devel kxmlgui-devel kconfigwidgets5-devel kauth5-devel kcodecs5-devel
+ kitemviews5-devel kxmlgui5-devel kconfigwidgets5-devel kauth5-devel kcodecs5-devel
  sonnet-devel kbookmarks5-devel kjobwidgets5-devel ktextwidgets5-devel"
 depends="qt5-imageformats"
 short_desc="Fast and easy to use image viewer by KDE"

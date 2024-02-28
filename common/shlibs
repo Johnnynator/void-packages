@@ -2769,7 +2769,7 @@ libKF5Notifications.so.5 knotifications5-5.115.0_1
 libKF5TextWidgets.so.5 ktextwidgets5-5.115.0_1
 libKF5Wallet.so.5 kwallet5-5.115.0_1
 libkwalletbackend5.so.5 kwallet5-5.115.0_1
-libKF5XmlGui.so.5 kxmlgui-5.26.0_1
+libKF5XmlGui.so.5 kxmlgui5-5.115.0_1
 libKF5Bookmarks.so.5 kbookmarks5-5.115.0_1
 libKF5KIOWidgets.so.5 kio5-5.115.0_1
 libKF5KIOCore.so.5 kio5-5.115.0_1

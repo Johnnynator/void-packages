@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules gettext pkg-config bison flex qt5-qmake
  qt5-host-tools kcoreaddons5"
 makedepends="qt5-devel libjpeg-turbo-devel qt5-plugin-mysql qt5-plugin-odbc
  qt5-plugin-pgsql qt5-plugin-sqlite qt5-plugin-tds qt5-xmlpatterns-devel
- qt5-webkit-devel qt5-webview-devel qt5-declarative-devel kxmlgui-devel
+ qt5-webkit-devel qt5-webview-devel qt5-declarative-devel kxmlgui5-devel
  kcoreaddons5-devel kconfig5-devel kservice5-devel kwindowsystem5-devel
  ksolid5-devel ki18n5-devel kio5-devel kiconthemes5-devel kfilemetadata5-devel
  knotifyconfig5-devel knotifications5-devel threadweaver-devel
