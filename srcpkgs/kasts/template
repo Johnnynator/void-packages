@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules gettext pkg-config
  qt5-qmake qt5-host-tools kcoreaddons5 kconfig5"
 makedepends="kcoreaddons5-devel syndication5-devel kconfig5-devel
- ki18n5-devel threadweaver-devel qt5-quickcontrols2-devel
+ ki18n5-devel threadweaver5-devel qt5-quickcontrols2-devel
  qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql libglib-devel
  qt5-plugin-sqlite qt5-plugin-tds qt5-multimedia-devel
  taglib-devel networkmanager-qt5-devel qtkeychain-qt5-devel

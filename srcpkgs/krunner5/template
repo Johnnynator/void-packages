@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons5 extra-cmake-modules qt5-host-tools
  kpackage5 gettext qt5-qmake"
-makedepends="plasma-framework5-devel threadweaver-devel"
+makedepends="plasma-framework5-devel threadweaver5-devel"
 short_desc="KDE Framework for Plasma runners"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
