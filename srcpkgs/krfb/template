@@ -10,7 +10,7 @@ makedepends="qt5-devel qt5-x11extras-devel ki18n5-devel kcompletion5-devel
  kconfig5-devel kcoreaddons5-devel kcrash5-devel kdbusaddons5-devel kdnssd5-devel
  kdoctools5-devel knotifications5-devel kwallet5-devel kwidgetsaddons-devel
  kxmlgui-devel libvncserver-devel libXtst-devel xcb-util-image-devel
- kwayland-devel pipewire-devel plasma-wayland-protocols kpipewire-devel"
+ kwayland5-devel pipewire-devel plasma-wayland-protocols kpipewire-devel"
 short_desc="KDE Desktop Sharing"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later, GFDL-1.2-only, LGPL-2.1-or-later"

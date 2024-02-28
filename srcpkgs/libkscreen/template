@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="pkg-config extra-cmake-modules qt5-host-tools qt5-x11extras-devel
  plasma-wayland-protocols qt5-wayland wayland-devel"
-makedepends="qt5-tools-devel qt5-x11extras-devel libXrandr-devel kwayland-devel
+makedepends="qt5-tools-devel qt5-x11extras-devel libXrandr-devel kwayland5-devel
  kconfig5-devel"
 short_desc="KDE screen management software"
 maintainer="John <me@johnnynator.dev>"

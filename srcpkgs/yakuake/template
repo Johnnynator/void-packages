@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules kconfig5 kcoreaddons5 qt5-host-tools qt5-qmake gettext"
 makedepends="knewstuff5-devel knotifyconfig5-devel kparts5-devel
- $(vopt_if wayland kwayland-devel)"
+ $(vopt_if wayland kwayland5-devel)"
 depends="konsole"
 short_desc="Drop-down terminal emulator based on KDE konsole technology"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"

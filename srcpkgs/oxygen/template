@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules pkg-config qt5-devel qt5-qmake kconfig5
  gettext kcoreaddons5"
-makedepends="kdecoration-devel frameworkintegration5-devel kwayland-devel
+makedepends="kdecoration-devel frameworkintegration5-devel kwayland5-devel
  kcmutils5-devel kdoctools5"
 short_desc="Oxygen visual style for the Plasma Desktop"
 maintainer="John <me@johnnynator.dev>"

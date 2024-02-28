@@ -2746,8 +2746,8 @@ libsass.so.1 libsass-3.5.0_1
 libjbig.so.0 jbigkit-libs-2.1_2
 libjbig85.so.0 jbigkit-libs-2.1_2
 libskk.so.0 libskk-1.0.2_1
-libKF5WaylandServer.so.5 kwayland-5.26.0_1
-libKF5WaylandClient.so.5 kwayland-5.26.0_1
+libKF5WaylandServer.so.5 kwayland5-5.115.0_1
+libKF5WaylandClient.so.5 kwayland5-5.115.0_1
 libKF5IdleTime.so.5 kidletime5-5.115.0_1
 libKF5Archive.so.5 karchive5-5.115.0_1
 libKF5Codecs.so.5 kcodecs5-5.115.0_1

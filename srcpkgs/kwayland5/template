@@ -1,5 +1,5 @@
-# Template file for 'kwayland'
-pkgname=kwayland
+# Template file for 'kwayland5'
+pkgname=kwayland5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -12,10 +12,10 @@ short_desc="Qt-style client and server library wrapper for Wayland libraries"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kwayland"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=07b512d9ce51a1cacc6d13c1c26143b57372afed0e30bd1c100ad46861b4643c
 
-kwayland-devel_package() {
+kwayland5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}-${version}_${revision}"
 	pkg_install() {

@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules gettext pkg-config qt5-host-tools qt5-qmake
  kauth5 kpackage5-devel kconfig5-devel kcoreaddons5-devel kdoctools5-devel
  kcmutils5-devel"
 makedepends="kdoctools5 plasma-framework-devel kdesignerplugin5-devel kcmutils5-devel
- kdelibs4support5-devel kwayland-devel glu-devel pciutils-devel libraw1394-devel
+ kdelibs4support5-devel kwayland5-devel glu-devel pciutils-devel libraw1394-devel
  ksolid5-devel"
 depends="hwids"
 short_desc="KDE Info Center"

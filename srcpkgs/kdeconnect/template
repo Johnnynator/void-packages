@@ -10,7 +10,7 @@ hostmakedepends="extra-cmake-modules qt5-host-tools
  kpackage5-devel qt5-wayland kcoreaddons5-devel gettext
  kcmutils5-devel"
 makedepends="kcmutils5-devel qca-qt5-devel frameworkintegration5-devel
- qt5-declarative-devel libfakekey-devel kwayland-devel
+ qt5-declarative-devel libfakekey-devel kwayland5-devel
  qt5-multimedia-devel kpeoplevcard-devel kirigami2-devel
  qqc2-desktop-style-devel pulseaudio-qt-devel modemmanager-qt5-devel"
 depends="kde-cli-tools qca-qt5-ossl fuse-sshfs kirigami2 qt5-quickcontrols
