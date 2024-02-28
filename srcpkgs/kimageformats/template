@@ -4,7 +4,7 @@ version=5.115.0
 revision=1
 build_style=cmake
 configure_args="-DKIMAGEFORMATS_HEIF=ON"
-hostmakedepends="kcoreaddons extra-cmake-modules qt5-qmake qt5-host-tools
+hostmakedepends="kcoreaddons5 extra-cmake-modules qt5-qmake qt5-host-tools
  pkg-config"
 makedepends="karchive5-devel libopenexr-devel libheif-devel libraw-devel libavif-devel
  libjxl-devel"

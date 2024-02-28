@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="extra-cmake-modules qt5-devel qt5-qmake
- kdoctools kconfig5 gettext pkg-config python3 kcoreaddons kparts"
+ kdoctools kconfig5 gettext pkg-config python3 kcoreaddons5 kparts"
 makedepends="libarchive-devel kpty-devel kparts-devel kitemmodels-devel libzip-devel"
 checkdepends="p7zip p7zip-unrar lzop lrzip unrar unzip zip zstd"
 short_desc="KDE Archiving Tool"

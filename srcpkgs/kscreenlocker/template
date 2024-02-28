@@ -4,7 +4,7 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
-hostmakedepends="extra-cmake-modules pkg-config kcoreaddons-devel
+hostmakedepends="extra-cmake-modules pkg-config kcoreaddons5-devel
  qt5-qmake wayland-devel qt5-host-tools gettext kcmutils5-devel"
 makedepends="kdeclarative-devel kidletime-devel kcmutils5-devel
  libSM-devel kwayland-devel libXi-devel pam-devel libXcursor-devel

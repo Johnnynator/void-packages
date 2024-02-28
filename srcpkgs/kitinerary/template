@@ -3,7 +3,7 @@ pkgname=kitinerary
 version=23.08.5
 revision=2
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kcoreaddons pkg-config
+hostmakedepends="extra-cmake-modules gettext kcoreaddons5 pkg-config
  qt5-host-tools qt5-qmake qt5-tools-devel"
 makedepends="kcalendarcore5-devel kcontacts5-devel kdeclarative-devel kmime-devel
  kpkpass-devel libphonenumber-devel poppler-devel protobuf-devel qt5-devel

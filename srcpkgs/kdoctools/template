@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 build_helper=qemu
 configure_args="-DINSTALL_INTERNAL_TOOLS=ON"
-hostmakedepends="gettext kcoreaddons extra-cmake-modules perl perl-URI
+hostmakedepends="gettext kcoreaddons5 extra-cmake-modules perl perl-URI
  qt5-host-tools qt5-qmake"
 makedepends="ki18n-devel karchive5-devel libxml2-devel libxslt-devel
  docbook-xml docbook-xsl"

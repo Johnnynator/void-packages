@@ -4,7 +4,7 @@ version=1.3.0
 revision=2
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext"
-makedepends="qt5-devel qt5-svg-devel kconfigwidgets5-devel kcoreaddons-devel
+makedepends="qt5-devel qt5-svg-devel kconfigwidgets5-devel kcoreaddons5-devel
  ki18n-devel kio-devel kitemmodels-devel ksolid-devel kwindowsystem-devel
  threadweaver-devel"
 depends="perf"

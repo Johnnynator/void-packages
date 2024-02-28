@@ -4,10 +4,10 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules python3 qt5-devel qt5-qmake pkg-config kcoreaddons
+hostmakedepends="extra-cmake-modules python3 qt5-devel qt5-qmake pkg-config kcoreaddons5
 gettext kauth"
 makedepends="qt5-devel libatasmart-devel libparted-devel kwidgetsaddons-devel ki18n-devel
- polkit-qt5-devel kauth5-devel kcoreaddons-devel qca-qt5-devel"
+ polkit-qt5-devel kauth5-devel kcoreaddons5-devel qca-qt5-devel"
 depends="parted"
 short_desc="Library for managing partitions"
 maintainer="jambonmcyeah <jambonmcyeah@gmail.com>"

@@ -3,7 +3,7 @@ pkgname=ktextwidgets
 version=5.115.0
 revision=1
 build_style=cmake
-hostmakedepends="kcoreaddons extra-cmake-modules kcoreaddons qt5-qmake qt5-host-tools
+hostmakedepends="kcoreaddons5 extra-cmake-modules kcoreaddons5 qt5-qmake qt5-host-tools
  qt5-tools gettext python3"
 makedepends="kcompletion5-devel kiconthemes-devel kservice-devel sonnet-devel
  qt5-speech-devel"

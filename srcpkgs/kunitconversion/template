@@ -3,7 +3,7 @@ pkgname=kunitconversion
 version=5.115.0
 revision=1
 build_style=cmake
-hostmakedepends="kcoreaddons extra-cmake-modules qt5-host-tools ki18n-devel
+hostmakedepends="kcoreaddons5 extra-cmake-modules qt5-host-tools ki18n-devel
  gettext"
 makedepends="qt5-devel ki18n-devel"
 short_desc="KDE Converting physical units"

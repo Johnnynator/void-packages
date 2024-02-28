@@ -4,7 +4,7 @@ version=5.115.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=ON"
-hostmakedepends="kcoreaddons extra-cmake-modules qt5-host-tools
+hostmakedepends="kcoreaddons5 extra-cmake-modules qt5-host-tools
  qt5-tools-devel"
 makedepends="qt5-devel qt5-tools-devel aspell-devel hunspell-devel
  qt5-declarative-devel"

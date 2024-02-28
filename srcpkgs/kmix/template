@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DSYSCONF_INSTALL_DIR=/etc -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="extra-cmake-modules pkg-config qt5-qmake qt5-host-tools
- kdoctools kcoreaddons kconfig5 gettext"
+ kdoctools kcoreaddons5 kconfig5 gettext"
 makedepends="plasma-framework-devel kinit-devel alsa-lib-devel pulseaudio-devel
  libcanberra-devel ksolid-devel"
 short_desc="KDE's mixer application"

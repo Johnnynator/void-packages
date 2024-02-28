@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="qt5-devel kdoctools kconfig5 qt5-qmake cmake python3
- extra-cmake-modules pkg-config gettext kcoreaddons"
+ extra-cmake-modules pkg-config gettext kcoreaddons5"
 makedepends="qt5-devel kconfig5-devel kpmcore-devel kdoctools-devel
  kservice-devel kio-devel kxmlgui-devel kiconthemes-devel kconfigwidgets5-devel"
 depends="hicolor-icon-theme"

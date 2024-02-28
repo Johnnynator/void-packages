@@ -4,7 +4,7 @@ version=5.115.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=ON"
-hostmakedepends="gettext kcoreaddons extra-cmake-modules
+hostmakedepends="gettext kcoreaddons5 extra-cmake-modules
  qt5-host-tools qt5-qmake python3 kdoctools"
 makedepends="kdoctools-devel gpgmepp-devel libgcrypt-devel
  kservice-devel knotifications-devel kiconthemes-devel

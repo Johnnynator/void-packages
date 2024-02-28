@@ -5,8 +5,8 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_DESIGNERPLUGIN=ON
  -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
-hostmakedepends="kcoreaddons extra-cmake-modules kauth5 gettext
- qt5-host-tools qt5-qmake kdoctools libxml2 kcoreaddons"
+hostmakedepends="kcoreaddons5 extra-cmake-modules kauth5 gettext
+ qt5-host-tools qt5-qmake kdoctools libxml2 kcoreaddons5"
 makedepends="kdoctools-devel ksolid-devel kbookmarks5-devel kjobwidgets-devel
  kwallet-devel acl-devel mit-krb5-devel libxslt-devel libxml2-devel"
 depends="desktop-file-utils"

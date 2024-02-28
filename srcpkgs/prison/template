@@ -3,7 +3,7 @@ pkgname=prison
 version=5.115.0
 revision=1
 build_style=cmake
-hostmakedepends="kcoreaddons extra-cmake-modules qt5-tools doxygen
+hostmakedepends="kcoreaddons5 extra-cmake-modules qt5-tools doxygen
  qt5-declarative-devel qt5-qmake qt5-host-tools"
 makedepends="qt5-devel libdmtx-devel qrencode-devel ecm-devel qt5-plugin-sqlite
  zxing-cpp-devel qt5-declarative-devel"

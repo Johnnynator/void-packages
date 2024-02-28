@@ -2681,7 +2681,7 @@ libspnav.so.0 libspnav-0.2.3_1
 libsimage.so.20 simage-1.7.0_1
 libCoin.so.80 coin3-4.0.0_1
 libgl2ps.so.1 gl2ps-1.3.9_1
-libKF5CoreAddons.so.5 kcoreaddons-5.26.0_1
+libKF5CoreAddons.so.5 kcoreaddons5-5.115.0_1
 librpmatch.so.0 musl-rpmatch-1.0_1
 libmilter.so.1.0.2 libmilter-1.0.2_1
 libopendkim.so.10 opendkim-2.10.3_12

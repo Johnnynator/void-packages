@@ -3,7 +3,7 @@ pkgname=kxmlgui
 version=5.115.0
 revision=1
 build_style=cmake
-hostmakedepends="kcoreaddons extra-cmake-modules kcoreaddons
+hostmakedepends="kcoreaddons5 extra-cmake-modules kcoreaddons5
  gettext qt5-qmake qt5-host-tools python3"
 makedepends="kglobalaccel-devel ktextwidgets-devel attica5-devel"
 short_desc="KDE Framework for managing menu and toolbar actions"

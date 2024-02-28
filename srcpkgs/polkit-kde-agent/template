@@ -4,7 +4,7 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools gettext kcoreaddons"
+hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools gettext kcoreaddons5"
 makedepends="kcrash-devel kdbusaddons-devel kiconthemes-devel kdoctools-devel
  polkit-qt5-devel"
 short_desc="KDE PolKit auth agent"

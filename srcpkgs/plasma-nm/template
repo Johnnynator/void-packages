@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules mobile-broadband-provider-info pkg-config
  gettext qt5-qmake qt5-host-tools kpackage-devel kconfig5-devel
- kcoreaddons-devel plasma-framework kcmutils5-devel"
+ kcoreaddons5-devel plasma-framework kcmutils5-devel"
 makedepends="plasma-workspace-devel networkmanager-qt5-devel kdelibs4support-devel
  kdesignerplugin-devel qca-qt5-devel modemmanager-qt5-devel kdoctools-devel
  openconnect-devel ksolid-devel"

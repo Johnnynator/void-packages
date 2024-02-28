@@ -4,7 +4,7 @@ version=1.5.0
 revision=1
 build_style=cmake
 configure_args="-DHEAPTRACK_BUILD_GUI=ON"
-hostmakedepends="qt5-qmake qt5-host-tools extra-cmake-modules kcoreaddons
+hostmakedepends="qt5-qmake qt5-host-tools extra-cmake-modules kcoreaddons5
  gettext"
 makedepends="qt5-devel boost-devel libunwind-devel libdwarf-devel kdiagram-devel
  libzstd-devel ecm-devel ki18n-devel kitemmodels-devel kio-devel

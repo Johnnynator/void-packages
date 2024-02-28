@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 # Check stage requires a running X Server
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="kcoreaddons pkg-config extra-cmake-modules qt5-host-tools qt5-tools-devel"
+hostmakedepends="kcoreaddons5 pkg-config extra-cmake-modules qt5-host-tools qt5-tools-devel"
 makedepends="qt5-tools-devel qt5-x11extras-devel libXfixes-devel xcb-util-keysyms-devel"
 short_desc="KDE frameworks - Access to the windowing system"
 maintainer="John <me@johnnynator.dev>"

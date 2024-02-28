@@ -3,7 +3,7 @@ pkgname=kteatime
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kcoreaddons kdoctools
+hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kdoctools
  pkg-config qt5-host-tools qt5-qmake"
 makedepends="kparts-devel knotifyconfig-devel"
 short_desc="Handy timer for steeping tea"

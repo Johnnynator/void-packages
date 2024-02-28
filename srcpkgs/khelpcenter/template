@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules kcoreaddons pkg-config gettext"
+hostmakedepends="extra-cmake-modules kcoreaddons5 pkg-config gettext"
 makedepends="kinit-devel khtml-devel grantlee5-devel xapian-core-devel"
 short_desc="KDE Help center"
 maintainer="John <me@johnnynator.dev>"

@@ -4,7 +4,7 @@ version=1.5.3
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools
- kcoreaddons kconfig5 gettext"
+ kcoreaddons5 kconfig5 gettext"
 makedepends="kxmlgui-devel syntax-highlighting-devel kio-devel
  qtkeychain-qt5-devel qt5-speech-devel"
 checkdepends="speech-dispatcher"

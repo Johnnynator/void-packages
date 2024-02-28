@@ -3,7 +3,7 @@ pkgname=akonadi-import-wizard
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kcoreaddons kdoctools qt5-host-tools qt5-qmake
+hostmakedepends="extra-cmake-modules kcoreaddons5 kdoctools qt5-host-tools qt5-qmake
  gettext"
 makedepends="kcontacts5-devel mailcommon-devel mailimporter-devel messagelib-devel
  kcalutils-devel"

@@ -5,7 +5,7 @@ version=5.115.0
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- gettext kcoreaddons"
+ gettext kcoreaddons5"
 makedepends="kio-devel qt5-xmlpatterns-devel"
 short_desc="DAV protocol implemention with KJobs"
 maintainer="John <me@johnnynator.dev>"

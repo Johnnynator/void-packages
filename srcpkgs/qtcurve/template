@@ -5,7 +5,7 @@ revision=3
 build_style=cmake
 configure_args="-DENABLE_QT4=OFF"
 hostmakedepends="gettext pkg-config extra-cmake-modules perl
- qt5-qmake qt5-host-tools kcoreaddons gdk-pixbuf-devel"
+ qt5-qmake qt5-host-tools kcoreaddons5 gdk-pixbuf-devel"
 makedepends="libxcb-devel libX11-devel qt5-devel gtk+-devel
  qt5-svg-devel qt5-x11extras-devel frameworkintegration5-devel
  ki18n-devel kdelibs4support-devel"

@@ -9,7 +9,7 @@ makedepends="qt5-devel qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql
  qt5-plugin-sqlite qt5-plugin-tds qt5-declarative-devel qt5-webchannel-devel
  qt5-webengine-devel qt5-location-devel qt5-x11extras-devel qt5-tools-devel
  $(vopt_if kde 'kwallet-devel kio-devel purpose-devel' 'ki18n-devel xcb-util-devel')
- kcoreaddons-devel"
+ kcoreaddons5-devel"
 depends="qt5-plugin-sqlite"
 checkdepends="dbus"
 short_desc="Cross-platform Qt Web Browser"

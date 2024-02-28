@@ -3,7 +3,7 @@ pkgname=kolourpaint
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kcoreaddons kdoctools
+hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kdoctools
  qt5-host-tools qt5-qmake"
 makedepends="kdelibs4support-devel kparts-devel libksane-devel qt5-devel"
 short_desc="Free, easy-to-use paint program for KDE"

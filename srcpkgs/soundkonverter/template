@@ -5,7 +5,7 @@ revision=2
 build_wrksrc=src
 build_style=cmake
 configure_args="-DCMAKE_CXX_STANDARD_LIBRARIES=-ltag"
-hostmakedepends="extra-cmake-modules gettext kcoreaddons qt5-qmake
+hostmakedepends="extra-cmake-modules gettext kcoreaddons5 qt5-qmake
  qt5-host-tools pkg-config"
 makedepends="kdelibs4support-devel libcdparanoia-devel libkcddb-devel
  qt5-devel taglib-devel ksolid-devel"

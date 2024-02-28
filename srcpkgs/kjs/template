@@ -3,7 +3,7 @@ pkgname=kjs
 version=5.115.0
 revision=1
 build_style=cmake
-hostmakedepends="kcoreaddons extra-cmake-modules perl pkg-config"
+hostmakedepends="kcoreaddons5 extra-cmake-modules perl pkg-config"
 makedepends="qt5-devel qt5-script-devel qt5-declarative-devel
  kdoctools-devel pcre-devel"
 short_desc="KDE Javascript engine"

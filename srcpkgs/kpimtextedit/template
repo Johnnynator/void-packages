@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules python3 qt5-qmake qt5-host-tools
- kcoreaddons gettext"
+ kcoreaddons5 gettext"
 makedepends="qt5-devel grantlee5-devel kcodecs5-devel kconfig5-devel kconfigwidgets5-devel
  kemoticons-devel kiconthemes-devel kio-devel syntax-highlighting-devel
  qt5-speech-devel"

@@ -3,7 +3,7 @@ pkgname=incidenceeditor
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kcoreaddons kconfig5
+hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kcoreaddons5 kconfig5
  gettext"
 makedepends="calendarsupport-devel eventviews-devel kdiagram-devel"
 short_desc="KDE PIM incidence editor"

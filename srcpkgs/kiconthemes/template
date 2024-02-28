@@ -4,7 +4,7 @@ version=5.115.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_DESIGNERPLUGIN=ON"
-hostmakedepends="kcoreaddons extra-cmake-modules kcoreaddons qt5-qmake qt5-host-tools
+hostmakedepends="kcoreaddons5 extra-cmake-modules kcoreaddons5 qt5-qmake qt5-host-tools
  gettext python3"
 makedepends="kitemviews-devel qt5-svg-devel karchive5-devel kconfigwidgets5-devel"
 short_desc="KDE Icon GUI utilities"

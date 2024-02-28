@@ -5,8 +5,8 @@ revision=1
 build_style=cmake
 configure_args="
  -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
-hostmakedepends="kcoreaddons extra-cmake-modules gettext
- kconfig5 qt5-host-tools qt5-qmake python3 kcoreaddons"
+hostmakedepends="kcoreaddons5 extra-cmake-modules gettext
+ kconfig5 qt5-host-tools qt5-qmake python3 kcoreaddons5"
 makedepends="kfilemetadata5-devel kidletime-devel kio-devel ksolid-devel lmdb-devel"
 depends="hicolor-icon-theme"
 short_desc="Framework for searching and managing metadata"

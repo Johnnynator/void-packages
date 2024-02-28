@@ -4,7 +4,7 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules gettext kcoreaddons qt5-devel
+hostmakedepends="extra-cmake-modules gettext kcoreaddons5 qt5-devel
  kdoctools"
 makedepends="kdesignerplugin-devel kdelibs4support-devel kdoctools-devel
  libXxf86vm-devel"

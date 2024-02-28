@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules pkg-config qt5-qmake qt5-host-tools
- kcoreaddons kdoctools gettext"
+ kcoreaddons5 kdoctools gettext"
 makedepends="kio-devel kparts-devel ksolid-devel"
 depends="virtual?phonon-qt5-backend hicolor-icon-theme"
 short_desc="Multimedia player where the focus is on simplicity"

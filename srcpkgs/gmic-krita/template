@@ -6,8 +6,8 @@ build_wrksrc="gmic-qt"
 build_style=cmake
 configure_args="-DGMIC_QT_HOST=krita-plugin -DENABLE_SYSTEM_GMIC=no
  -DCMAKE_BUILD_TYPE=RelWithDebInfo"
-hostmakedepends="pkg-config extra-cmake-modules qt5-qmake qt5-host-tools kcoreaddons"
-makedepends="fftw-devel qt5-devel qt5-tools-devel kcoreaddons-devel krita-devel"
+hostmakedepends="pkg-config extra-cmake-modules qt5-qmake qt5-host-tools kcoreaddons5"
+makedepends="fftw-devel qt5-devel qt5-tools-devel kcoreaddons5-devel krita-devel"
 short_desc="GREYC's Magic for Image Computing - Krita plugin"
 maintainer="John <me@johnnynator.dev>"
 license="CECILL-2.1"

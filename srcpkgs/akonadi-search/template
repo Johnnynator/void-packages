@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 build_helper="rust qemu"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3 AppStream
- gettext kcoreaddons kpackage corrosion cargo"
+ gettext kcoreaddons5 kpackage corrosion cargo"
 makedepends="akonadi5-devel akonadi-mime-devel xapian-core-devel krunner-devel
  kcmutils5-devel kcontacts5-devel kcalendarcore5-devel rust-std"
 short_desc="Libraries and daemons to implement searching in Akonadi"

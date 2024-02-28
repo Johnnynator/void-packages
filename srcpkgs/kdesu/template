@@ -3,7 +3,7 @@ pkgname=kdesu
 version=5.115.0
 revision=1
 build_style=cmake
-hostmakedepends="kcoreaddons extra-cmake-modules gettext
+hostmakedepends="kcoreaddons5 extra-cmake-modules gettext
  qt5-host-tools qt5-qmake python3"
 makedepends="kservice-devel kpty-devel"
 short_desc="KDE User interface for running shell commands with root privileges"

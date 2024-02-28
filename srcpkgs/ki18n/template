@@ -3,7 +3,7 @@ pkgname=ki18n
 version=5.115.1
 revision=1
 build_style=cmake
-hostmakedepends="gettext kcoreaddons extra-cmake-modules qt5-qmake qt5-host-tools
+hostmakedepends="gettext kcoreaddons5 extra-cmake-modules qt5-qmake qt5-host-tools
  qt5-devel pkg-config python3"
 makedepends="qt5-devel qt5-script-devel qt5-declarative-devel"
 depends="iso-codes"

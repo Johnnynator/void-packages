@@ -1,5 +1,5 @@
-# Template file for 'kcoreaddons'
-pkgname=kcoreaddons
+# Template file for 'kcoreaddons5'
+pkgname=kcoreaddons5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,7 +10,7 @@ short_desc="Qt5 addon library with a collection of non-GUI utilities"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kcoreaddons"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=8cd0e1d3e3e9da8de9519ac6fb70dac660cb9286c2deb1f695212edd2c8e99c9
 
 post_install() {
@@ -18,7 +18,7 @@ post_install() {
 		-i ${DESTDIR}/usr/lib/cmake/KF5CoreAddons/KF5CoreAddonsToolingTargets-*.cmake
 }
 
-kcoreaddons-devel_package() {
+kcoreaddons5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

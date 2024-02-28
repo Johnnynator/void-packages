@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules kdoctools qt5-host-tools qt5-qmake
- gettext kcoreaddons"
+ gettext kcoreaddons5"
 makedepends="kxmlgui-devel"
 short_desc="Interface to use kipi-plugins from a KDE application"
 maintainer="John <me@johnnynator.dev>"

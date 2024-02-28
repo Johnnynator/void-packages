@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=ON -DWaylandScanner_EXECUTABLE=/usr/bin/wayland-scanner
  $(vopt_bool wayland WITH_WAYLAND)"
-hostmakedepends="kcoreaddons pkg-config extra-cmake-modules
+hostmakedepends="kcoreaddons5 pkg-config extra-cmake-modules
  $(vopt_if wayland 'wayland-devel qt5-wayland') qt5-host-tools qt5-tools-devel"
 makedepends="qt5-tools-devel $(vopt_if x11 qt5-x11extras-devel)
  $(vopt_if wayland 'plasma-wayland-protocols xcb-util-devel qt5-wayland-devel wayland-devel')"

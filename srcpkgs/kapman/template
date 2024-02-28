@@ -4,8 +4,8 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools kconfig5
- kcoreaddons gettext"
-makedepends="qt5-devel qt5-svg-devel kcoreaddons-devel kconfig5-devel
+ kcoreaddons5 gettext"
+makedepends="qt5-devel qt5-svg-devel kcoreaddons5-devel kconfig5-devel
  kconfigwidgets5-devel kxmlgui-devel libkdegames-devel"
 short_desc="Clone of the well known game Pac-Man"
 maintainer="toluschr <toluschr@protonmail.com>"

@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules python3 qt5-qmake qt5-host-tools
- gettext kcoreaddons kconfig5"
+ gettext kcoreaddons5 kconfig5"
 makedepends="akonadi-contacts-devel kmailtransport-devel kcalutils-devel
  messagelib-devel"
 short_desc="Akonadi calendar integration"

@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons kdoctools
+hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons5 kdoctools
  pkg-config qt5-host-tools qt5-qmake"
 makedepends="hunspell kconfig5-devel kdoctools-devel kio-devel qt5-devel
  qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql qt5-plugin-sqlite

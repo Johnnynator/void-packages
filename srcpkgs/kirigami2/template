@@ -3,7 +3,7 @@ pkgname=kirigami2
 version=5.115.0
 revision=1
 build_style=cmake
-hostmakedepends="kcoreaddons extra-cmake-modules qt5-qmake qt5-host-tools"
+hostmakedepends="kcoreaddons5 extra-cmake-modules qt5-qmake qt5-host-tools"
 makedepends="qt5-devel qt5-declarative-devel qt5-svg-devel qt5-quickcontrols2-devel
  qt5-tools-devel"
 depends="qt5-graphicaleffects"

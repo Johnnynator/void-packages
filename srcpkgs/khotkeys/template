@@ -4,7 +4,7 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules kdoctools kcoreaddons qt5-qmake
+hostmakedepends="extra-cmake-modules kdoctools kcoreaddons5 qt5-qmake
  gettext qt5-host-tools"
 makedepends="kdesignerplugin-devel kdoctools plasma-workspace-devel"
 short_desc="KDE Hotkeys"

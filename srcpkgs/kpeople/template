@@ -3,7 +3,7 @@ pkgname=kpeople
 version=5.115.0
 revision=1
 build_style=cmake
-hostmakedepends="kcoreaddons extra-cmake-modules gettext
+hostmakedepends="kcoreaddons5 extra-cmake-modules gettext
  qt5-host-tools qt5-qmake python3"
 makedepends="kitemviews-devel kservice-devel kwidgetsaddons-devel qt5-plugin-mysql
  qt5-plugin-odbc qt5-plugin-pgsql qt5-plugin-sqlite qt5-plugin-tds"

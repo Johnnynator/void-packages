@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules kconfig5 python3 qt5-host-tools qt5-qmake
- gettext kcoreaddons qt5-tools"
+ gettext kcoreaddons5 qt5-tools"
 makedepends="kholidays-devel akonadi-calendar-devel akonadi-notes-devel
  pimcommon-devel"
 short_desc="Calendar support library"

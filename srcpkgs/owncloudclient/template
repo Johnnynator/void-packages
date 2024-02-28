@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-Wno-dev -DWITH_AUTO_UPDATER=OFF"
 hostmakedepends="pkg-config extra-cmake-modules qt5-host-tools qt5-tools-devel
- kcoreaddons"
+ kcoreaddons5"
 makedepends="qtkeychain-qt5-devel sqlite-devel qt5-declarative-devel kio-devel
  qt5-tools-devel qt5-plugin-odbc qt5-plugin-tds qt5-plugin-pgsql qt5-plugin-mysql
  qt5-plugin-sqlite libre-graph-api-cpp-qt-client libcloudproviders-devel"

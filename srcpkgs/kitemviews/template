@@ -4,7 +4,7 @@ version=5.115.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_DESIGNERPLUGIN=ON"
-hostmakedepends="kcoreaddons extra-cmake-modules
+hostmakedepends="kcoreaddons5 extra-cmake-modules
  qt5-qmake qt5-host-tools qt5-tools-devel"
 makedepends="qt5-devel qt5-tools-devel"
 short_desc="Set of item views extending the Qt model-view framework"

@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
  -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
-hostmakedepends="extra-cmake-modules pkg-config kcoreaddons qt5-host-tools
+hostmakedepends="extra-cmake-modules pkg-config kcoreaddons5 qt5-host-tools
  kpackage gettext qt5-qmake"
 makedepends="qt5-devel kio-devel ki18n-devel krunner-devel kactivities5-devel
  plasma-workspace-devel purpose-devel kfilemetadata5-devel"

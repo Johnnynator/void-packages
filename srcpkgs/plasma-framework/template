@@ -4,7 +4,7 @@ version=5.115.0
 revision=1
 build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
-hostmakedepends="kcoreaddons extra-cmake-modules pkg-config
+hostmakedepends="kcoreaddons5 extra-cmake-modules pkg-config
  kpackage kconfig5 python3 qt5-host-tools qt5-qmake gettext kdoctools"
 makedepends="kactivities5-devel kdeclarative-devel kdoctools-devel kirigami2-devel
  $(vopt_if wayland kwayland-devel) kconfig5-devel"

@@ -4,7 +4,7 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DKF5_HOST_TOOLING=/usr/lib/cmake"
-hostmakedepends="extra-cmake-modules kcoreaddons-devel
+hostmakedepends="extra-cmake-modules kcoreaddons5-devel
  kcmutils5-devel gettext qt5-host-tools qt5-qmake"
 makedepends="kcmutils5-devel"
 depends="bolt"

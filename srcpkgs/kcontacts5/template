@@ -5,8 +5,8 @@ version=5.115.0
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- gettext kcoreaddons"
-makedepends="qt5-devel kcoreaddons-devel ki18n-devel kconfig5-devel kcodecs5-devel"
+ gettext kcoreaddons5"
+makedepends="qt5-devel kcoreaddons5-devel ki18n-devel kconfig5-devel kcodecs5-devel"
 short_desc="Address book API for KDE"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"

@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kworkspace python3 qt5-host-tools
  qt5-qmake"
-makedepends="gpgmepp-devel gpgmeqt-devel kcoreaddons-devel kcrash-devel
+makedepends="gpgmepp-devel gpgmeqt-devel kcoreaddons5-devel kcrash-devel
  ki18n-devel kiconthemes-devel ksolid-devel kwidgetsaddons-devel qt5-devel"
 depends="gpgmeqt kiconthemes"
 short_desc="Program to write hybrid ISO files onto USB disks"

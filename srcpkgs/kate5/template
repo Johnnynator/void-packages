@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules pkg-config kcoreaddons gettext"
+hostmakedepends="extra-cmake-modules pkg-config kcoreaddons5 gettext"
 makedepends="kitemmodels-devel knewstuff-devel ktexteditor-devel
  plasma-framework-devel threadweaver-devel"
 depends="hicolor-icon-theme"

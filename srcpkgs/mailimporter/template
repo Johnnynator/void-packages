@@ -3,7 +3,7 @@ pkgname=mailimporter
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kcoreaddons qt5-qmake qt5-host-tools python3
+hostmakedepends="extra-cmake-modules kcoreaddons5 qt5-qmake qt5-host-tools python3
  gettext"
 makedepends="libkdepim-devel pimcommon-devel"
 short_desc="Mail importer library"

@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- gettext kcoreaddons"
+ gettext kcoreaddons5"
 makedepends="kparts-devel"
 short_desc="Kontact Plugin Interface Library"
 maintainer="John <me@johnnynator.dev>"

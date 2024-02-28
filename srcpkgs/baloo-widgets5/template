@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules python3 kcoreaddons qt5-host-tools
+hostmakedepends="extra-cmake-modules python3 kcoreaddons5 qt5-host-tools
  qt5-qmake gettext"
 makedepends="baloo5-devel"
 short_desc="Baloo widgets"

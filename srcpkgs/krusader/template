@@ -4,7 +4,7 @@ version=2.8.0
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext pkg-config kdoctools
- qt5-qmake qt5-host-tools kcoreaddons"
+ qt5-qmake qt5-host-tools kcoreaddons5"
 makedepends="kparts-devel plasma-framework-devel ksolid-devel"
 short_desc="Twin-panel (commander-style) file manager"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"

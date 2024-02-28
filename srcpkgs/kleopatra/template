@@ -3,7 +3,7 @@ pkgname=kleopatra
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kdoctools qt5-qmake qt5-host-tools kcoreaddons gettext kconfig5"
+hostmakedepends="extra-cmake-modules kdoctools qt5-qmake qt5-host-tools kcoreaddons5 gettext kconfig5"
 makedepends="kcmutils5-devel AppStream kitemmodels-devel gpgmeqt-devel libkleo-devel kmime-devel"
 depends="gnupg>=2"
 checkdepends="dbus gnupg"

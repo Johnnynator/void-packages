@@ -4,8 +4,8 @@ version=5.115.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=ON"
-hostmakedepends="kcoreaddons extra-cmake-modules kcoreaddons qt5-host-tools qt5-tools qt5-qmake"
-makedepends="kcoreaddons-devel kwidgetsaddons-devel qt5-x11extras-devel"
+hostmakedepends="kcoreaddons5 extra-cmake-modules kcoreaddons5 qt5-host-tools qt5-tools qt5-qmake"
+makedepends="kcoreaddons5-devel kwidgetsaddons-devel qt5-x11extras-devel"
 short_desc="KDE Widgets for showing progress of asynchronous jobs"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, LGPL-2.0-or-later"

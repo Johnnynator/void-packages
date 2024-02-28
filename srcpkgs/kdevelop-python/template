@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 pycompile_dirs="usr/share/kdevpythonsupport"
 hostmakedepends="extra-cmake-modules tar gettext python3 qt5-qmake python3-devel
- qt5-host-tools kcoreaddons"
+ qt5-host-tools kcoreaddons5"
 makedepends="python3-devel qt5-devel knewstuff-devel kitemmodels-devel
  threadweaver-devel ktexteditor-devel kcmutils5-devel knotifyconfig-devel
  grantlee5-devel kdevelop-devel"

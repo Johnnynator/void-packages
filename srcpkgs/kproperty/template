@@ -3,8 +3,8 @@ pkgname=kproperty
 version=3.2.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kcoreaddons"
-makedepends="qt5-devel kconfig5-devel kcoreaddons-devel kguiaddons-devel
+hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kcoreaddons5"
+makedepends="qt5-devel kconfig5-devel kcoreaddons5-devel kguiaddons-devel
  kwidgetsaddons-devel"
 short_desc="Property editing framework"
 maintainer="John <me@johnnynator.dev>"

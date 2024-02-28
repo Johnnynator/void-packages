@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="
  -DMEINPROC5_EXECUTABLE=/usr/bin/meinproc5"
-hostmakedepends="kcoreaddons extra-cmake-modules gettext
+hostmakedepends="kcoreaddons5 extra-cmake-modules gettext
  qt5-host-tools qt5-qmake kdoctools-devel"
 makedepends="qt5-tools-devel kdoctools-devel kparts-devel"
 short_desc="KDE scripting bridge"

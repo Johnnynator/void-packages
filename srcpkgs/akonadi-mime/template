@@ -3,7 +3,7 @@ pkgname=akonadi-mime
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kcoreaddons kdoctools python3
+hostmakedepends="extra-cmake-modules kcoreaddons5 kdoctools python3
  gettext"
 makedepends="kmime-devel akonadi5-devel"
 short_desc="Libraries and daemons to implement basic email handling"

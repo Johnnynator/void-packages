@@ -4,9 +4,9 @@ version=5.27.10
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules plasma-wayland-protocols gettext
- qt5-qmake qt5-host-tools pkg-config wayland-devel kcoreaddons
+ qt5-qmake qt5-host-tools pkg-config wayland-devel kcoreaddons5
  kwayland-devel"
-makedepends="ffmpeg-devel kcoreaddons-devel kwayland-devel ki18n-devel
+makedepends="ffmpeg-devel kcoreaddons5-devel kwayland-devel ki18n-devel
  libepoxy-devel pipewire-devel"
 short_desc="Components relating to Flatpak 'pipewire' use in Plasma"
 maintainer="John <me@johnnynator.dev>"

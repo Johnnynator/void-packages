@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kconfig5
- libkdepim-devel kcoreaddons kcmutils5 gettext"
+ libkdepim-devel kcoreaddons5 kcmutils5 gettext"
 makedepends="akonadi5-devel libkleo-devel kcmutils5-devel kontactinterface-devel
  pimcommon-devel"
 short_desc="KDE contact manager"

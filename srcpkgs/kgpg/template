@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext pkg-config
- qt5-qmake kcoreaddons-devel kdoctools kconfig5"
+ qt5-qmake kcoreaddons5-devel kdoctools kconfig5"
 makedepends="kwindowsystem-devel kcrash-devel kdbusaddons-devel
  kiconthemes-devel kjobwidgets-devel kio-devel
  kservice-devel ktextwidgets-devel kxmlgui-devel

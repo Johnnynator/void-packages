@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools pkg-config
- kpackage-devel kconfig5-devel kcoreaddons-devel kcmutils5-devel gettext"
+ kpackage-devel kconfig5-devel kcoreaddons5-devel kcmutils5-devel gettext"
 makedepends="kross-devel kdesignerplugin-devel kdoctools-devel kholidays-devel
  plasma-workspace-devel purpose-devel NetworkManager-devel"
 short_desc="Various Plasma addons"

@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules gettext kcoreaddons"
+hostmakedepends="extra-cmake-modules gettext kcoreaddons5"
 makedepends="kio-devel libksane-devel"
 short_desc="Image Scanning Application"
 maintainer="travankor <travankor@tuta.io>"

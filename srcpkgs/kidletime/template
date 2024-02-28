@@ -3,7 +3,7 @@ pkgname=kidletime
 version=5.115.0
 revision=1
 build_style=cmake
-hostmakedepends="kcoreaddons pkg-config extra-cmake-modules qt5-host-tools qt5-x11extras-devel
+hostmakedepends="kcoreaddons5 pkg-config extra-cmake-modules qt5-host-tools qt5-x11extras-devel
  qt5-wayland wayland-devel"
 makedepends="qt5-x11extras-devel libXScrnSaver-devel
  wayland-protocols wayland-devel qt5-wayland-devel
