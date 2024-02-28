@@ -1,5 +1,5 @@
-# Template file for 'kdeclarative'
-pkgname=kdeclarative
+# Template file for 'kdeclarative5'
+pkgname=kdeclarative5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,7 +10,7 @@ short_desc="KDE Integration of QML and KDE work spaces"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kdeclarative"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=66ecac06ea2226f75be84ceacf447b4cdd26685d0161cc32e2e01d216303a344
 
 do_check() {
@@ -18,7 +18,7 @@ do_check() {
 	ctest -E 'quickviewsharedengine'
 }
 
-kdeclarative-devel_package() {
+kdeclarative5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

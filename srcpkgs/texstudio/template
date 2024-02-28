@@ -8,7 +8,7 @@ configure_args="USE_SYSTEM_HUNSPELL=y USE_SYSTEM_QUAZIP=y
  $(vopt_if phonon PHONON=true) $(vopt_if poppler '' NO_POPPLER_PREVIEW=true)"
 hostmakedepends="pkg-config qt5-qmake qt5-host-tools"
 makedepends="qt5-webkit-devel qt5-svg-devel qt5-script-devel qt5-tools-devel
- kdeclarative-devel hunspell-devel quazip-devel
+ kdeclarative5-devel hunspell-devel quazip-devel
  $(vopt_if phonon phonon-qt5-devel)
  $(vopt_if poppler "poppler-qt5-devel poppler-cpp-devel")
  "

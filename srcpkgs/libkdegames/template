@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules pkg-config qt5-qmake qt5-host-tools
  kcoreaddons5 kdoctools kpackage gettext"
-makedepends="qt5-svg-devel knewstuff-devel kdnssd-devel kdeclarative-devel libopenal-devel libsndfile-devel"
+makedepends="qt5-svg-devel knewstuff-devel kdnssd-devel kdeclarative5-devel libopenal-devel libsndfile-devel"
 short_desc="Common code and data for many KDE games"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"

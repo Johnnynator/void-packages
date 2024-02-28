@@ -2776,9 +2776,9 @@ libKF5KIOCore.so.5 kio-5.26.0_1
 libKF5KIOFileWidgets.so.5 kio-5.26.0_1
 libKF5KIOGui.so.5 kio-5.36.0_1
 libKF5KIONTLM.so.5 kio-5.36.0_1
-libKF5Declarative.so.5 kdeclarative-5.26.0_1
-libKF5QuickAddons.so.5 kdeclarative-5.26.0_1
-libKF5CalendarEvents.so.5 kdeclarative-5.26.0_1
+libKF5Declarative.so.5 kdeclarative5-5.115.0_1
+libKF5QuickAddons.so.5 kdeclarative5-5.115.0_1
+libKF5CalendarEvents.so.5 kdeclarative5-5.115.0_1
 libKF5KCMUtils.so.5 kcmutils5-5.115.0_1
 libKF5KCMUtilsCore.so.5 kcmutils5-5.115.0_1
 libKF5Style.so.5 frameworkintegration5-5.115.0_1

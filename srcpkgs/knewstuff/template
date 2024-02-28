@@ -7,7 +7,7 @@ hostmakedepends="kcoreaddons5 extra-cmake-modules gettext
  kpackage qt5-host-tools qt5-qmake python3"
 makedepends="kio-devel kpackage-devel attica5-devel
  syndication-devel kirigami2-devel"
-depends="kdeclarative qt5-quickcontrols"
+depends="kdeclarative5 qt5-quickcontrols"
 short_desc="KDE Framework for downloading and sharing additional application data"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
