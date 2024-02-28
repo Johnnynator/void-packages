@@ -4,7 +4,7 @@ version=5.115.0
 revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons5 extra-cmake-modules"
-makedepends="kdoctools5-devel kplotting-devel kcoreaddons5-devel
+makedepends="kdoctools5-devel kplotting5-devel kcoreaddons5-devel
  kconfig5-devel"
 depends="kgendesignerplugin>=${version}_${revision}"
 short_desc="Integrating KDE frameworks widgets with Qt Designer"

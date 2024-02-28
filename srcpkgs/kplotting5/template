@@ -1,5 +1,5 @@
-# Template file for 'kplotting'
-pkgname=kplotting
+# Template file for 'kplotting5'
+pkgname=kplotting5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,10 +10,10 @@ short_desc="QWidget-derived class for easy data-plotting"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kplotting"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=836e5c74a9c4c812e4fce2399cc2c29cb61c7810e7d3f4f992d051e1c5f0e1f3
 
-kplotting-devel_package() {
+kplotting5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
