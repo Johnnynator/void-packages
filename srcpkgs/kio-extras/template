@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKDSOAP_KDWSDL2CPP_COMPILER=/usr/bin/kdwsdl2cpp"
 hostmakedepends="extra-cmake-modules pkg-config gperf qt5-qmake qt5-host-tools
- KDSoap-devel kdoctools5 kcoreaddons5 kio gettext"
+ KDSoap-devel kdoctools5 kcoreaddons5 kio5 gettext"
 makedepends="kdesignerplugin5-devel kactivities5-devel kdelibs4support5-devel
  kdnssd5-devel khtml5-devel kpty-devel exiv2-devel libmtp-devel libssh-devel
  syntax-highlighting-devel libopenexr-devel samba-devel taglib-devel

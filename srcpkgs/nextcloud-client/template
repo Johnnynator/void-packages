@@ -9,7 +9,7 @@ makedepends="qt5-tools-devel qt5-declarative-devel qt5-webchannel-devel
  qt5-location-devel qtkeychain-qt5-devel sqlite-devel libcloudproviders-devel
  qt5-quickcontrols2-devel qt5-websockets-devel qt5-svg-devel karchive5-devel
  qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql qt5-plugin-sqlite qt5-plugin-tds
- $(vopt_if dolphin 'extra-cmake-modules kio-devel')
+ $(vopt_if dolphin 'extra-cmake-modules kio5-devel')
  $(vopt_if webengine 'qt5-webengine-devel')"
 depends="qt5-graphicaleffects"
 checkdepends="cmocka-devel"

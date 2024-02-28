@@ -9,7 +9,7 @@ hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
  kconfig5 kcoreaddons5"
 makedepends="qt5-devel qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql
  qt5-plugin-sqlite qt5-plugin-tds kcompletion5-devel kconfigwidgets5-devel
- kdbusaddons5-devel kiconthemes5-devel kitemmodels-devel kio-devel sqlite-devel
+ kdbusaddons5-devel kiconthemes5-devel kitemmodels-devel kio5-devel sqlite-devel
  kaccounts-integration-devel libaccounts-qt5-devel qt5-tools-devel"
 depends="shared-mime-info kaccounts-providers"
 checkdepends="dbus ${depends}"

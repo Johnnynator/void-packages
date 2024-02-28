@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DWaylandScanner_EXECUTABLE=/usr/bin/wayland-scanner"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kcoreaddons5 gettext
  kpackage wayland-devel plasma-wayland-protocols pkg-config qt5-wayland"
-makedepends="glib-devel kio-devel kwayland-devel libepoxy-devel pipewire-devel
+makedepends="glib-devel kio5-devel kwayland-devel libepoxy-devel pipewire-devel
  plasma-framework-devel kdeclarative5-devel kirigami2-devel"
 short_desc="Backend implementation for xdg-desktop-portal that is using Qt/KF5"
 maintainer="John <me@johnnynator.dev>"

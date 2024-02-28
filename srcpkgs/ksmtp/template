@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
  gettext kcoreaddons5"
-makedepends="kmime-devel kio-devel"
+makedepends="kmime-devel kio5-devel"
 short_desc="Job-based library to send email through an SMTP server"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"

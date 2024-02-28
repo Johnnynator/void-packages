@@ -6,7 +6,7 @@ build_style=cmake
 build_helper="qemu"
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext qt5-qmake qt5-host-tools kcoreaddons5"
-makedepends="kio-devel boost-devel qt5-plugin-mysql qt5-plugin-odbc
+makedepends="kio5-devel boost-devel qt5-plugin-mysql qt5-plugin-odbc
  qt5-plugin-pgsql qt5-plugin-sqlite qt5-plugin-tds"
 short_desc="Manage user's activities and track the usage patterns"
 maintainer="John <me@johnnynator.dev>"

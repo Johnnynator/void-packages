@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
  gettext kcoreaddons5"
-makedepends="kio-devel kmime-devel"
+makedepends="kio5-devel kmime-devel"
 depends="cyrus-sasl-modules"
 short_desc="Job-based API for interacting with IMAP servers"
 maintainer="John <me@johnnynator.dev>"

@@ -10,7 +10,7 @@ makedepends="extra-cmake-modules eigen qt5-devel qt5-declarative-devel
  qt5-plugin-tds qt5-svg-devel qt5-websockets-devel qt5-datavis3d-devel
  cfitsio-devel  libnova-devel libraw-devel qtkeychain-qt5-devel
  knotifyconfig-devel kauth5-devel kconfig5-devel kcrash5-devel kdoctools5-devel
- kwidgetsaddons-devel knewstuff-devel ki18n5-devel kio-devel kxmlgui-devel
+ kwidgetsaddons-devel knewstuff-devel ki18n5-devel kio5-devel kxmlgui-devel
  kplotting-devel knotifications-devel"
 depends="xplanet"
 short_desc="Open source, cross-platform Astronomy Software by KDE"

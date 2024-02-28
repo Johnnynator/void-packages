@@ -7,8 +7,8 @@ configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons5 kdoctools5
  pkg-config qt5-host-tools qt5-qmake"
 makedepends="kactivities5-stats5-devel kbookmarks5-devel kconfig5-devel
- kcrash5-devel kdoctools5-devel kio-devel ktextwidgets-devel kxmlgui-devel"
-depends="kactivities5-stats5 kio"
+ kcrash5-devel kdoctools5-devel kio5-devel ktextwidgets-devel kxmlgui-devel"
+depends="kactivities5-stats5 kio5"
 short_desc="History and temporary file cleaner"
 maintainer="Hervy Qurrotul Ainur Rozi <hervyqa@proton.me>"
 license="LGPL-2.0-or-later"

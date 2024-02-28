@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules pkg-config qt5-devel qt5-qmake
  kpackage-devel gettext kauth5-devel kconfig5-devel kcmutils5-devel"
-makedepends="kio-devel xcb-util-image-devel libXcursor-devel
+makedepends="kio5-devel xcb-util-image-devel libXcursor-devel
  kcmutils5-devel knewstuff-devel"
 depends="sddm"
 short_desc="KDE Config Module for SDDM"

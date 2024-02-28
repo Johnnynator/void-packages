@@ -1,5 +1,5 @@
-# Template file for 'kio'
-pkgname=kio
+# Template file for 'kio5'
+pkgname=kio5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -15,14 +15,14 @@ short_desc="KDE Network transparent access to files and data"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kio"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=0f53387b5a883fcef3db10b7c1062485a314d42d9584d9119056e571568ff90b
 
 do_check() {
 	: # Pain to get working in limited enviroment, excpects e.g. real disks
 }
 
-kio-devel_package() {
+kio5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

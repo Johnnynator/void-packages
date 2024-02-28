@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake gettext
  kcoreaddons5 pkg-config qt5-host-tools"
 makedepends="qt5-devel networkmanager-qt5-devel ksolid-devel libnl3-devel
- kio-devel kdbusaddons5-devel libksysguard-devel libsensors-devel"
+ kio5-devel kdbusaddons5-devel libksysguard-devel libsensors-devel"
 short_desc="Plugin based system monitoring daemon"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-only OR GPL-3.0-only, LGPL-2.1-only OR LGPL-3-only"

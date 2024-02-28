@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kcmutils5"
-makedepends="kio-devel kcontacts5-devel kmime-devel akonadi-mime-devel prison-devel
+makedepends="kio5-devel kcontacts5-devel kmime-devel akonadi-mime-devel prison-devel
  libkleo-devel grantlee5-devel grantleetheme-devel"
 short_desc="Libraries and daemons to implement Contact Management in Akonadi"
 maintainer="John <me@johnnynator.dev>"

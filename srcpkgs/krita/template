@@ -9,7 +9,7 @@ hostmakedepends="extra-cmake-modules gettext pkg-config python3
  python3-PyQt5-devel"
 makedepends="karchive5-devel kconfig5-devel kwidgetsaddons-devel kcompletion5-devel
  kcoreaddons5-devel kguiaddons5-devel ki18n5-devel kitemmodels-devel kitemviews-devel
- kwindowsystem-devel kio-devel kcrash5-devel qt5-svg-devel qt5-multimedia-devel
+ kwindowsystem-devel kio5-devel kcrash5-devel qt5-svg-devel qt5-multimedia-devel
  boost-devel gsl-devel tiff-devel libjpeg-turbo-devel libraw-devel fftw-devel
  opencolorio-devel eigen exiv2-devel libXi-devel libopenexr-devel libgomp-devel
  poppler-qt5-devel giflib-devel python3-devel python3-PyQt5

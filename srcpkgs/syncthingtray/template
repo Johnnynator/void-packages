@@ -9,7 +9,7 @@ configure_args="-DJS_PROVIDER=qml -DBUILTIN_TRANSLATIONS=ON -DSYSTEMD_SUPPORT=OF
 hostmakedepends="pkg-config qt5-host-tools qt5-qmake extra-cmake-modules plasma-framework"
 makedepends="cpp-utilities-devel qtutilities-devel qtforkawesome-devel
  qt5-devel qt5-core qt5-network qt5-gui qt5-widgets qt5-svg qt5-declarative
- qt5-quickcontrols qt5-location-devel boost-devel kio-devel plasma-framework-devel
+ qt5-quickcontrols qt5-location-devel boost-devel kio5-devel plasma-framework-devel
  $(vopt_if webengine 'qt5-webengine-devel qt5-webchannel-devel')"
 depends="syncthing"
 checkdepends="syncthing iproute2"
@@ -58,7 +58,7 @@ syncthingtray-plasma_package() {
 }
 
 syncthingtray-dolphin_package() {
-	depends="${sourcepkg}>=${version}_${revision} kio"
+	depends="${sourcepkg}>=${version}_${revision} kio5"
 	short_desc+=" - KDE dolphin integration"
 	pkg_install() {
 		vmove usr/share/kservices5/syncthingfileitemaction.desktop

@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons5 extra-cmake-modules libcap-progs pkg-config
  gettext qt5-host-tools qt5-qmake kdoctools5"
-makedepends="kio-devel kdoctools5-devel libcap-devel kbookmarks5-devel kservice-devel"
+makedepends="kio5-devel kdoctools5-devel libcap-devel kbookmarks5-devel kservice-devel"
 short_desc="Helper library to speed up start of applications on KDE workspaces"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only"
