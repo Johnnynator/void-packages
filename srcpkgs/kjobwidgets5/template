@@ -1,5 +1,5 @@
-# Template file for 'kjobwidgets'
-pkgname=kjobwidgets
+# Template file for 'kjobwidgets5'
+pkgname=kjobwidgets5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,10 +10,10 @@ short_desc="KDE Widgets for showing progress of asynchronous jobs"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kjobwidgets"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=cee37be8d309cc572ecf572214d9138183fd07e6aee2af77fb60f37ebe4e3061
 
-kjobwidgets-devel_package() {
+kjobwidgets5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
