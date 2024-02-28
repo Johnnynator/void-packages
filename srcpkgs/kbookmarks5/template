@@ -1,5 +1,5 @@
-# Template file for 'kbookmarks'
-pkgname=kbookmarks
+# Template file for 'kbookmarks5'
+pkgname=kbookmarks5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -9,10 +9,10 @@ short_desc="KDE Bookmarks management library"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only"
 homepage="https://invent.kde.org/frameworks/kbookmarks"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=164f11a92548c54d4855d207a6a7fa7bd3e7f71f8af01a43899f49c0188cdec0
 
-kbookmarks-devel_package() {
+kbookmarks5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

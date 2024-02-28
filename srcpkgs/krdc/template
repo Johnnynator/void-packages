@@ -7,7 +7,7 @@ configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3 freerdp
  kcoreaddons kdoctools kconfig gettext"
 makedepends="kconfig-devel kcmutils-devel kdnssd-devel knotifyconfig-devel
- knotifications-devel kbookmarks-devel kiconthemes-devel kxmlgui-devel
+ knotifications-devel kbookmarks5-devel kiconthemes-devel kxmlgui-devel
  kcompletion-devel kwallet-devel kwidgetsaddons-devel ki18n-devel
  libvncserver-devel"
 depends="freerdp"

@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext kconfig kcoreaddons kdoctools
  pkg-config qt5-host-tools qt5-qmake"
-makedepends="kactivities5-stats5-devel kbookmarks-devel kconfig-devel
+makedepends="kactivities5-stats5-devel kbookmarks5-devel kconfig-devel
  kcrash-devel kdoctools-devel kio-devel ktextwidgets-devel kxmlgui-devel"
 depends="kactivities5-stats5 kio"
 short_desc="History and temporary file cleaner"
