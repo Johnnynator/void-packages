@@ -1,5 +1,5 @@
-# Template file for 'kcompletion'
-pkgname=kcompletion
+# Template file for 'kcompletion5'
+pkgname=kcompletion5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -11,10 +11,10 @@ short_desc="KDE Powerful completion framework"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kcompletion"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=b134a5c9535589c8a1e694286cd1cddc6b9df77f2330f101dec155568f710dc7
 
-kcompletion-devel_package() {
+kcompletion5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

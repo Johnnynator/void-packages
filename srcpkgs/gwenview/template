@@ -11,7 +11,7 @@ makedepends="qt5-devel qt5-svg-devel phonon-qt5-devel kio-devel kactivities5-dev
  kiconthemes-devel knotifications-devel ksolid-devel libjpeg-turbo-devel
  exiv2-devel libkipi5-devel lcms2-devel baloo5-devel libkdcraw5-devel cfitsio-devel
  kio-devel kwidgetsaddons-devel kImageAnnotator-devel kColorPicker-devel
- kparts-devel kcoreaddons-devel kconfig-devel kservice-devel kcompletion-devel
+ kparts-devel kcoreaddons-devel kconfig-devel kservice-devel kcompletion5-devel
  kitemviews-devel kxmlgui-devel kconfigwidgets-devel kauth5-devel kcodecs5-devel
  sonnet-devel kbookmarks5-devel kjobwidgets-devel ktextwidgets-devel"
 depends="qt5-imageformats"
