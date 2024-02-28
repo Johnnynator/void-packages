@@ -1,5 +1,5 @@
-# Template file for 'kapidox'
-pkgname=kapidox
+# Template file for 'kapidox5'
+pkgname=kapidox5
 version=5.115.0
 revision=1
 build_style=python3-module
@@ -11,7 +11,7 @@ short_desc="API documentation generation tool for KDE framework"
 maintainer="John <me@johnnynator.dev>"
 license="BSD-2-Clause, CC0-1.0"
 homepage="https://invent.kde.org/frameworks/kapidox"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=34ba524d11dfb59ca9a04158dfac973262bcb9e24361c6c5d2a601f319f8e14e
 make_check=no # requires doxyqml (which is not packaged in void repos)
 
