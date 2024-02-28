@@ -11,7 +11,7 @@ makedepends="
  kirigami2-devel knotifyconfig-devel purpose-devel qt5-multimedia-devel
  qt5-quickcontrols2-devel"
 depends="
- kconfigwidgets kcompletion5 ksolid knotifyconfig gst-plugins-good1
+ kconfigwidgets5 kcompletion5 ksolid knotifyconfig gst-plugins-good1
  gst-plugins-bad1 phonon-qt5 qt5-graphicaleffects qt5-quickcontrols kirigami2
  purpose"
 short_desc="Simple and friendly program to use your webcam recorder"

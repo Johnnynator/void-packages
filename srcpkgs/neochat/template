@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules gettext pkg-config qt5-qmake
 makedepends="kquickimageeditor-devel libQuotient-devel qtkeychain-qt5-devel
  qt5-multimedia-devel kirigami2-devel ki18n-devel cmark-devel
  knotifications-devel kconfig5-devel kcoreaddons-devel qqc2-desktop-style-devel
- sonnet-devel kitemmodels-devel kirigami-addons kconfigwidgets-devel kio-devel
+ sonnet-devel kitemmodels-devel kirigami-addons kconfigwidgets5-devel kio-devel
  qcoro-qt5-devel olm-devel qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql
  qt5-plugin-sqlite qt5-plugin-tds"
 depends="kquickimageeditor kitemmodels kirigami2 kirigami-addons kquickcharts

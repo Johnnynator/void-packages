@@ -1,5 +1,5 @@
-# Template file for 'kconfigwidgets'
-pkgname=kconfigwidgets
+# Template file for 'kconfigwidgets5'
+pkgname=kconfigwidgets5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -12,7 +12,7 @@ short_desc="KDE Widgets for configuration dialogs"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kconfigwidgets"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=8ddb3203d97ad6681e93cad4c9b826105a8214c1f143aacdc8cbf11fd47e955b
 
 do_check() {
@@ -21,7 +21,7 @@ do_check() {
 	ctest -E "kstandardactiontest"
 }
 
-kconfigwidgets-devel_package() {
+kconfigwidgets5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

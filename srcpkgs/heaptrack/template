@@ -8,7 +8,7 @@ hostmakedepends="qt5-qmake qt5-host-tools extra-cmake-modules kcoreaddons
  gettext"
 makedepends="qt5-devel boost-devel libunwind-devel libdwarf-devel kdiagram-devel
  libzstd-devel ecm-devel ki18n-devel kitemmodels-devel kio-devel
- kconfigwidgets-devel threadweaver-devel"
+ kconfigwidgets5-devel threadweaver-devel"
 #depends="gdb"
 short_desc="Heap memory profiler for Linux"
 maintainer="Piraty <mail@piraty.dev>"

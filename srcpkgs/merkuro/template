@@ -7,7 +7,7 @@ hostmakedepends="extra-cmake-modules gettext qt5-host-tools qt5-qmake
  kcoreaddons kconfig5 kpackage"
 makedepends="qt5-devel qt5-declarative-devel qt5-quickcontrols2-devel
  qt5-svg-devel qt5-location-devel kirigami2-devel kdbusaddons-devel ki18n-devel
- kcalendarcore5-devel kconfigwidgets-devel kwindowsystem-devel kcoreaddons-devel
+ kcalendarcore5-devel kconfigwidgets5-devel kwindowsystem-devel kcoreaddons-devel
  kcontacts-devel kitemmodels-devel kxmlgui-devel knotifications-devel
  kiconthemes-devel kservice-devel akonadi5-devel akonadi-contacts-devel
  calendarsupport-devel eventviews-devel qqc2-desktop-style-devel kio-devel
