@@ -1,5 +1,5 @@
-# Template file for 'kdnssd'
-pkgname=kdnssd
+# Template file for 'kdnssd5'
+pkgname=kdnssd5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -9,10 +9,10 @@ short_desc="Network service discovery using Zeroconf"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kdnssd"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=b2e361c233d9c38a14d83c36b9cf0290311d0e5f77c629a04b597065fbce52df
 
-kdnssd-devel_package() {
+kdnssd5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

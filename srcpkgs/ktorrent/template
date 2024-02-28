@@ -9,7 +9,7 @@ makedepends="qt5-devel qt5-script-devel ki18n-devel kio-devel kxmlgui-devel
  knotifications-devel ksolid-devel kconfig5-devel kcoreaddons5-devel kdoctools-devel
  kross-devel kcmutils5-devel sonnet-devel kdbusaddons5-devel kcrash5-devel
  karchive5-devel knotifyconfig-devel libktorrent-devel kplotting-devel
- gmp-devel taglib-devel kdnssd-devel kdewebkit5-devel geoip-devel syndication-devel"
+ gmp-devel taglib-devel kdnssd5-devel kdewebkit5-devel geoip-devel syndication-devel"
 short_desc="BitTorrent client based on the KDE platform"
 maintainer="Norbert Vegh <vegh@norvegh.com>"
 license="GPL-2.0-or-later"

@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF -DKDSOAP_KDWSDL2CPP_COMPILER=/usr/bin/kdwsdl
 hostmakedepends="extra-cmake-modules pkg-config gperf qt5-qmake qt5-host-tools
  KDSoap-devel kdoctools kcoreaddons5 kio gettext"
 makedepends="kdesignerplugin5-devel kactivities5-devel kdelibs4support5-devel
- kdnssd-devel khtml-devel kpty-devel exiv2-devel libmtp-devel libssh-devel
+ kdnssd5-devel khtml-devel kpty-devel exiv2-devel libmtp-devel libssh-devel
  syntax-highlighting-devel libopenexr-devel samba-devel taglib-devel
  libkexiv25-devel KDSoap-devel ksolid-devel"
 short_desc="Additional KIO components"

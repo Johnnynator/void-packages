@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3 freerdp
  kcoreaddons5 kdoctools kconfig5 gettext"
-makedepends="kconfig5-devel kcmutils5-devel kdnssd-devel knotifyconfig-devel
+makedepends="kconfig5-devel kcmutils5-devel kdnssd5-devel knotifyconfig-devel
  knotifications-devel kbookmarks5-devel kiconthemes-devel kxmlgui-devel
  kcompletion5-devel kwallet-devel kwidgetsaddons-devel ki18n-devel
  libvncserver-devel"
