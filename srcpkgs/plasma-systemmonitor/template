@@ -7,7 +7,7 @@ hostmakedepends="extra-cmake-modules gettext qt5-host-tools qt5-qmake
  kpackage5 kconfig5 kcoreaddons5"
 makedepends="kirigami2-devel libksysguard-devel kitemmodels5-devel
  knewstuff5-devel"
-depends="kirigami2 qqc2-desktop-style kquickcharts5 ksystemstats"
+depends="kirigami2 qqc2-desktop-style5 kquickcharts5 ksystemstats"
 short_desc="Application for monitoring system resources"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-only OR GPL-3.0-only, LGPL-2.1-only OR LGPL-3.0-only"

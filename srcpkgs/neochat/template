@@ -7,7 +7,7 @@ hostmakedepends="extra-cmake-modules gettext pkg-config qt5-qmake
  qt5-host-tools kcoreaddons5 kconfig5 AppStream"
 makedepends="kquickimageeditor-devel libQuotient-devel qtkeychain-qt5-devel
  qt5-multimedia-devel kirigami2-devel ki18n5-devel cmark-devel
- knotifications5-devel kconfig5-devel kcoreaddons5-devel qqc2-desktop-style-devel
+ knotifications5-devel kconfig5-devel kcoreaddons5-devel qqc2-desktop-style5-devel
  sonnet-devel kitemmodels5-devel kirigami-addons kconfigwidgets5-devel kio5-devel
  qcoro-qt5-devel olm-devel qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql
  qt5-plugin-sqlite qt5-plugin-tds"
