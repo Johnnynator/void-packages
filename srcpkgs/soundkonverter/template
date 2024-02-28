@@ -7,7 +7,7 @@ build_style=cmake
 configure_args="-DCMAKE_CXX_STANDARD_LIBRARIES=-ltag"
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 qt5-qmake
  qt5-host-tools pkg-config"
-makedepends="kdelibs4support-devel libcdparanoia-devel libkcddb-devel
+makedepends="kdelibs4support5-devel libcdparanoia-devel libkcddb-devel
  qt5-devel taglib-devel ksolid-devel"
 depends="hicolor-icon-theme"
 short_desc="Frontend to various audio converters"

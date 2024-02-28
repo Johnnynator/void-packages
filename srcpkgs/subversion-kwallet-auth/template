@@ -14,7 +14,7 @@ hostmakedepends="automake libtool pkg-config perl python3
  apache-devel gettext swig"
 makedepends="apache-devel gdbm-devel libgnome-keyring-devel serf-devel
  libsecret-devel liblz4-devel python3-devel sqlite-devel py3c
- kdelibs4support-devel file-devel perl"
+ kdelibs4support5-devel file-devel perl"
 short_desc="KDE kwallet authentication support in subversion"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="Apache-2.0, BSD-3-Clause"

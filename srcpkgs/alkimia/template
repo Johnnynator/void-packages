@@ -8,7 +8,7 @@ configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson
 hostmakedepends="extra-cmake-modules pkg-config qt5-qmake qt5-host-tools
  kcoreaddons5 gettext kpackage"
 makedepends="qt5-devel gmp-devel gmpxx-devel qt5-webkit-devel
- qt5-declarative-devel kconfig5-devel kcoreaddons5-devel kdelibs4support-devel
+ qt5-declarative-devel kconfig5-devel kcoreaddons5-devel kdelibs4support5-devel
  kpackage-devel plasma-framework-devel knewstuff-devel"
 short_desc="Infrastructure for common storage and business logic"
 maintainer="Helmut Pozimski <helmut@pozimski.eu>"

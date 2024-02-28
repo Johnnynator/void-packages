@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-host-tools qt5-qmake kdoctools
  perl kcoreaddons5 gettext"
-makedepends="libkdegames-devel kdelibs4support-devel qt5-multimedia-devel
+makedepends="libkdegames-devel kdelibs4support5-devel qt5-multimedia-devel
  kconfig5-devel"
 short_desc="Simple constructor game"
 maintainer="Orphaned <orphan@voidlinux.org>"

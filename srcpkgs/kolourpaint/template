@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kdoctools
  qt5-host-tools qt5-qmake"
-makedepends="kdelibs4support-devel kparts-devel libksane-devel qt5-devel"
+makedepends="kdelibs4support5-devel kparts-devel libksane-devel qt5-devel"
 short_desc="Free, easy-to-use paint program for KDE"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="BSD-2-Clause, GPL-2.0-or-later, LGPL-2.1-only, GFDL-1.2-only"
