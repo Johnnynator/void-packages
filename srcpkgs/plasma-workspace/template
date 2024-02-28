@@ -10,7 +10,7 @@ hostmakedepends="extra-cmake-modules iso-codes pkg-config kdoctools kcoreaddons5
  qt5-wayland plasma-wayland-protocols gettext wayland-devel
  kcmutils5-devel kpackage-devel kconfig5-devel kcoreaddons5-devel plasma-framework"
 makedepends="qt5-devel qt5-declarative-devel qt5-script-devel plasma-framework-devel
- krunner-devel kjsembed-devel knotifyconfig-devel kdesu-devel knewstuff-devel
+ krunner-devel kjsembed-devel knotifyconfig-devel kdesu5-devel knewstuff-devel
  kcmutils5-devel kidletime-devel kdelibs4support5-devel libksysguard-devel
  baloo5-devel ktexteditor-devel kwin-devel libxcb-devel libXtst-devel
  libqalculate-devel prison-devel kholidays-devel ksolid-devel kpeople-devel

@@ -1,5 +1,5 @@
-# Template file for 'kdesu'
-pkgname=kdesu
+# Template file for 'kdesu5'
+pkgname=kdesu5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,10 +10,10 @@ short_desc="KDE User interface for running shell commands with root privileges"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only"
 homepage="https://invent.kde.org/frameworks/kdesu"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=03e2b7963bc02492639193d20c76723430d5f530b6dee60d61b8dd64f0698b62
 
-kdesu-devel_package() {
+kdesu5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

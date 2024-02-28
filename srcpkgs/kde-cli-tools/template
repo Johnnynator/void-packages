@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules gettext pkg-config kcmutils5-devel
  kpackage-devel kdoctools kcoreaddons5-devel python3 qt5-host-tools qt5-qmake"
 makedepends="kactivities5-devel kcmutils5-devel kdelibs4support5-devel
- kdesu-devel plasma-workspace-devel"
+ kdesu5-devel plasma-workspace-devel"
 depends="xdg-utils"
 short_desc="KDE CLI tools"
 maintainer="John <me@johnnynator.dev>"
