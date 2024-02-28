@@ -7,7 +7,7 @@ configure_args="-DSYSCONF_INSTALL_DIR=/etc -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/d
 hostmakedepends="extra-cmake-modules pkg-config qt5-qmake qt5-host-tools
  kdoctools5 kcoreaddons5 kconfig5 gettext"
 makedepends="plasma-framework-devel kinit5-devel alsa-lib-devel pulseaudio-devel
- libcanberra-devel ksolid-devel"
+ libcanberra-devel ksolid5-devel"
 short_desc="KDE's mixer application"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later, LGPL-2.0-or-later, GFDL-1.2-only"

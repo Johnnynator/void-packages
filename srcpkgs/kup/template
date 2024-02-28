@@ -5,7 +5,7 @@ revision=3
 build_style=cmake
 hostmakedepends="extra-cmake-modules kdoctools5 qt5-qmake qt5-host-tools kcoreaddons5
  kpackage5 gettext kconfig5"
-makedepends="cmake qt5-devel kcoreaddons5-devel ki18n5-devel kio5-devel ksolid-devel
+makedepends="cmake qt5-devel kcoreaddons5-devel ki18n5-devel kio5-devel ksolid5-devel
  kidletime5-devel knotifications5-devel kconfig5-devel kinit5-devel kjobwidgets5-devel
  libgit2-devel plasma-framework-devel"
 depends="rsync"

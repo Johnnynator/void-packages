@@ -11,7 +11,7 @@ makedepends="kfilemetadata5-devel khtml5-devel kitemmodels5-devel knewstuff5-dev
  $(vopt_if webcam v4l-utils-devel) $(vopt_if yaz yaz-devel)
  $(vopt_if xmp exempi-devel) $(vopt_if cdio libcdio-devel)
  $(vopt_if cddb libkcddb-devel) $(vopt_if scanner libksane-devel)
- libcdio-paranoia-devel ksolid-devel"
+ libcdio-paranoia-devel ksolid5-devel"
 short_desc="Collection manager for KDE"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-or-later"

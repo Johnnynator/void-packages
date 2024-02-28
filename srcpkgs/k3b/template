@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules pkg-config qt5-qmake gettext
  qt5-host-tools kauth5 kdoctools5 kcoreaddons5"
 makedepends="kcmutils5-devel kfilemetadata5-devel knewstuff5-devel
- knotifyconfig5-devel kio5-devel ksolid-devel lame-devel libXft-devel
+ knotifyconfig5-devel kio5-devel ksolid5-devel lame-devel libXft-devel
  libcddb-devel libdvdread-devel libkcddb-devel libmad-devel libmpcdec-devel
  libmusicbrainz5-devel libsamplerate-devel kauth5-devel"
 depends="cdrdao cdrtools dvd+rw-tools"

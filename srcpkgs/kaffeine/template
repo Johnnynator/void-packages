@@ -5,7 +5,7 @@ revision=3
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext pkg-config kcoreaddons5"
-makedepends="kidletime5-devel kio5-devel ksolid-devel vlc-devel
+makedepends="kidletime5-devel kio5-devel ksolid5-devel vlc-devel
  qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql
  qt5-plugin-sqlite qt5-plugin-tds
  $(vopt_if dvb 'v4l-utils-devel eudev-libudev-devel')"

@@ -4,7 +4,7 @@ version=1.4.0
 revision=1
 build_style=cmake
 hostmakedepends="pkg-config lxqt-build-tools qt5-qmake qt5-host-tools perl"
-makedepends="libxkbcommon-devel liblxqt-devel ksolid-devel kguiaddons5-devel
+makedepends="libxkbcommon-devel liblxqt-devel ksolid5-devel kguiaddons5-devel
  lxqt-globalkeys-devel alsa-lib-devel pulseaudio-devel libstatgrab-devel
  libsensors-devel libsysstat-devel libdbusmenu-qt5-devel lxqt-menu-data-devel
  libqtxdg-devel libxcb-devel libXtst-devel xcb-util-image-devel"

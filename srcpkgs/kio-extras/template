@@ -9,7 +9,7 @@ hostmakedepends="extra-cmake-modules pkg-config gperf qt5-qmake qt5-host-tools
 makedepends="kdesignerplugin5-devel kactivities5-devel kdelibs4support5-devel
  kdnssd5-devel khtml5-devel kpty5-devel exiv2-devel libmtp-devel libssh-devel
  syntax-highlighting-devel libopenexr-devel samba-devel taglib-devel
- libkexiv25-devel KDSoap-devel ksolid-devel"
+ libkexiv25-devel KDSoap-devel ksolid5-devel"
 short_desc="Additional KIO components"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later, LGPL-2.0-or-later"

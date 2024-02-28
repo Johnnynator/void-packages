@@ -1,5 +1,5 @@
-# Template file for 'ksolid'
-pkgname=ksolid
+# Template file for 'ksolid5'
+pkgname=ksolid5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -11,17 +11,17 @@ short_desc="KDE frameworks - Hardware integration and detection"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/solid"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#k}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/solid-${version}.tar.xz"
 checksum=a7a1c6f6a0ef27b876e3753c67ea17ec5cc1d66cfd3e2c0fbba83e2ce4773d7b
 
-libksolid_package() {
+libksolid5_package() {
 	short_desc+=" - runtime library"
 	pkg_install() {
 		vmove "usr/lib/*.so.*"
 	}
 }
 
-ksolid-devel_package() {
+ksolid5-devel_package() {
 	short_desc+=" - development files"
 	depends="${makedepends} lib${sourcepkg}-${version}_${revision}"
 	pkg_install() {

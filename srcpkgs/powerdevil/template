@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules pkg-config kdoctools5 kauth5-devel
  gettext kconfig5-devel kcmutils5-devel qt5-qmake qt5-host-tools"
 makedepends="bluez-qt5-devel libkscreen-devel networkmanager-qt5-devel
- kdesignerplugin5-devel kdoctools5-devel plasma-workspace-devel ksolid-devel"
+ kdesignerplugin5-devel kdoctools5-devel plasma-workspace-devel ksolid5-devel"
 short_desc="Power consumption settings of a Plasma"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"

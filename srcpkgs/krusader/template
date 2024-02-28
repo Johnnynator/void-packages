@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext pkg-config kdoctools5
  qt5-qmake qt5-host-tools kcoreaddons5"
-makedepends="kparts5-devel plasma-framework-devel ksolid-devel"
+makedepends="kparts5-devel plasma-framework-devel ksolid5-devel"
 short_desc="Twin-panel (commander-style) file manager"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"
