@@ -7,7 +7,7 @@ hostmakedepends="pkg-config extra-cmake-modules qt5-qmake qt5-host-tools
  kcoreaddons5 kdoctools5"
 makedepends="qt5-multimedia-devel qt5-svg-devel qt5-tools-devel
  qt5-webengine-devel qt5-location-devel qt5-webchannel-devel
- qt5-declarative-devel sonnet-devel kcoreaddons5-devel kxmlgui5-devel
+ qt5-declarative-devel sonnet5-devel kcoreaddons5-devel kxmlgui5-devel
  kconfigwidgets5-devel"
 depends="hicolor-icon-theme qt5-svg"
 short_desc="Distraction-free Markdown editor"

@@ -1,5 +1,5 @@
-# Template file for 'sonnet'
-pkgname=sonnet
+# Template file for 'sonnet5'
+pkgname=sonnet5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -12,14 +12,14 @@ short_desc="KDE Multi-language spell checker"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/sonnet"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=de6182cf02507f686c1e236e52e1c9ca69f0493fcd0dc7827066f3ba67519914
 
 if [ "$CROSS_BUILD" ]; then
-	hostmakedepends+=" sonnet"
+	hostmakedepends+=" sonnet5"
 fi
 
-sonnet-devel_package() {
+sonnet5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
