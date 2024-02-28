@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules pkg-config kcoreaddons5 gettext"
-makedepends="kitemmodels5-devel knewstuff5-devel ktexteditor-devel
+makedepends="kitemmodels5-devel knewstuff5-devel ktexteditor5-devel
  plasma-framework-devel threadweaver-devel"
 depends="hicolor-icon-theme"
 short_desc="KDE Text editor"

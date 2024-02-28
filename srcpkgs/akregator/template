@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools5
  kconfig5 kcoreaddons5 kcmutils5 gettext"
-makedepends="knotifyconfig5-devel kontactinterface-devel ktexteditor-devel
+makedepends="knotifyconfig5-devel kontactinterface-devel ktexteditor5-devel
  messagelib-devel syndication-devel"
 short_desc="KDE feed reader"
 maintainer="Orphaned <orphan@voidlinux.org>"

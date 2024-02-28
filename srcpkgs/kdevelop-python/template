@@ -8,7 +8,7 @@ pycompile_dirs="usr/share/kdevpythonsupport"
 hostmakedepends="extra-cmake-modules tar gettext python3 qt5-qmake python3-devel
  qt5-host-tools kcoreaddons5"
 makedepends="python3-devel qt5-devel knewstuff5-devel kitemmodels5-devel
- threadweaver-devel ktexteditor-devel kcmutils5-devel knotifyconfig5-devel
+ threadweaver-devel ktexteditor5-devel kcmutils5-devel knotifyconfig5-devel
  grantlee5-devel kdevelop-devel"
 short_desc="Python 3 language and Django project support for KDevelop"
 maintainer="yopito <pierre.bourgin@free.fr>"

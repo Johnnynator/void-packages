@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kdoctools5
  qt5-host-tools qt5-qmake"
-makedepends="ktexteditor-devel libkomparediff2-devel"
+makedepends="ktexteditor5-devel libkomparediff2-devel"
 short_desc="File difference viewer"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-only, GFDL-1.2-only"
