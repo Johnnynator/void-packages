@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="pkg-config lxqt-build-tools qt5-qmake qt5-host-tools xdg-user-dirs
  perl"
-makedepends="kwindowsystem-devel liblxqt-devel procps-ng-devel qtxdg-tools-devel"
+makedepends="kwindowsystem5-devel liblxqt-devel procps-ng-devel qtxdg-tools-devel"
 depends="xdg-user-dirs qtxdg-tools"
 short_desc="LXQt session handler"
 maintainer="Helmut Pozimski <helmut@pozimski.eu>"

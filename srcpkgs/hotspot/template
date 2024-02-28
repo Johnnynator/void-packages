@@ -5,7 +5,7 @@ revision=2
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext"
 makedepends="qt5-devel qt5-svg-devel kconfigwidgets5-devel kcoreaddons5-devel
- ki18n5-devel kio5-devel kitemmodels5-devel ksolid5-devel kwindowsystem-devel
+ ki18n5-devel kio5-devel kitemmodels5-devel ksolid5-devel kwindowsystem5-devel
  threadweaver-devel"
 depends="perf"
 short_desc="Linux perf GUI for performance analysis"

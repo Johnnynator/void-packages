@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules qt5-devel qt5-qmake wayland-devel
  pkg-config wayland-protocols qt5-wayland-devel"
-makedepends="kidletime5-devel kwayland5-devel kwindowsystem-devel kguiaddons5-devel
+makedepends="kidletime5-devel kwayland5-devel kwindowsystem5-devel kguiaddons5-devel
  libxkbcommon-devel"
 short_desc="Integration plugins for Kwayland"
 maintainer="John <me@johnnynator.dev>"
