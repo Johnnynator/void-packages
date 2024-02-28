@@ -7,7 +7,7 @@ configure_args="-DENABLE_WEBCAM=$(vopt_if webcam ON OFF)"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools kconfig
  gettext kcoreaddons"
 makedepends="kfilemetadata5-devel khtml-devel kitemmodels-devel knewstuff-devel
- kguiaddons-devel karchive-devel kiconthemes-devel
+ kguiaddons-devel karchive5-devel kiconthemes-devel
  $(vopt_if webcam v4l-utils-devel) $(vopt_if yaz yaz-devel)
  $(vopt_if xmp exempi-devel) $(vopt_if cdio libcdio-devel)
  $(vopt_if cddb libkcddb-devel) $(vopt_if scanner libksane-devel)

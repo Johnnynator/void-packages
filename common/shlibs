@@ -2749,7 +2749,7 @@ libskk.so.0 libskk-1.0.2_1
 libKF5WaylandServer.so.5 kwayland-5.26.0_1
 libKF5WaylandClient.so.5 kwayland-5.26.0_1
 libKF5IdleTime.so.5 kidletime-5.26.0_1
-libKF5Archive.so.5 karchive-5.26.0_1
+libKF5Archive.so.5 karchive5-5.115.0_1
 libKF5Codecs.so.5 kcodecs-5.26.0_1
 libKF5ConfigCore.so.5 kconfig-5.26.0_1
 libKF5ConfigGui.so.5 kconfig-5.26.0_1

@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kconfig kcoreaddons kdoctools
  librsvg-utils pkg-config python3 qt5-host-tools qt5-qmake"
 makedepends="alsa-lib-devel appstream-glib-devel audiofile-devel doxygen
- fftw-devel id3lib-devel ImageMagick karchive-devel kcompletion-devel
+ fftw-devel id3lib-devel ImageMagick karchive5-devel kcompletion-devel
  kconfig-devel kconfigwidgets-devel kcoreaddons-devel kcrash-devel
  kdbusaddons-devel kdoctools-devel ki18n-devel kiconthemes-devel kio-devel
  kservice-devel ktexteditor-devel ktextwidgets-devel kxmlgui-devel libmad-devel

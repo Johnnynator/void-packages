@@ -7,7 +7,7 @@ build_helper=qemu
 configure_args="-DINSTALL_INTERNAL_TOOLS=ON"
 hostmakedepends="gettext kcoreaddons extra-cmake-modules perl perl-URI
  qt5-host-tools qt5-qmake"
-makedepends="ki18n-devel karchive-devel libxml2-devel libxslt-devel
+makedepends="ki18n-devel karchive5-devel libxml2-devel libxslt-devel
  docbook-xml docbook-xsl"
 depends="docbook-xml docbook-xsl"
 short_desc="KDE Create documentation from DocBook"

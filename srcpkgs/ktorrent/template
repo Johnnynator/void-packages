@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules qt5-host-tools qt5-qmake gettext"
 makedepends="qt5-devel qt5-script-devel ki18n-devel kio-devel kxmlgui-devel
  knotifications-devel ksolid-devel kconfig-devel kcoreaddons-devel kdoctools-devel
  kross-devel kcmutils-devel sonnet-devel kdbusaddons-devel kcrash-devel
- karchive-devel knotifyconfig-devel libktorrent-devel kplotting-devel
+ karchive5-devel knotifyconfig-devel libktorrent-devel kplotting-devel
  gmp-devel taglib-devel kdnssd-devel kdewebkit-devel geoip-devel syndication-devel"
 short_desc="BitTorrent client based on the KDE platform"
 maintainer="Norbert Vegh <vegh@norvegh.com>"

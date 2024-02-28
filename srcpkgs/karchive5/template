@@ -1,5 +1,5 @@
-# Template file for 'karchive'
-pkgname=karchive
+# Template file for 'karchive5'
+pkgname=karchive5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -9,10 +9,10 @@ short_desc="Qt5 addon providing access to numerous types of archives"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/karchive"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=e89951c58beca1f9802b9a3a8b8b2beff9b534d2de433ad7947258dd27d6b475
 
-karchive-devel_package() {
+karchive5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

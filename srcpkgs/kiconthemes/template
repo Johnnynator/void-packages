@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_DESIGNERPLUGIN=ON"
 hostmakedepends="kcoreaddons extra-cmake-modules kcoreaddons qt5-qmake qt5-host-tools
  gettext python3"
-makedepends="kitemviews-devel qt5-svg-devel karchive-devel kconfigwidgets-devel"
+makedepends="kitemviews-devel qt5-svg-devel karchive5-devel kconfigwidgets-devel"
 short_desc="KDE Icon GUI utilities"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, GPL-2.0-or-later"
