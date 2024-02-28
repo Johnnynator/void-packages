@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons5 extra-cmake-modules gettext
  qt5-host-tools qt5-qmake python3"
-makedepends="kitemviews5-devel kservice-devel kwidgetsaddons-devel qt5-plugin-mysql
+makedepends="kitemviews5-devel kservice5-devel kwidgetsaddons-devel qt5-plugin-mysql
  qt5-plugin-odbc qt5-plugin-pgsql qt5-plugin-sqlite qt5-plugin-tds"
 short_desc="Provides access to all contacts and aggregates them by person"
 maintainer="John <me@johnnynator.dev>"

@@ -1,5 +1,5 @@
-# Template file for 'kservice'
-pkgname=kservice
+# Template file for 'kservice5'
+pkgname=kservice5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -9,7 +9,7 @@ short_desc="KDE Plugin framework for desktop services"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kservice"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=9bcb83fb5eaa58877130f63e203471a766547fd2b0068a88555f95e482dc5efd
 
 if [ "$CROSS_BUILD" ]; then
@@ -17,7 +17,7 @@ if [ "$CROSS_BUILD" ]; then
 	configure_args+=" -DMEINPROC5_EXECUTABLE=/usr/bin/meinproc5"
 fi
 
-kservice-devel_package() {
+kservice5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
