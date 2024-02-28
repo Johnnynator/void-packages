@@ -7,7 +7,7 @@ hostmakedepends="
  extra-cmake-modules kconfig5 kcoreaddons5 kdoctools5 pkg-config python3
  kpackage qt5-host-tools qt5-qmake gettext"
 makedepends="
- kdeclarative5-devel kfilemetadata5-devel knewstuff-devel knotifyconfig-devel
+ kdeclarative5-devel kfilemetadata5-devel knewstuff5-devel knotifyconfig-devel
  kplotting-devel mlt7-devel qt5-multimedia-devel qt5-webkit-devel purpose-devel
  v4l-utils-devel ksolid-devel qt5-quickcontrols2-devel qt5-networkauth-devel"
 depends="breeze-icons dvdauthor ffmpeg frei0r-plugins kinit5 qt5-quickcontrols

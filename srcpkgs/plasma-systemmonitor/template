@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules gettext qt5-host-tools qt5-qmake
  kpackage kconfig5 kcoreaddons5"
 makedepends="kirigami2-devel libksysguard-devel kitemmodels5-devel
- knewstuff-devel"
+ knewstuff5-devel"
 depends="kirigami2 qqc2-desktop-style kquickcharts ksystemstats"
 short_desc="Application for monitoring system resources"
 maintainer="John <me@johnnynator.dev>"

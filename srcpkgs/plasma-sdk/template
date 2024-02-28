@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools
  gettext kpackage-devel kconfig5-devel kcoreaddons5-devel plasma-framework"
 makedepends="plasma-framework-devel kdelibs4support5-devel kdesignerplugin5-devel
- kitemmodels5-devel knewstuff-devel ktexteditor-devel kdoctools5-devel"
+ kitemmodels5-devel knewstuff5-devel ktexteditor-devel kdoctools5-devel"
 short_desc="Plasma development applications"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"

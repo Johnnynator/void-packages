@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules kdoctools5 qt5-qmake qt5-host-tools
  pkg-config gettext kcoreaddons5"
-makedepends="knewstuff-devel libksysguard-devel kinit5-devel libsensors-devel
+makedepends="knewstuff5-devel libksysguard-devel kinit5-devel libsensors-devel
  libnl3-devel libpcap-devel"
 depends="hicolor-icon-theme lm_sensors"
 short_desc="KDE program to monitor various elements of your system"

@@ -7,7 +7,7 @@ configure_args="-DWITH_BH_SOLVER=OFF"
 hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons5 kdoctools5
  pkg-config qt5-host-tools qt5-qmake"
 makedepends="libfreecell-solver-devel libkdegames-devel
- knewstuff-devel kparts-devel qt5-devel"
+ knewstuff5-devel kparts-devel qt5-devel"
 short_desc="Relaxing card sorting game"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-only"

@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
 makedepends="akonadi-contacts-devel gpgmeqt-devel
  kidentitymanagement-devel kmailtransport-devel kmbox-devel libgravatar-devel
  libkdepim-devel qt5-location-devel qt5-webchannel-devel qt5-webengine-devel
- qca-qt5-devel pimcommon-devel knewstuff-devel"
+ qca-qt5-devel pimcommon-devel knewstuff5-devel"
 checkdepends="procps-ng gnupg dbus"
 short_desc="KDE PIM messaging library"
 maintainer="John <me@johnnynator.dev>"

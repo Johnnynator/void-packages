@@ -7,7 +7,7 @@ configure_args="-DBUILD_TESTING=OFF -DENABLE_MAKE_UNIQUE=OFF
  -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules kcoreaddons5 pkg-config qt5-qmake
  qt5-host-tools gettext kconfig5-devel kcoreaddons5-devel kpackage-devel"
-makedepends="knewstuff-devel libksysguard-devel libSM-devel plasma-framework-devel gettext-devel"
+makedepends="knewstuff5-devel libksysguard-devel libSM-devel plasma-framework-devel gettext-devel"
 short_desc="Dock based on plasma frameworks"
 maintainer="Giuseppe Fierro <gspe+void@offlink.xyz>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"

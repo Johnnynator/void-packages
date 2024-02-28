@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons5 extra-cmake-modules pkg-config
  kpackage qt5-host-tools qt5-qmake python3 gettext"
-makedepends="kiconthemes5-devel knotifications-devel kpackage-devel knewstuff-devel"
+makedepends="kiconthemes5-devel knotifications-devel kpackage-devel knewstuff5-devel"
 short_desc="Integration of Qt application with KDE workspaces"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
