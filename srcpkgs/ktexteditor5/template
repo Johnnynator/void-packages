@@ -8,7 +8,7 @@ configure_args="
 hostmakedepends="kcoreaddons5 extra-cmake-modules pkg-config
  qt5-host-tools qt5-qmake python3 kauth5 kparts5 gettext"
 makedepends="kparts5-devel libgit2-devel qt5-xmlpatterns-devel
- editorconfig-devel syntax-highlighting-devel"
+ editorconfig-devel syntax-highlighting5-devel"
 short_desc="KDE Full text editor component"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
