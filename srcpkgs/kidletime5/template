@@ -1,5 +1,5 @@
-# Template file for 'kidletime'
-pkgname=kidletime
+# Template file for 'kidletime5'
+pkgname=kidletime5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -12,10 +12,10 @@ short_desc="Framework for detection and notification of device idle time"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kidletime"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=9d8029aa6a740dbcdee6988987d097538f369ce7b6f3dee09d502aa29737ae56
 
-kidletime-devel_package() {
+kidletime5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}-${version}_${revision}"
 	pkg_install() {
