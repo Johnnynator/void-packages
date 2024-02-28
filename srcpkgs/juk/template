@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules pkg-config qt5-qmake qt5-host-tools
  kcoreaddons5 kdoctools5 gettext"
 makedepends="qt5-svg-devel kio-devel taglib-devel"
-depends="virtual?phonon-qt5-backend hicolor-icon-theme kinit"
+depends="virtual?phonon-qt5-backend hicolor-icon-theme kinit5"
 short_desc="Jukebox, tagger and music collection manager"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"

@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules kcoreaddons5 kconfig5 kdoctools5 python3
  qt5-host-tools qt5-qmake gettext"
-makedepends="gmp-devel kinit-devel kparts-devel qt5-devel mpfr-devel"
+makedepends="gmp-devel kinit5-devel kparts-devel qt5-devel mpfr-devel"
 short_desc="Simple and scientific calculator"
 maintainer="Norbert Vegh <vegh@norvegh.com>"
 license="GPL-2.0-or-later"

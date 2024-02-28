@@ -2782,7 +2782,7 @@ libKF5CalendarEvents.so.5 kdeclarative5-5.115.0_1
 libKF5KCMUtils.so.5 kcmutils5-5.115.0_1
 libKF5KCMUtilsCore.so.5 kcmutils5-5.115.0_1
 libKF5Style.so.5 frameworkintegration5-5.115.0_1
-libkdeinit5_klauncher.so kinit-5.26.0_1
+libkdeinit5_klauncher.so kinit5-5.115.0_1
 libKF5NewStuff.so.5 knewstuff-5.26.0_1
 libKF5NewStuffCore.so.5 knewstuff-5.36.0_1
 libKF5NewStuffWidgets.so.5 knewstuff-5.95.0_1

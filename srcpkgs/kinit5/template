@@ -1,5 +1,5 @@
-# Template file for 'kinit'
-pkgname=kinit
+# Template file for 'kinit5'
+pkgname=kinit5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,10 +10,10 @@ short_desc="Helper library to speed up start of applications on KDE workspaces"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only"
 homepage="https://invent.kde.org/frameworks/kinit"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=78c87dfe50387a6e58f513a02054246ae073ecef4784285881508667da627dad
 
-kinit-devel_package() {
+kinit5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
