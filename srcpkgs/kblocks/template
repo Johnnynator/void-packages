@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools5 kconfig5
  kcoreaddons5 gettext"
 makedepends="kconfig5-devel kconfigwidgets5-devel kcoreaddons5-devel kcrash5-devel
- kdbusaddons5-devel kdoctools5-devel ki18n5-devel ktextwidgets-devel kxmlgui-devel
+ kdbusaddons5-devel kdoctools5-devel ki18n5-devel ktextwidgets5-devel kxmlgui-devel
  libkdegames-devel kio5-devel"
 short_desc="Classic falling blocks game"
 maintainer="toluschr <toluschr@protonmail.com>"

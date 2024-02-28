@@ -1,5 +1,5 @@
-# Template file for 'ktextwidgets'
-pkgname=ktextwidgets
+# Template file for 'ktextwidgets5'
+pkgname=ktextwidgets5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -11,10 +11,10 @@ short_desc="KDE Text editing widgets"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/ktextwidgets"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=6348888c0cc0a37045337f09d71a28f2fd275dfa2258e5ed4e5342f310a39d8e
 
-ktextwidgets-devel_package() {
+ktextwidgets5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

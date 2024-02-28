@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons5 extra-cmake-modules kcoreaddons5
  gettext qt5-qmake qt5-host-tools python3"
-makedepends="kglobalaccel5-devel ktextwidgets-devel attica5-devel"
+makedepends="kglobalaccel5-devel ktextwidgets5-devel attica5-devel"
 short_desc="KDE Framework for managing menu and toolbar actions"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
