@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules kdoctools qt5-qmake qt5-host-tools
  gettext kcoreaddons5"
-makedepends="kdelibs4support5-devel kdesignerplugin-devel kdoctools"
+makedepends="kdelibs4support5-devel kdesignerplugin5-devel kdoctools"
 depends="khotkeys"
 short_desc="KDE Menu editor"
 maintainer="John <me@johnnynator.dev>"

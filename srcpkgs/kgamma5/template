@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 qt5-devel
  kdoctools"
-makedepends="kdesignerplugin-devel kdelibs4support5-devel kdoctools-devel
+makedepends="kdesignerplugin5-devel kdelibs4support5-devel kdoctools-devel
  libXxf86vm-devel"
 short_desc="KDE gamma adjustiment app"
 maintainer="John <me@johnnynator.dev>"
