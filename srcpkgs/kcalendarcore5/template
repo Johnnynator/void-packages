@@ -1,5 +1,5 @@
-# Template file for 'kcalendarcore'
-pkgname=kcalendarcore
+# Template file for 'kcalendarcore5'
+pkgname=kcalendarcore5
 reverts="19.08.3_1 19.08.2_1 19.08.1_1 19.08.0_1 19.04.3_1 19.04.2_1 19.04.1_1 19.04.0_1 18.12.3_1 18.12.2_1 18.12.1_1 18.12.0_2 18.12.0_1 18.08.3_1 18.08.2_1 18.08.1_1 18.08.0_1 18.04.3_1 17.12.3_1"
 version=5.115.0
 revision=1
@@ -11,7 +11,7 @@ short_desc="KDE calendar access library"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kcalendarcore"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=59d8872c471b1bc4433d6643d2d28755772dc3e0019fac9451cbea8e9e3f54a3
 replaces="kcalcore>=0"
 
@@ -22,7 +22,7 @@ do_check() {
 	#ctest -E "test(recurtodo|readrecurrenceid|icaltimezones|memorycalendar|timesininterval)"
 }
 
-kcalendarcore-devel_package() {
+kcalendarcore5-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"
 	replaces="kcalcore-devel>=0"
 	short_desc+=" - development files"
