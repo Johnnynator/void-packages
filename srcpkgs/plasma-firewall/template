@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools
- kcmutils-devel kauth-devel kcoreaddons-devel gettext"
+ kcmutils-devel kauth5-devel kcoreaddons-devel gettext"
 makedepends="kcmutils-devel plasma-framework-devel"
 short_desc="Control Panel for ufw (Uncomplicated Firewall)"
 maintainer="John <me@johnnynator.dev>"

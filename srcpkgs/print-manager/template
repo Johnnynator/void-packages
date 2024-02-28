@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools
- kpackage-devel kcoreaddons-devel kconfig-devel kauth-devel
+ kpackage-devel kcoreaddons-devel kconfig-devel kauth5-devel
  kcmutils-devel gettext"
 makedepends="plasma-framework-devel kcmutils-devel cups-devel"
 short_desc="Printing management for KDE 5"

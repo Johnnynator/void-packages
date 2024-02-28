@@ -4,7 +4,7 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
-hostmakedepends="extra-cmake-modules pkg-config kdoctools kauth-devel
+hostmakedepends="extra-cmake-modules pkg-config kdoctools kauth5-devel
  gettext kconfig-devel kcmutils-devel qt5-qmake qt5-host-tools"
 makedepends="bluez-qt5-devel libkscreen-devel networkmanager-qt5-devel
  kdesignerplugin-devel kdoctools-devel plasma-workspace-devel ksolid-devel"

@@ -1,5 +1,5 @@
-# Template file for 'kauth'
-pkgname=kauth
+# Template file for 'kauth5'
+pkgname=kauth5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,7 +10,7 @@ short_desc="KDE Execute actions as privileged user"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kauth"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=53a9f56befc66a467ea1764af55dfaac0d79a5d5b55d2abe6e399236f9f35aa2
 
 do_check() {
@@ -19,7 +19,7 @@ do_check() {
 	ctest -E 'KAuthHelperTest'
 }
 
-kauth-devel_package() {
+kauth5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

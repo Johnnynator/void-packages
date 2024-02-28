@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="
  -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
 hostmakedepends="kcoreaddons extra-cmake-modules pkg-config
- qt5-host-tools qt5-qmake python3 kauth kparts gettext"
+ qt5-host-tools qt5-qmake python3 kauth5 kparts gettext"
 makedepends="kparts-devel libgit2-devel qt5-xmlpatterns-devel
  editorconfig-devel syntax-highlighting-devel"
 short_desc="KDE Full text editor component"

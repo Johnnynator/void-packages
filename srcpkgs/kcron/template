@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules gettext kcoreaddons kdoctools
- kauth pkg-config qt5-host-tools qt5-qmake kcmutils-devel"
+ kauth5 pkg-config qt5-host-tools qt5-qmake kcmutils-devel"
 makedepends="kparts-devel kcmutils-devel qt5-devel"
 short_desc="KDE Configure and schedule tasks"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"

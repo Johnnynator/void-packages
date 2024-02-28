@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules pkg-config qt5-devel qt5-qmake
- kpackage-devel gettext kauth-devel kconfig-devel kcmutils-devel"
+ kpackage-devel gettext kauth5-devel kconfig-devel kcmutils-devel"
 makedepends="kio-devel xcb-util-image-devel libXcursor-devel
  kcmutils-devel knewstuff-devel"
 depends="sddm"

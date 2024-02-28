@@ -3,7 +3,7 @@ pkgname=libksysguard
 version=5.27.10
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kauth qt5-host-tools qt5-qmake
+hostmakedepends="extra-cmake-modules gettext kauth5 qt5-host-tools qt5-qmake
  kpackage"
 makedepends="plasma-framework-devel qt5-webchannel-devel knewstuff-devel
  libcap-devel libnl3-devel libsensors-devel ki18n-devel kconfig-devel kiconthemes-devel
