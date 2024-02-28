@@ -1,5 +1,5 @@
-# Template file for 'kross'
-pkgname=kross
+# Template file for 'kross5'
+pkgname=kross5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -12,10 +12,10 @@ short_desc="KDE scripting bridge"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kross"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/portingAids/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/portingAids/${pkgname%5}-${version}.tar.xz"
 checksum=e26f27e8421e31ddd3eaeadf6ac2257dc1ad47257faa912c489259dad7240b6f
 
-kross-devel_package() {
+kross5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

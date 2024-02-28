@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules kcoreaddons5 qt5-qmake qt5-host-tools python3
  gettext"
-makedepends="libkleo-devel kross-devel kmailtransport-devel kidentitymanagement-devel
+makedepends="libkleo-devel kross5-devel kmailtransport-devel kidentitymanagement-devel
  pimcommon-devel knotifyconfig5-devel ktexteditor-devel"
 short_desc="KMail account wizard"
 maintainer="John <me@johnnynator.dev>"
