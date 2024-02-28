@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DUSE_TSC=OFF"
 hostmakedepends="cmake ninja extra-cmake-modules nodejs"
 makedepends="qt5-declarative-devel qt5-svg-devel kconfig5-devel
- kconfigwidgets5-devel kcoreaddons5-devel kdeclarative5-devel kglobalaccel-devel
+ kconfigwidgets5-devel kcoreaddons5-devel kdeclarative5-devel kglobalaccel5-devel
  kcmutils5-devel ki18n-devel gettext-devel kdecoration-devel"
 checkdepends="AppStream"
 short_desc="Tile KDE Plasma windows automatically and manage via keyboard"
