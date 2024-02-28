@@ -12,7 +12,7 @@ configure_args="-Wno-dev -DBUILD_RELEASE=ON \
  $(vopt_if kde '-DWITH_KDE4=ON' '-DWITH_KDE4=OFF') \
  $(vopt_if upower '-DWITH_UPOWER=ON' '-DWITH_UPOWER=OFF')"
 hostmakedepends="pkg-config extra-cmake-modules"
-makedepends="Lucene++-devel attica-qt5-devel boost-devel gnutls-devel
+makedepends="Lucene++-devel attica5-qt5-devel boost-devel gnutls-devel
  liblastfm-qt5-devel phonon-qt5-devel qca-qt5-devel
  qt5-svg-devel qt5-tools-devel qt5-webkit-devel qtkeychain-qt5-devel
  quazip-devel sparsehash taglib-devel vlc-devel

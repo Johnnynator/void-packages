@@ -1,5 +1,5 @@
-# Template file for 'attica'
-pkgname=attica
+# Template file for 'attica5'
+pkgname=attica5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -9,7 +9,7 @@ short_desc="Qt library that implements the Open Collaboration Services API"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/attica"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=ab054982f2e4bd2041a2bda895b1078f19cf371b2be96b32bd4f59d1f5a9a458
 
 do_check() {
@@ -19,7 +19,7 @@ do_check() {
 	ctest -E 'providertest'
 }
 
-attica-devel_package() {
+attica5-devel_package() {
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	short_desc+=" - development files"
 	pkg_install() {
@@ -31,13 +31,13 @@ attica-devel_package() {
 	}
 }
 
-attica-qt5_package() {
+attica5-qt5_package() {
 	build_style=meta
 	short_desc+=" - (transitional dummy package)"
 	depends="${sourcepkg}>=${version}_${revision}"
 }
 
-attica-qt5-devel_package() {
+attica5-qt5-devel_package() {
 	build_style=meta
 	short_desc+=" - (transitional dummy package)"
 	depends="${sourcepkg}-devel>=${version}_${revision}"
