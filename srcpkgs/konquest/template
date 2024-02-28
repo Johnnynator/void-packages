@@ -3,7 +3,7 @@ pkgname=konquest
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kcoreaddons5 kdoctools
+hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kcoreaddons5 kdoctools5
  gettext"
 makedepends="libkdegames-devel"
 depends="hicolor-icon-theme"

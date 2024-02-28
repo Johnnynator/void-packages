@@ -4,7 +4,7 @@ version=3.3.4
 revision=1
 build_style=cmake
 configure_args="-DENABLE_WEBCAM=$(vopt_if webcam ON OFF)"
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools kconfig5
+hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools5 kconfig5
  gettext kcoreaddons5"
 makedepends="kfilemetadata5-devel khtml-devel kitemmodels-devel knewstuff-devel
  kguiaddons-devel karchive5-devel kiconthemes-devel

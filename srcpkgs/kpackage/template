@@ -4,8 +4,8 @@ version=5.115.0
 revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons5 extra-cmake-modules gettext
- qt5-host-tools qt5-qmake python3 kdoctools"
-makedepends="karchive5-devel kconfig5-devel kcoreaddons5-devel ki18n-devel kdoctools-devel"
+ qt5-host-tools qt5-qmake python3 kdoctools5"
+makedepends="karchive5-devel kconfig5-devel kcoreaddons5-devel ki18n-devel kdoctools5-devel"
 short_desc="KDE Installation and loading of additional content as packages"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"

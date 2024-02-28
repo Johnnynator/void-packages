@@ -3,7 +3,7 @@ pkgname=kompare
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kdoctools
+hostmakedepends="extra-cmake-modules gettext kcoreaddons5 kdoctools5
  qt5-host-tools qt5-qmake"
 makedepends="ktexteditor-devel libkomparediff2-devel"
 short_desc="File difference viewer"

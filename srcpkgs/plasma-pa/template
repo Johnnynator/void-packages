@@ -4,10 +4,10 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DKF5_HOST_TOOLING=/usr/lib/cmake"
-hostmakedepends="extra-cmake-modules kdoctools pkg-config qt5-qmake
+hostmakedepends="extra-cmake-modules kdoctools5 pkg-config qt5-qmake
  kpackage-devel kconfig5-devel kcoreaddons5-devel gettext qt5-host-tools
  kcmutils5-devel"
-makedepends="plasma-framework-devel kdoctools-devel pulseaudio-devel
+makedepends="plasma-framework-devel kdoctools5-devel pulseaudio-devel
  kcmutils5-devel libcanberra-devel"
 depends="sound-theme-freedesktop"
 short_desc="PulseAudio Plasma applet"

@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF
  -DWaylandScanner_EXECUTABLE=/usr/bin/wayland-scanner
  -DKF5_HOST_TOOLING=/usr/lib/cmake"
-hostmakedepends="extra-cmake-modules iso-codes pkg-config kdoctools kcoreaddons5
+hostmakedepends="extra-cmake-modules iso-codes pkg-config kdoctools5 kcoreaddons5
  qt5-wayland plasma-wayland-protocols gettext wayland-devel
  kcmutils5-devel kpackage-devel kconfig5-devel kcoreaddons5-devel plasma-framework"
 makedepends="qt5-devel qt5-declarative-devel qt5-script-devel plasma-framework-devel

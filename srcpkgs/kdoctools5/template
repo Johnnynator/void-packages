@@ -1,5 +1,5 @@
-# Template file for 'kdoctools'
-pkgname=kdoctools
+# Template file for 'kdoctools5'
+pkgname=kdoctools5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -14,19 +14,19 @@ short_desc="KDE Create documentation from DocBook"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kdoctools"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=51e90910f75caf45334961a881082a06c52f292103f1975a5d0a13f39d2fe243
 
 if [ "$CROSS_BUILD" ]; then
 	configure_args+=" -DDOCBOOKL10NHELPER_EXECUTABLE=/usr/bin/docbookl10nhelper"
-	hostmakedepends+=" kdoctools-devel"
+	hostmakedepends+=" kdoctools5-devel"
 fi
 
 pre_check() {
 	export PATH="$PATH:${wrksrc}/build/bin"
 }
 
-kdoctools-devel_package() {
+kdoctools5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

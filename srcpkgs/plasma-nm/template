@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules mobile-broadband-provider-info pkg-config
  gettext qt5-qmake qt5-host-tools kpackage-devel kconfig5-devel
  kcoreaddons5-devel plasma-framework kcmutils5-devel"
 makedepends="plasma-workspace-devel networkmanager-qt5-devel kdelibs4support5-devel
- kdesignerplugin5-devel qca-qt5-devel modemmanager-qt5-devel kdoctools-devel
+ kdesignerplugin5-devel qca-qt5-devel modemmanager-qt5-devel kdoctools5-devel
  openconnect-devel ksolid-devel"
 depends="mobile-broadband-provider-info"
 short_desc="NetworkManager Plasma applet"

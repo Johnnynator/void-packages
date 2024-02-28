@@ -3,7 +3,7 @@ pkgname=kwalletmanager
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kauth5 kdoctools pkg-config
+hostmakedepends="extra-cmake-modules gettext kauth5 kdoctools5 pkg-config
  qt5-host-tools qt5-qmake"
 makedepends="kcmutils5-devel kparts-devel qt5-devel"
 short_desc="KDE Wallet Management Tools"

@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules kdoctools python3 qt5-host-tools qt5-qmake
+hostmakedepends="extra-cmake-modules kdoctools5 python3 qt5-host-tools qt5-qmake
  qt5-wayland kconfig5 gettext kcoreaddons5 wayland-devel"
 makedepends="kColorPicker-devel kImageAnnotator-devel kdeclarative5-devel
  knewstuff-devel kwayland-devel libkipi5-devel purpose-devel

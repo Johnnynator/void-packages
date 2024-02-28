@@ -3,9 +3,9 @@ pkgname=palapeli
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools
+hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools5
  kconfig5 kcoreaddons5 gettext"
-makedepends="libkdegames-devel kdoctools"
+makedepends="libkdegames-devel kdoctools5"
 depends="qhull"
 short_desc="Jigsaw puzzle game"
 maintainer="Adam Beckmeyer <adam_gpg@thebeckmeyers.xyz>"

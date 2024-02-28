@@ -5,8 +5,8 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=ON"
 hostmakedepends="gettext kcoreaddons5 extra-cmake-modules
- qt5-host-tools qt5-qmake python3 kdoctools"
-makedepends="kdoctools-devel gpgmepp-devel libgcrypt-devel
+ qt5-host-tools qt5-qmake python3 kdoctools5"
+makedepends="kdoctools5-devel gpgmepp-devel libgcrypt-devel
  kservice-devel knotifications-devel kiconthemes-devel
  gpgmeqt-devel qca-qt5-devel"
 short_desc="KDE Safe desktop-wide storage for passwords"

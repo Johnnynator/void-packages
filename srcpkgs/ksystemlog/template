@@ -3,7 +3,7 @@ pkgname=ksystemlog
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons5 kdoctools
+hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons5 kdoctools5
  pkg-config qt5-host-tools qt5-qmake"
 makedepends="kparts-devel qt5-devel"
 short_desc="KDE System log viewer tool"

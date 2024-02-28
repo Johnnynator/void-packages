@@ -4,7 +4,7 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules kdoctools kpackage qt5-host-tools
+hostmakedepends="extra-cmake-modules kdoctools5 kpackage qt5-host-tools
  gettext qt5-qmake"
 makedepends="krunner-devel kitemmodels-devel"
 short_desc="KDE dedicated search application built on top of Baloo"

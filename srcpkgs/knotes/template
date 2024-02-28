@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools libxslt
- kcoreaddons5 kdoctools kconfig5 gettext kcmutils5"
+ kcoreaddons5 kdoctools5 kconfig5 gettext kcmutils5"
 makedepends="akonadi-notes-devel kcalutils-devel kdelibs4support5-devel kdnssd5-devel
  knotifyconfig-devel kontactinterface-devel pimcommon-devel grantleetheme-devel
  ktextaddons-devel"

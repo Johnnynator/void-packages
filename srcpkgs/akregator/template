@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools
+hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools5
  kconfig5 kcoreaddons5 kcmutils5 gettext"
 makedepends="knotifyconfig-devel kontactinterface-devel ktexteditor-devel
  messagelib-devel syndication-devel"

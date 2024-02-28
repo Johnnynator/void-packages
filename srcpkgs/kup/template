@@ -3,7 +3,7 @@ pkgname=kup
 version=0.9.1
 revision=3
 build_style=cmake
-hostmakedepends="extra-cmake-modules kdoctools qt5-qmake qt5-host-tools kcoreaddons5
+hostmakedepends="extra-cmake-modules kdoctools5 qt5-qmake qt5-host-tools kcoreaddons5
  kpackage gettext kconfig5"
 makedepends="cmake qt5-devel kcoreaddons5-devel ki18n-devel kio-devel ksolid-devel
  kidletime-devel knotifications-devel kconfig5-devel kinit-devel kjobwidgets-devel

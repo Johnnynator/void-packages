@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules python3 qt5-qmake qt5-host-tools
- gettext kcoreaddons5 kconfig5 kdoctools"
+ gettext kcoreaddons5 kconfig5 kdoctools5"
 makedepends="baloo-widgets5-devel kcmutils5-devel knewstuff-devel kactivities5-devel
  kinit-devel kparts-devel ksolid-devel"
 depends="kio-extras"

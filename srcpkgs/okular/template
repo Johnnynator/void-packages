@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules pkg-config gettext kcoreaddons5
- qt5-qmake qt5-host-tools kdoctools kconfig5"
+ qt5-qmake qt5-host-tools kdoctools5 kconfig5"
 makedepends="discount-devel djvulibre-devel ebook-tools-devel khtml-devel
  kpty-devel libchmlib-devel libkexiv25-devel libqmobipocket-devel
  libspectre-devel libzip-devel plasma-framework-devel poppler-qt5-devel

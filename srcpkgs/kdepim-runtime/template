@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 # XXX KolabLibraries, Kolabxml
-hostmakedepends="extra-cmake-modules python3 kdoctools kdesignerplugin5
+hostmakedepends="extra-cmake-modules python3 kdoctools5 kdesignerplugin5
  gettext qt5-qmake qt5-host-tools"
 makedepends="akonadi-calendar-devel akonadi-notes-devel knotifyconfig-devel
  pimcommon-devel kdav5-devel libkgapi-devel kmbox-devel

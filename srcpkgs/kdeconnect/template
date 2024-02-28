@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DWaylandScanner_EXECUTABLE=/usr/bin/wayland-scanner
  -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules qt5-host-tools
- pkg-config wayland-devel qt5-qmake python3 kdoctools-devel
+ pkg-config wayland-devel qt5-qmake python3 kdoctools5-devel
  kpackage-devel qt5-wayland kcoreaddons5-devel gettext
  kcmutils5-devel"
 makedepends="kcmutils5-devel qca-qt5-devel frameworkintegration5-devel

@@ -9,7 +9,7 @@ version=3.3
 revision=1
 build_style=cmake
 configure_args="-DQML_BOX2D_LIBRARY=/usr/lib/qt5/qml/Box2D.2.0"
-hostmakedepends="extra-cmake-modules kdoctools-devel gettext
+hostmakedepends="extra-cmake-modules kdoctools5-devel gettext
  qt5-host-tools qt5-qmake"
 makedepends="qml-box2d qt5-declarative-devel
  qt5-multimedia-devel qt5-sensors-devel qt5-svg-devel
