@@ -6,7 +6,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kauth5 qt5-host-tools qt5-qmake
  kpackage"
 makedepends="plasma-framework-devel qt5-webchannel-devel knewstuff-devel
- libcap-devel libnl3-devel libsensors-devel ki18n-devel kconfig-devel kiconthemes-devel
+ libcap-devel libnl3-devel libsensors-devel ki18n-devel kconfig5-devel kiconthemes-devel
  $(vopt_if webengine 'qt5-webengine-devel qt5-location-devel')"
 short_desc="KDE libksysguard"
 maintainer="John <me@johnnynator.dev>"

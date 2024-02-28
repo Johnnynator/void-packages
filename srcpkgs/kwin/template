@@ -7,7 +7,7 @@ build_helper=qemu
 configure_args="-DBUILD_TESTING=OFF -DFORCE_CROSSCOMPILED_TOOLS=ON
  -DKF5_HOST_TOOLING=/usr/lib/cmake"
 hostmakedepends="extra-cmake-modules gettext breeze pkg-config
- qt5-qmake qt5-host-tools kcoreaddons kconfig-devel qt5-wayland
+ qt5-qmake qt5-host-tools kcoreaddons kconfig5-devel qt5-wayland
  kwayland-devel kpackage-devel kservice-devel kcmutils5-devel"
 makedepends="plasma-framework-devel kcmutils5-devel knewstuff-devel
  kscreenlocker-devel kinit-devel xcb-util-cursor-devel qt5-multimedia-devel

@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules kdoctools qt5-host-tools qt5-qmake
- gettext kcoreaddons kconfig"
+ gettext kcoreaddons kconfig5"
 makedepends="akonadi-notes-devel mailcommon-devel calendarsupport-devel
  messagelib-devel"
 short_desc="Import and export KDE PIM settings"

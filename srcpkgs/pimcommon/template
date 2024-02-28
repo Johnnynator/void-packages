@@ -4,9 +4,9 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3 libxslt
- gettext kconfig kgendesignerplugin"
+ gettext kconfig5 kgendesignerplugin"
 makedepends="karchive5-devel kcodecs5-devel ki18n-devel kdbusaddons-devel knewstuff-devel
- kconfig-devel kiconthemes-devel kjobwidgets-devel kpimtextedit-devel akonadi-contacts-devel
+ kconfig5-devel kiconthemes-devel kjobwidgets-devel kpimtextedit-devel akonadi-contacts-devel
  kxmlgui-devel kservice-devel kdesignerplugin-devel kimap-devel libkdepim-devel purpose-devel
  ktextaddons-devel"
 short_desc="Common libraries for KDE PIM"

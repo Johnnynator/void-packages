@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 build_helper=qemu
 hostmakedepends="kcoreaddons extra-cmake-modules
- kpackage kconfig qt5-host-tools qt5-qmake python3 gettext"
+ kpackage kconfig5 qt5-host-tools qt5-qmake python3 gettext"
 makedepends="kdeclarative-devel"
 short_desc="Utilities for KDE System Settings modules"
 maintainer="John <me@johnnynator.dev>"

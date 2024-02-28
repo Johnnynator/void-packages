@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools
- kcmutils5 kcoreaddons kconfig gettext"
+ kcmutils5 kcoreaddons kconfig5 gettext"
 makedepends="akonadi-calendar-devel akonadi-notes-devel incidenceeditor-devel
  qt5-multimedia-devel kholidays-devel kontactinterface-devel"
 short_desc="Calendar and scheduling Program"

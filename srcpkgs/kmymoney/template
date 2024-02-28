@@ -5,7 +5,7 @@ revision=4
 build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson
  -DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules kconfig kcoreaddons kdoctools pkg-config
+hostmakedepends="extra-cmake-modules kconfig5 kcoreaddons kdoctools pkg-config
  python3 qt5-host-tools qt5-qmake gettext"
 makedepends="akonadi5-devel aqbanking-devel gmp-devel gmpxx-devel gpgmeqt-devel
  gwenhywfar-devel gwenhywfar-qt5 kactivities5-devel kcmutils5-devel

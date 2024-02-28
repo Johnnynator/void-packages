@@ -32,7 +32,7 @@ hook() {
 	if [ -d ${PKGDESTDIR}/usr/lib/libexec ]; then
 		# Add exception for kconfig,
 		# other packages hard-coded path to its files
-		if [ "${pkgname}" != kconfig ]; then
+		if [ "${pkgname}" != kconfig5 ]; then
 			msg_red "${pkgver}: /usr/lib/libexec directory is not allowed!\n"
 			error=1
 		fi

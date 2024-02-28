@@ -4,7 +4,7 @@ version=5.115.0
 revision=1
 build_style=cmake
 hostmakedepends="kcoreaddons extra-cmake-modules pkg-config
- kpackage gettext qt5-host-tools qt5-qmake python3 kconfig"
+ kpackage gettext qt5-host-tools qt5-qmake python3 kconfig5"
 makedepends="kio-devel kpackage-devel libepoxy-devel"
 short_desc="KDE Integration of QML and KDE work spaces"
 maintainer="John <me@johnnynator.dev>"

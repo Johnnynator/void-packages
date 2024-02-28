@@ -6,7 +6,7 @@ build_style=cmake
 build_helper="qemu"
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
  shared-mime-info libxslt pkg-config gettext qt5-tools-devel
- kconfig kcoreaddons"
+ kconfig5 kcoreaddons"
 makedepends="qt5-devel qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql
  qt5-plugin-sqlite qt5-plugin-tds kcompletion5-devel kconfigwidgets-devel
  kdbusaddons-devel kiconthemes-devel kitemmodels-devel kio-devel sqlite-devel

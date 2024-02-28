@@ -3,9 +3,9 @@ pkgname=kblocks
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools kconfig
+hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools kconfig5
  kcoreaddons gettext"
-makedepends="kconfig-devel kconfigwidgets-devel kcoreaddons-devel kcrash-devel
+makedepends="kconfig5-devel kconfigwidgets-devel kcoreaddons-devel kcrash-devel
  kdbusaddons-devel kdoctools-devel ki18n-devel ktextwidgets-devel kxmlgui-devel
  libkdegames-devel kio-devel"
 short_desc="Classic falling blocks game"

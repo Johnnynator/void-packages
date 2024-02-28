@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DWITH_BH_SOLVER=OFF"
-hostmakedepends="extra-cmake-modules gettext kconfig kcoreaddons kdoctools
+hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons kdoctools
  pkg-config qt5-host-tools qt5-qmake"
 makedepends="libfreecell-solver-devel libkdegames-devel
  knewstuff-devel kparts-devel qt5-devel"

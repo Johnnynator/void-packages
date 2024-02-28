@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules python3 qt5-host-tools qt5-qmake
- gettext kcmutils5 kdoctools kconfig kcoreaddons"
+ gettext kcmutils5 kdoctools kconfig5 kcoreaddons"
 makedepends="kcalutils-devel knotifyconfig-devel kontactinterface-devel
  kparts-devel ktnef-devel libkleo-devel libksieve-devel mailcommon-devel
  messagelib-devel qt5-location-devel qt5-webchannel-devel qt5-webengine-devel"

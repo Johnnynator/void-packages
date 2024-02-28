@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="
- boost extra-cmake-modules gettext glib kconfig kcoreaddons kdoctools
+ boost extra-cmake-modules gettext glib kconfig5 kcoreaddons kdoctools
  pkg-config python3 qt5-host-tools qt5-qmake qt5-quickcontrols"
 makedepends="
  glib-devel gst-plugins-base1-devel gst-plugins-bad1-devel gstreamer1-devel

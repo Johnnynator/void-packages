@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools libxslt kdoctools
- kauth5 kconfig gettext"
+ kauth5 kconfig5 gettext"
 makedepends="mailcommon-devel messagelib-devel kidletime-devel
  kcalutils-devel kholidays-devel knotifyconfig-devel"
 short_desc="Personal alarm scheduler"

@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DKF5_HOST_TOOLING=/usr/lib/cmake"
-hostmakedepends="extra-cmake-modules gettext kconfig kcoreaddons kdoctools
+hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons kdoctools
  qt5-host-tools qt5-qmake kcmutils5-devel"
 makedepends="kcmutils5-devel kio-devel libmusicbrainz5-devel"
 short_desc="KDE CDDB library"

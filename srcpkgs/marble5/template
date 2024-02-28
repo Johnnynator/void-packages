@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 configure_args="-DBUILD_MARBLE_TESTS=NO -DKF5_HOST_TOOLING=/usr/lib/cmake"
-hostmakedepends="extra-cmake-modules kconfig-devel kcoreaddons-devel kdoctools
+hostmakedepends="extra-cmake-modules kconfig5-devel kcoreaddons-devel kdoctools
  kpackage-devel perl qt5-host-tools qt5-qmake gettext"
 makedepends="gpsd-devel knewstuff-devel kparts-devel krunner-devel phonon-qt5-devel
  qt5-location-devel qt5-serialport-devel qt5-webkit-devel shapelib-devel

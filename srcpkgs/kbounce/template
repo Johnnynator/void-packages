@@ -4,8 +4,8 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools gettext kcoreaddons
- kconfig kdoctools"
-makedepends="qt5-svg-devel kcoreaddons-devel kconfig-devel kxmlgui-devel
+ kconfig5 kdoctools"
+makedepends="qt5-svg-devel kcoreaddons-devel kconfig5-devel kxmlgui-devel
  kcrash-devel kwidgetsaddons-devel kdbusaddons-devel ki18n-devel
  kcompletion5-devel kio-devel kdoctools-devel libkdegames-devel"
 short_desc="Build walls to confine a number of bouncing balls"

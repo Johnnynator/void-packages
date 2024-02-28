@@ -4,7 +4,7 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules pkg-config qt5-devel qt5-qmake kconfig
+hostmakedepends="extra-cmake-modules pkg-config qt5-devel qt5-qmake kconfig5
  gettext kcoreaddons"
 makedepends="kdecoration-devel frameworkintegration5-devel kwayland-devel
  kcmutils5-devel kdoctools"

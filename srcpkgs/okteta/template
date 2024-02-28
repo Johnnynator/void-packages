@@ -5,7 +5,7 @@ version=0.26.9
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext qt5-qmake qt5-host-tools
- kdoctools kconfig kcoreaddons kparts"
+ kdoctools kconfig5 kcoreaddons kparts"
 makedepends="qt5-devel qt5-script-devel qca-qt5-devel kbookmarks5-devel
  kcodecs5-devel kcompletion5-devel kconfigwidgets-devel kcrash-devel
  kcmutils5-devel knewstuff-devel kparts-devel"

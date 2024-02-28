@@ -4,7 +4,7 @@ version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="python3 qt5-qmake qt5-host-tools kconfig
+hostmakedepends="python3 qt5-qmake qt5-host-tools kconfig5
  kpackage kcoreaddons kdoctools extra-cmake-modules gettext"
 makedepends="kcmutils5-devel kdoctools khtml-devel kactivities5-stats5-devel
  kirigami2-devel plasma-workspace-devel"

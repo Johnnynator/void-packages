@@ -3,7 +3,7 @@ pkgname=yakuake
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kconfig kcoreaddons qt5-host-tools qt5-qmake gettext"
+hostmakedepends="extra-cmake-modules kconfig5 kcoreaddons qt5-host-tools qt5-qmake gettext"
 makedepends="knewstuff-devel knotifyconfig-devel kparts-devel
  $(vopt_if wayland kwayland-devel)"
 depends="konsole"

@@ -4,7 +4,7 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- gettext kcoreaddons kconfig"
+ gettext kcoreaddons kconfig5"
 makedepends="kcalendarcore5-devel kidentitymanagement-devel"
 short_desc="KDE calendar utility library"
 maintainer="John <me@johnnynator.dev>"

@@ -4,10 +4,10 @@ version=23.08.5
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext pkg-config qt5-qmake
- qt5-host-tools kcoreaddons kconfig AppStream"
+ qt5-host-tools kcoreaddons kconfig5 AppStream"
 makedepends="kquickimageeditor-devel libQuotient-devel qtkeychain-qt5-devel
  qt5-multimedia-devel kirigami2-devel ki18n-devel cmark-devel
- knotifications-devel kconfig-devel kcoreaddons-devel qqc2-desktop-style-devel
+ knotifications-devel kconfig5-devel kcoreaddons-devel qqc2-desktop-style-devel
  sonnet-devel kitemmodels-devel kirigami-addons kconfigwidgets-devel kio-devel
  qcoro-qt5-devel olm-devel qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql
  qt5-plugin-sqlite qt5-plugin-tds"

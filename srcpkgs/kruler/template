@@ -3,7 +3,7 @@ pkgname=kruler
 version=23.08.5
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kconfig kcoreaddons kdoctools
+hostmakedepends="extra-cmake-modules gettext kconfig5 kcoreaddons kdoctools
  pkg-config qt5-host-tools qt5-qmake"
 makedepends="kparts-devel"
 short_desc="Screen Ruler"
