@@ -1,5 +1,5 @@
-# Template file for 'frameworkintegration'
-pkgname=frameworkintegration
+# Template file for 'frameworkintegration5'
+pkgname=frameworkintegration5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,10 +10,10 @@ short_desc="Integration of Qt application with KDE workspaces"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/frameworkintegration"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=6e299a572cf123a2d2492a5e957d3a21b15039515d9232a34c5e4cbea391636e
 
-frameworkintegration-devel_package() {
+frameworkintegration5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

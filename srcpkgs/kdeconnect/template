@@ -9,7 +9,7 @@ hostmakedepends="extra-cmake-modules qt5-host-tools
  pkg-config wayland-devel qt5-qmake python3 kdoctools-devel
  kpackage-devel qt5-wayland kcoreaddons-devel gettext
  kcmutils-devel"
-makedepends="kcmutils-devel qca-qt5-devel frameworkintegration-devel
+makedepends="kcmutils-devel qca-qt5-devel frameworkintegration5-devel
  qt5-declarative-devel libfakekey-devel kwayland-devel
  qt5-multimedia-devel kpeoplevcard-devel kirigami2-devel
  qqc2-desktop-style-devel pulseaudio-qt-devel modemmanager-qt5-devel"

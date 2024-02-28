@@ -8,7 +8,7 @@ hostmakedepends="automake flex gperf hyphen icu libtool openldap which gettext x
  tar perl-Archive-Zip pkg-config qt5-qmake sane unzip zip python3-setuptools
  fontforge python3-lxml qt6-base gtk4-devel gobject-introspection gnupg"
 makedepends="CoinMP-devel apr-devel avahi-libs-devel clucene-devel
- frameworkintegration-devel glyphy-devel gpgmepp-devel gst-plugins-base1-devel
+ frameworkintegration5-devel glyphy-devel gpgmepp-devel gst-plugins-base1-devel
  gtk+3-devel gtk4-devel hunspell-devel hyphen-devel libXt-devel libabw-devel glm
  libatomic_ops-devel libbluetooth-devel libcdr-devel libe-book-devel
  libepubgen-devel libetonyek-devel libexttextcat-devel libfbclient3-devel
