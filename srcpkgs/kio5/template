@@ -8,7 +8,7 @@ configure_args="-DBUILD_DESIGNERPLUGIN=ON
 hostmakedepends="kcoreaddons5 extra-cmake-modules kauth5 gettext
  qt5-host-tools qt5-qmake kdoctools5 libxml2 kcoreaddons5"
 makedepends="kdoctools5-devel ksolid5-devel kbookmarks5-devel kjobwidgets5-devel
- kwallet-devel acl-devel mit-krb5-devel libxslt-devel libxml2-devel"
+ kwallet5-devel acl-devel mit-krb5-devel libxslt-devel libxml2-devel"
 depends="desktop-file-utils"
 checkdepends="dbus desktop-file-utils"
 short_desc="KDE Network transparent access to files and data"

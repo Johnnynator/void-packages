@@ -1,5 +1,5 @@
-# Template file for 'kwallet'
-pkgname=kwallet
+# Template file for 'kwallet5'
+pkgname=kwallet5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -13,7 +13,7 @@ short_desc="KDE Safe desktop-wide storage for passwords"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kwallet"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=f2b3fc21c89440c9290703929a8bcb77461fa510fd060c33d64787c9e0eaef3d
 
 do_check() {
@@ -22,7 +22,7 @@ do_check() {
 	ctest -E "fdo_secrets_test"
 }
 
-kwallet-devel_package() {
+kwallet5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

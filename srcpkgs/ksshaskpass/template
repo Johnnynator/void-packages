@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules qt5-devel kdoctools5 qt5-qmake
  gettext kcoreaddons5"
-makedepends="kwallet-devel kdoctools5-devel"
+makedepends="kwallet5-devel kdoctools5-devel"
 short_desc="KDE ssh-add helper"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"

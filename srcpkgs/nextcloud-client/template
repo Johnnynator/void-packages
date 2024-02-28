@@ -56,7 +56,7 @@ fi
 
 nextcloud-client-kwallet_package() {
 	short_desc+=" - kwallet credential backend"
-	depends="nextcloud-client>=${version}_${revision} kwallet"
+	depends="nextcloud-client>=${version}_${revision} kwallet5"
 	pkg_install() {
 		vbin ${FILESDIR}/kwallet/nextcloud.kwallet
 		vmkdir usr/share/applications
