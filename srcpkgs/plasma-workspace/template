@@ -17,7 +17,7 @@ makedepends="qt5-devel qt5-declarative-devel qt5-script-devel plasma-framework-d
  libXft-devel libkscreen-devel kactivities5-stats5-devel
  $(vopt_if pipewire kpipewire-devel)"
 depends="kactivitymanagerd kwin iso-codes milou plasma-integration
- kquickcharts qt5-wayland xorg-server-xwayland qt5-tools"
+ kquickcharts5 qt5-wayland xorg-server-xwayland qt5-tools"
 short_desc="KDE Window manager"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, GFDL-1.2-or-later, LGPL-2.1-or-later"

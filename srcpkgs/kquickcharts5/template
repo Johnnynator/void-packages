@@ -1,5 +1,5 @@
-# Template file for 'kquickcharts'
-pkgname=kquickcharts
+# Template file for 'kquickcharts5'
+pkgname=kquickcharts5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -10,7 +10,7 @@ short_desc="QtQuick plugin providing high-performance charts"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-only, LGPL-3.0-only"
 homepage="https://community.kde.org/Frameworks"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/kquickcharts-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=aa78d81ce4af03671803b50f4a7ee8ffb8e6c687749de1706359176d502566bb
 
 do_check() {
