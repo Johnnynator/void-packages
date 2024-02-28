@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext pkg-config
  qt5-qmake kcoreaddons5-devel kdoctools kconfig5"
-makedepends="kwindowsystem-devel kcrash5-devel kdbusaddons-devel
+makedepends="kwindowsystem-devel kcrash5-devel kdbusaddons5-devel
  kiconthemes-devel kjobwidgets-devel kio-devel
  kservice-devel ktextwidgets-devel kxmlgui-devel
  kwidgetsaddons-devel knotifications-devel kdoctools-devel
