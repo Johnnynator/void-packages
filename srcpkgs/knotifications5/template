@@ -1,5 +1,5 @@
-# Template file for 'knotifications'
-pkgname=knotifications
+# Template file for 'knotifications5'
+pkgname=knotifications5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -13,10 +13,10 @@ short_desc="KDE Desktop notifications"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/knotifications"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=fb8271ffbbbb570949326eb28ccfe3fe36d97be4b07172b8992a546791570642
 
-knotifications-devel_package() {
+knotifications5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {

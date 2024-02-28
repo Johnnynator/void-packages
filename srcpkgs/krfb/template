@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3 kdoctools5
  kconfig5 pkg-config kcoreaddons5 gettext wayland-devel qt5-wayland"
 makedepends="qt5-devel qt5-x11extras-devel ki18n5-devel kcompletion5-devel
  kconfig5-devel kcoreaddons5-devel kcrash5-devel kdbusaddons5-devel kdnssd5-devel
- kdoctools5-devel knotifications-devel kwallet-devel kwidgetsaddons-devel
+ kdoctools5-devel knotifications5-devel kwallet-devel kwidgetsaddons-devel
  kxmlgui-devel libvncserver-devel libXtst-devel xcb-util-image-devel
  kwayland-devel pipewire-devel plasma-wayland-protocols kpipewire-devel"
 short_desc="KDE Desktop Sharing"

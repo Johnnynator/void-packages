@@ -11,7 +11,7 @@ makedepends="qt5-devel libjpeg-turbo-devel qt5-plugin-mysql qt5-plugin-odbc
  qt5-webkit-devel qt5-webview-devel qt5-declarative-devel kxmlgui-devel
  kcoreaddons5-devel kconfig5-devel kservice-devel kwindowsystem-devel
  ksolid-devel ki18n5-devel kio5-devel kiconthemes5-devel kfilemetadata5-devel
- knotifyconfig-devel knotifications-devel threadweaver-devel
+ knotifyconfig-devel knotifications5-devel threadweaver-devel
  akonadi-contacts-devel libksane-devel kcalendarcore5-devel tiff-devel
  lcms2-devel qtav libopencv-devel liblqr-devel marble5-devel libgphoto2-devel
  lensfun-devel eigen jasper-devel MesaLib-devel glu-devel qt5-webchannel-devel

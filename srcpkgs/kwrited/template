@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext kcoreaddons5 qt5-devel qt5-qmake"
-makedepends="kdbusaddons5-devel knotifications-devel kpty-devel kdoctools5"
+makedepends="kdbusaddons5-devel knotifications5-devel kpty-devel kdoctools5"
 short_desc="KDE daemon listening for wall and write messages"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
