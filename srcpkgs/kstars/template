@@ -9,7 +9,7 @@ makedepends="extra-cmake-modules eigen qt5-devel qt5-declarative-devel
  qt5-plugin-mysql qt5-plugin-odbc qt5-plugin-pgsql qt5-plugin-sqlite
  qt5-plugin-tds qt5-svg-devel qt5-websockets-devel qt5-datavis3d-devel
  cfitsio-devel  libnova-devel libraw-devel qtkeychain-qt5-devel
- knotifyconfig-devel kauth5-devel kconfig5-devel kcrash-devel kdoctools-devel
+ knotifyconfig-devel kauth5-devel kconfig5-devel kcrash5-devel kdoctools-devel
  kwidgetsaddons-devel knewstuff-devel ki18n-devel kio-devel kxmlgui-devel
  kplotting-devel knotifications-devel"
 depends="xplanet"

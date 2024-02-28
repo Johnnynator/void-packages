@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext qt5-qmake qt5-host-tools kcoreaddons5 kconfig5"
 makedepends="qt5-devel libksane-devel kcoreaddons5-devel ki18n-devel
- kirigami2-devel kcrash-devel ksanecore-devel kconfig5-devel purpose-devel
+ kirigami2-devel kcrash5-devel ksanecore-devel kconfig5-devel purpose-devel
  kxmlgui-devel kquickimageeditor-devel"
 depends="kirigami2>=5.26.0 qt5-quickcontrols2"
 short_desc="Multi-page scanning application"

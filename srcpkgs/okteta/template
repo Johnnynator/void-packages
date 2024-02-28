@@ -7,7 +7,7 @@ build_style=cmake
 hostmakedepends="extra-cmake-modules gettext qt5-qmake qt5-host-tools
  kdoctools kconfig5 kcoreaddons5 kparts"
 makedepends="qt5-devel qt5-script-devel qca-qt5-devel kbookmarks5-devel
- kcodecs5-devel kcompletion5-devel kconfigwidgets5-devel kcrash-devel
+ kcodecs5-devel kcompletion5-devel kconfigwidgets5-devel kcrash5-devel
  kcmutils5-devel knewstuff-devel kparts-devel"
 checkdepends="AppStream"
 short_desc="Hexadecimal editor for binary files"
