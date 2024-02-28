@@ -1,5 +1,5 @@
-# Template file for 'kguiaddons'
-pkgname=kguiaddons
+# Template file for 'kguiaddons5'
+pkgname=kguiaddons5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -13,13 +13,13 @@ short_desc="KDE frameworks - Addons to QtGui"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kguiaddons"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=4f6dda36ea182c8f9f7a703301cea8258b094d7b9254f42ad70dedbeb73ff262
 
 build_options="wayland x11"
 build_options_default="wayland x11"
 
-kguiaddons-devel_package() {
+kguiaddons5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}-${version}_${revision}"
 	pkg_install() {
