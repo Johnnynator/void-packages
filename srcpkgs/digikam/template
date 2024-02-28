@@ -15,7 +15,7 @@ makedepends="qt5-devel libjpeg-turbo-devel qt5-plugin-mysql qt5-plugin-odbc
  akonadi-contacts-devel libksane-devel kcalendarcore5-devel tiff-devel
  lcms2-devel qtav libopencv-devel liblqr-devel marble5-devel libgphoto2-devel
  lensfun-devel eigen jasper-devel MesaLib-devel glu-devel qt5-webchannel-devel
- kconfigwidgets5-devel kwidgetsaddons-devel libheif-devel qt5-networkauth-devel"
+ kconfigwidgets5-devel kwidgetsaddons5-devel libheif-devel qt5-networkauth-devel"
 short_desc="Advanced digital photo management application"
 maintainer="Helmut Pozimski <helmut@pozimski.eu>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"

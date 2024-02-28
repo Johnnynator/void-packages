@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3 freerdp
  kcoreaddons5 kdoctools5 kconfig5 gettext"
 makedepends="kconfig5-devel kcmutils5-devel kdnssd5-devel knotifyconfig5-devel
  knotifications5-devel kbookmarks5-devel kiconthemes5-devel kxmlgui-devel
- kcompletion5-devel kwallet5-devel kwidgetsaddons-devel ki18n5-devel
+ kcompletion5-devel kwallet5-devel kwidgetsaddons5-devel ki18n5-devel
  libvncserver-devel"
 depends="freerdp"
 short_desc="Remote Desktop Client supporting VNC and RDP"

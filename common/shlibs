@@ -2543,7 +2543,7 @@ libopenshot-audio.so.9 libopenshot-audio-0.3.0_1
 libopenshot.so.23 libopenshot-0.3.0_1
 libpqxx-6.3.so libpqxx-6.3.3_1
 libndpi.so.3 ndpi-3.4_1
-libKF5WidgetsAddons.so.5 kwidgetsaddons-5.26.0_1
+libKF5WidgetsAddons.so.5 kwidgetsaddons5-5.115.0_1
 libsearpc.so.1 libsearpc-3.0.7_1
 libseafile.so.0 seafile-libclient-7.0.10_2
 libpodofo.so.0.9.7 libpodofo0.9.7-0.9.7_1

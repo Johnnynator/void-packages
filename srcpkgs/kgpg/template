@@ -8,7 +8,7 @@ hostmakedepends="extra-cmake-modules gettext pkg-config
 makedepends="kwindowsystem-devel kcrash5-devel kdbusaddons5-devel
  kiconthemes5-devel kjobwidgets5-devel kio5-devel
  kservice5-devel ktextwidgets5-devel kxmlgui-devel
- kwidgetsaddons-devel knotifications5-devel kdoctools5-devel
+ kwidgetsaddons5-devel knotifications5-devel kdoctools5-devel
  akonadi-contacts-devel kcontacts5-devel"
 depends="gnupg"
 checkdepends="gnupg"

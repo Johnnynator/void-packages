@@ -5,7 +5,7 @@ revision=2
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3 kcoreaddons5"
 makedepends="ecm-devel kconfig5-devel kcoreaddons5-devel kguiaddons5-devel kproperty-devel
- kwidgetsaddons-devel qt5-declarative-devel"
+ kwidgetsaddons5-devel qt5-declarative-devel"
 short_desc="Reports creation and generation framework for multiple formats"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"

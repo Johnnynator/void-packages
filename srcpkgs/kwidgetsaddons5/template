@@ -1,5 +1,5 @@
-# Template file for 'kwidgetsaddons'
-pkgname=kwidgetsaddons
+# Template file for 'kwidgetsaddons5'
+pkgname=kwidgetsaddons5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -9,15 +9,15 @@ short_desc="Large set of desktop widgets"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kwidgetsaddons"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=e359844567ce2e21d0eba257a1857e65123f8a796309bcf8ccb88a1d4bb8ae55
 
 do_check() {
 	cd build
-	ctest -E 'kwidgetsaddons-kcolumnresizertest'
+	ctest -E 'kwidgetsaddons5-kcolumnresizertest'
 }
 
-kwidgetsaddons-devel_package() {
+kwidgetsaddons5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
