@@ -1,5 +1,5 @@
-# Template file for 'kitemviews'
-pkgname=kitemviews
+# Template file for 'kitemviews5'
+pkgname=kitemviews5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -11,10 +11,10 @@ short_desc="Set of item views extending the Qt model-view framework"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kitemviews"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=6e2e5bc2e5c5126b3cf3e52dcc2f26c349068c345c8825bbb7e7c11efe4565d9
 
-kitemviews-devel_package() {
+kitemviews5-devel_package() {
 	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
