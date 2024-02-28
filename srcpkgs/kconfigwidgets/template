@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_DESIGNERPLUGIN=ON"
 hostmakedepends="kcoreaddons extra-cmake-modules qt5-devel qt5-host-tools
  kconfig gettext kcoreaddons kdoctools"
-makedepends="qt5-devel kauth5-devel kcodecs-devel kconfig-devel kguiaddons-devel
+makedepends="qt5-devel kauth5-devel kcodecs5-devel kconfig-devel kguiaddons-devel
  kdoctools-devel ki18n-devel kwidgetsaddons-devel"
 short_desc="KDE Widgets for configuration dialogs"
 maintainer="John <me@johnnynator.dev>"

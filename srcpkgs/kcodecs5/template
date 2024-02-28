@@ -1,5 +1,5 @@
-# Template file for 'kcodecs'
-pkgname=kcodecs
+# Template file for 'kcodecs5'
+pkgname=kcodecs5
 version=5.115.0
 revision=1
 build_style=cmake
@@ -9,10 +9,10 @@ short_desc="Collection of methods to manipulate strings using various encodings"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-only, LGPL-2.0-or-later"
 homepage="https://invent.kde.org/frameworks/kcodecs"
-distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
+distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname%5}-${version}.tar.xz"
 checksum=94385e46989f998ce1f011d4ddf8de6f9faa682d14c776a802bf2fc2cb1804bf
 
-kcodecs-devel_package() {
+kcodecs5-devel_package() {
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
 		vmove usr/include

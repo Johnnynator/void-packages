@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=ON"
 hostmakedepends="kcoreaddons extra-cmake-modules qt5-qmake
  pkg-config qt5-host-tools qt5-tools"
-makedepends="kwindowsystem-devel kcodecs-devel kconfig-devel
+makedepends="kwindowsystem-devel kcodecs5-devel kconfig-devel
  kcoreaddons-devel phonon-qt5-devel libdbusmenu-qt5-devel
  libcanberra-devel qt5-speech-devel qt5-declarative-devel"
 short_desc="KDE Desktop notifications"

@@ -5,7 +5,7 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules python3 qt5-qmake qt5-host-tools
  kcoreaddons gettext"
-makedepends="qt5-devel grantlee5-devel kcodecs-devel kconfig-devel kconfigwidgets-devel
+makedepends="qt5-devel grantlee5-devel kcodecs5-devel kconfig-devel kconfigwidgets-devel
  kemoticons-devel kiconthemes-devel kio-devel syntax-highlighting-devel
  qt5-speech-devel"
 short_desc="Textedit with PIM-specific features"
