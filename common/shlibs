@@ -2033,6 +2033,8 @@ libKF6Su.so.6 kf6-kdesu-6.0.0_1
 libKF6ModemManagerQt.so.6 kf6-modemmanager-qt-6.0.0_1
 libKF6Purpose.so.6 kf6-purpose-6.0.0_1
 libKF6PurposeWidgets.so.6 kf6-purpose-6.0.0_1
+libKF6TextTemplate.so.6 kf6-ktexttemplate-6.0.0_1
+libKF6DAV.so.6 kf6-kdav-6.0.0_1
 
 liblxqt-qt5.so.0 liblxqt-0.8.0_1
 liblxqt-globalkeys-qt5.so.0 lxqt-globalkeys-0.8.0_1
