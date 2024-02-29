@@ -2227,6 +2227,7 @@ libwvutils.so.4.6 wvstreams-4.6.1_20
 libwvstreams.so.4.6 wvstreams-4.6.1_20
 libespeak-ng.so.1 libespeak-ng-1.50_1
 libKF5Plotting.so.5 kplotting-5.26.0_1
+libKF6Plotting.so.6 kf6-kplotting-6.0.0_1
 libpgf.so.6 libpgf-6.14.12_1
 libqhull_r.so.8.0 libqhull-2020.2_1
 libqhull.so.8.0 libqhull-2020.2_1
