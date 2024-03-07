@@ -1,0 +1,40 @@
+# Template file for 'libaccounts-qt'
+pkgname=libaccounts-qt
+_commit="18557f7def9af8f4a9e0e93e9f575ae11e5066aa"
+version=1.16
+revision=3
+build_style=qmake
+configure_args="LIBDIR=/usr/lib"
+hostmakedepends="pkgconf doxygen qt6-base"
+makedepends="libaccounts-glib-devel qt6-base-devel"
+short_desc="Client library to the accounts database, with a Qt6-based API"
+maintainer="Luciogi <lucigithubcommit@skiff.com>"
+license="LGPL-2.1-only"
+homepage="https://gitlab.com/accounts-sso/libaccounts-qt"
+distfiles="${homepage}/-/archive/VERSION_${version}/libaccounts-qt-VERSION_${version}.tar.gz"
+distfiles="https://gitlab.com/nicolasfella/libaccounts-qt/-/archive/$_commit/${pkgname%6}-$_commit.tar.gz"
+checksum=c89df9c9537afa5b2f01556a99a28cb78bca6325588147c0e902d52a06c64c49
+
+libaccounts-qt-devel_package() {
+       short_desc+=" - development files"
+       depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
+       pkg_install() {
+               vmove usr/include
+               vmove usr/lib/*.so
+               vmove usr/lib/pkgconfig
+               vmove usr/share/doc/accounts-qt
+               vmove usr/lib/cmake
+       }
+}
+
+libaccounts-qt5_package(){
+	short_desc+=" - (Dummy transitional package)"
+	build_style=meta
+	depends="libaccounts-qt-${version}_${revision}"
+}
+
+libaccounts-qt5-devel_package(){
+	short_desc+=" - (Dummy transitional package)"
+	build_style=meta
+	depends="libaccounts-qt-devel-${version}_${revision}"
+}
