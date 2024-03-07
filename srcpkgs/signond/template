@@ -1,25 +1,26 @@
 # Template file for 'signond'
 pkgname=signond
 version=8.61
-revision=1
+revision=2
+_commit="c8ad98249af541514ff7a81634d3295e712f1a39"
 build_style=qmake
 configure_args="LIBDIR=/usr/lib"
 conf_files="/etc/signond.conf"
-hostmakedepends="pkg-config doxygen qt5-host-tools qt5-qmake"
-makedepends="qt5-devel"
-short_desc="Daemon providing SSO over D-Bus for the gSSO framework"
+hostmakedepends="pkg-config doxygen qt6-base"
+makedepends="qt6-base-devel"
+short_desc="Daemon providing SSO over D-Bus for the gSSO framework - Qt6"
 maintainer="John Rowley <enterthevoid@codesector.co>"
 license="LGPL-2.1-only"
 homepage="https://gitlab.com/accounts-sso/signond"
-distfiles="${homepage}/-/archive/VERSION_${version}/signond-VERSION_${version}.tar.gz"
-checksum=3dd57c25e1bf1583b2cb857f96831e38e73d40264ff66ca43e63bb7233f76828
+distfiles="https://gitlab.com/accounts-sso/signond/-/archive/$_commit/signond-$_commit.tar.gz"
+checksum=2c3dd97fcdb90f38bb9884f7e11d0fb9ba214f78bddaacb27e4969cefff7d690
 
 pre_configure() {
 	if [ "$CROSS_BUILD" ]; then
-		CXXFLAGS+=" -I${XBPS_CROSS_BASE}/usr/include/qt5"
-		for i in ${XBPS_CROSS_BASE}/usr/include/qt5/*; do
+	        CXXFLAGS+=" -I${XBPS_CROSS_BASE}/usr/include/qt6"
+	        for i in ${XBPS_CROSS_BASE}/usr/include/qt6/*; do
 			CXXFLAGS+=" -I$i"
-		done
+	        done
 	fi
 }
 
