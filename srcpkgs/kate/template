@@ -1,5 +1,5 @@
-# Template file for 'kate5'
-pkgname=kate5
+# Template file for 'kate'
+pkgname=kate
 version=24.02.0
 revision=1
 build_style=cmake
@@ -34,4 +34,10 @@ kwrite_package() {
 			vmove ${f#$DESTDIR}
 		done
 	}
+}
+
+kate5_package() {
+	short_desc+=" - (Dummy transitional package)"
+	build_style=meta
+	depends="kate-${version}_${revision}"
 }
