@@ -1,0 +1,25 @@
+# Template file for 'libkipi'
+pkgname=libkipi
+version=24.02.0
+revision=1
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF -DQT_MAJOR_VERSION=6"
+hostmakedepends="extra-cmake-modules kf6-kdoctools qt6-tools 
+ gettext kf6-kcoreaddons"
+makedepends="kf6-kxmlgui-devel"
+short_desc="Interface to use kipi-plugins from a KDE application"
+maintainer="Luciogi <lucigithubcommit@skiff.com>"
+license="GPL-2.0-or-later"
+homepage="https://invent.kde.org/graphics/libkipi"
+distfiles="${KDE_SITE}/release-service/${version}/src/libkipi-${version}.tar.xz"
+checksum=220f4858c17e7d9b853332e6481de35182a113b412af7f2d49fe4f209ee0391e
+
+libkipi-devel_package() {
+	short_desc+=" - development files"
+	depends="${sourcepkg}-${version}_${revision}"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/cmake
+		vmove "usr/lib/*.so"
+	}
+}
