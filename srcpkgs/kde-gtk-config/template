@@ -14,3 +14,9 @@ license="GPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/kde-gtk-config"
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname}-${version}.tar.xz"
 checksum=884570500ced842f1e1c545edf6fdd5036673f83a7188644f8b9f761e2682f7e
+
+kde-gtk-config5_package() {
+	short_desc+=" - (Dummy transitional package)"
+	build_style=meta
+	depends="kde-gtk-config-${version}_${revision}"
+}
