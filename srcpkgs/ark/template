@@ -1,19 +1,19 @@
 # Template file for 'ark'
 pkgname=ark
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
-hostmakedepends="extra-cmake-modules qt5-devel qt5-qmake
- kdoctools kconfig gettext pkg-config python3 kcoreaddons kparts"
-makedepends="libarchive-devel kpty-devel kparts-devel kitemmodels-devel libzip-devel"
+hostmakedepends="extra-cmake-modules qt6-base gettext"
+# kdoctools kconfig pkg-config python3 kcoreaddons kparts"
+makedepends="libarchive-devel kf6-kpty-devel kf6-kparts-devel kf6-kitemmodels-devel libzip-devel kf6-kfilemetadata-devel kf6-kdbusaddons-devel kf6-kdoctools-devel kf6-ki18n-devel kf6-kio-devel kf6-kwindowsystem-devel kf6-kiconthemes-devel kf6-kwidgetsaddons-devel kf6-kconfig-devel kf6-kcrash-devel"
 checkdepends="p7zip p7zip-unrar lzop lrzip unrar unzip zip zstd"
 short_desc="KDE Archiving Tool"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://kde.org/applications/en/utilities/org.kde.ark"
 distfiles="${KDE_SITE}/release-service/${version}/src/${pkgname}-${version}.tar.xz"
-checksum=6081c564e2d4e25113691483d2cf3843461a9db6c726e1e547fa9a9697aecfeb
+checksum=ff11fe9352d8aa80207a21f3e024e18b4035cbbe689abaad20a91fe36c455469
 
 do_check() {
 	cd build
