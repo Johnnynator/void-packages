@@ -1,15 +1,15 @@
 # Template file for 'ffmpegthumbs'
 pkgname=ffmpegthumbs
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kcoreaddons kconfig-devel
- pkg-config qt5-host-tools qt5-qmake gettext"
-makedepends="qt5-devel kio-devel ffmpeg-devel taglib-devel"
+configure_args="-DQT_MAJOR_VERSION=6"
+hostmakedepends="extra-cmake-modules pkg-config gettext qt6-base"
+makedepends="qt6-base-devel kf6-kconfig-devel kf6-kio-devel kf6-ki18n-devel ffmpeg-devel taglib-devel"
 short_desc="FFmpeg-based thumbnail creator for video files"
 maintainer="Michael Straube <straubem@gmx.de>"
 license="GPL-2.0-or-later"
 homepage="https://kde.org/applications/"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#ffmpegthumbs"
 distfiles="${KDE_SITE}/release-service/${version}/src/ffmpegthumbs-${version}.tar.xz"
-checksum=dad83ce22fccf141bb19fd6192c73dc0cab6365c86251e68f393962f0a5be5df
+checksum=383dc6d5a7464b443c166cb42a8507b5960069356da28a91907d76a8178d79f1
