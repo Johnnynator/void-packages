@@ -1,17 +1,18 @@
 # Template file for 'ksanecore'
 pkgname=ksanecore
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext qt5-qmake qt5-host-tools"
-makedepends="qt5-devel sane-devel ki18n-devel"
+configure_args="-DQT_MAJOR_VERSION=6"
+hostmakedepends="extra-cmake-modules gettext qt6-base"
+makedepends="qt6-base-devel sane-devel kf6-kconfig-devel kf6-ki18n-devel"
 short_desc="Library providing logic to interface scanners"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://kde.org/applications/graphics"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#ksanecore"
 distfiles="${KDE_SITE}/release-service/${version}/src/ksanecore-${version}.tar.xz"
-checksum=3d19c4caf13799b4bc835d18d77668ebb86771ba5128de3497a43302371d9ba2
+checksum=93087737fc734c54cf2324921b6b5eaf0f7864306c4496942944b9352cdb21db
 
 ksanecore-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"
