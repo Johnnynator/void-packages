@@ -1,6 +1,6 @@
 # Template file for 'libkscreen5'
 pkgname=libkscreen5
-version=5.27.11
+version=5.27.10
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -13,14 +13,7 @@ maintainer="Luciogi <lucigithubcommit@skiff.com>"
 license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/plasma/libkscreen"
 distfiles="${KDE_SITE}/plasma/${version}/${pkgname%5}-${version}.tar.xz"
-checksum=0d11f41d489f32303988e5a2eee8cef7f4eb18faea5614e65bf202007ea21dd5
-
-post_install() {
-	rm -r ${DESTDIR}/usr/bin
-	rm -r ${DESTDIR}/usr/lib/systemd
-	rm -r ${DESTDIR}/usr/share/dbus-1
-	rm -r ${DESTDIR}/usr/share/zsh
-}
+checksum=27f59f088929bc7fb560c353fb9da98832dde5b58fde88d9c694c98fdf3aff98
 
 libkscreen5-devel_package() {
 	short_desc+=" - development"
