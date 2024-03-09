@@ -1,6 +1,6 @@
 # Template file for 'print-manager'
 pkgname=print-manager
-version=6.0.2
+version=6.0.1
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules qt6-base gettext"
@@ -13,7 +13,7 @@ license="GPL-2.0-or-later"
 homepage="https://kde.org/applications/en/print-manager"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#print-manager"
 distfiles="${KDE_SITE}/plasma/${version}/print-manager-${version}.tar.xz"
-checksum=66ce0738158380eeec2c259cc2d3f259d53e29dbff2dfd853e55a09d3aca46ff
+checksum=a8c6a6e0fd3424c022d7211410a3f774c353f86ee7cb4f18adbd3aa67121974a
 
 if [ "$CROSS_BUILD" ]; then
 	configure_args+=" -DKF6_HOST_TOOLING=/usr/lib/cmake"
