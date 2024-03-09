@@ -1,20 +1,20 @@
 # Template file for 'kmime'
 pkgname=kmime
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules python3 gettext"
-makedepends="kcodecs-devel ki18n-devel"
+hostmakedepends="extra-cmake-modules python3 qt6-base gettext"
+makedepends="kf6-kcodecs-devel kf6-ki18n-devel"
 short_desc="Library for handling mail messages and newsgroup articles"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://community.kde.org/KDE_PIM"
 distfiles="${KDE_SITE}/release-service/${version}/src/kmime-${version}.tar.xz"
-checksum=b6894e733abf3a8fb4fc7de37b7cbf15cbebdc737b80f7fe632bdf61e5da3fda
+checksum=4f1251484f18b6eedf62c9219a504e6357de5adff4016cc34a714dd0cb748065
 
-if [ "CROSS_BUILD" ];then
-	hostmakedepends+=" qt5-qmake qt5-host-tools"
-fi
+#if [ "CROSS_BUILD" ];then
+#	hostmakedepends+=" qt5-qmake qt5-host-tools"
+#fi
 
 kmime-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"
@@ -22,7 +22,6 @@ kmime-devel_package() {
 	pkg_install() {
 		vmove usr/include
 		vmove usr/lib/cmake
-		vmove usr/lib/qt5/mkspecs
 		vmove "usr/lib/*.so"
 	}
 }
