@@ -1,22 +1,23 @@
 # Template file for 'kaccounts-integration'
 pkgname=kaccounts-integration
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules pkg-config qt5-host-tools qt5-qmake
- kcoreaddons libaccounts-qt5-devel signond-devel gettext kpackage kcmutils"
-makedepends="kcmutils-devel kparts-devel libaccounts-qt5-devel signond-devel qcoro-qt5-devel"
-depends="kinit signon-ui signon-plugin-oauth2 signon-kwallet-extension"
+hostmakedepends="extra-cmake-modules pkg-config qt6-base gettext"
+# kcoreaddons libaccounts-qt-devel signond-devel gettext kpackage kcmutils"
+makedepends="kf6-kcmutils-devel kf6-kparts-devel libaccounts-qt-devel
+ signond-devel qcoro-qt6-devel kf6-ki18n-devel"
+depends="signon-ui signon-plugin-oauth2 signon-kwallet-extension"
 short_desc="Administer web accounts for sites and services across the KDE desktop"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/network/kaccounts-integration"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#kaccounts-integration"
 distfiles="${KDE_SITE}/release-service/${version}/src/kaccounts-integration-${version}.tar.xz"
-checksum=c02ee25495c387dfc9c7581babd4756e04d7c3dae68bffd1652cf418e1d129b9
+checksum=578842584084e13628a7af02e7673122244c9a03084a852661f4dce4c56d800e
 
 kaccounts-integration-devel_package() {
-	short_desc+=" - development"
+	short_desc+=" - development files"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
 		vmove usr/include
