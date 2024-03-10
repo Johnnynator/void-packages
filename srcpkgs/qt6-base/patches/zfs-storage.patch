@@ -1,11 +1,19 @@
---- qt6-base-6.4.2.orig/tests/auto/corelib/io/qstorageinfo/tst_qstorageinfo.cpp
-+++ qt6-base-6.4.2/tests/auto/corelib/io/qstorageinfo/tst_qstorageinfo.cpp
-@@ -165,6 +165,8 @@ void tst_QStorageInfo::tempFile()
- #ifdef Q_OS_LINUX
-     if (storage1.fileSystemType() == "btrfs")
-         QSKIP("This test doesn't work on btrfs, probably due to a btrfs bug");
-+    if (storage1.fileSystemType() == "zfs")
-+        QSKIP("This test doesn't work on zfs");
- #endif
- 
-     qint64 free = storage1.bytesFree();
+--- qt6-base-6.6.2/tests/auto/corelib/io/qstorageinfo/tst_qstorageinfo.cpp	2024-02-08 17:01:05.000000000 +0100
++++ -	2024-03-11 00:24:18.288882854 +0100
+@@ -165,14 +165,14 @@
+         std::destroy_at(where);
+         q20::construct_at(where, std::forward<decltype(how)>(how)...);
+     };
+-    if (storage.fileSystemType() == "btrfs") {
++    if (storage.fileSystemType() == "btrfs" || storage.fileSystemType() == "zfs") {
+         // let's see if we can find another, writable FS
+         QString runtimeDir = QStandardPaths::writableLocation(QStandardPaths::RuntimeLocation);
+         if (!runtimeDir.isEmpty()) {
+             reconstructAt(&file, runtimeDir + "/XXXXXX");
+             if (file.open()) {
+                 storage.setPath(file.fileName());
+-                if (storage.fileSystemType() != "btrfs")
++                if (storage.fileSystemType() != "btrfs" && storage.fileSystemType() == "zfs")
+                     return true;
+             }
+         }

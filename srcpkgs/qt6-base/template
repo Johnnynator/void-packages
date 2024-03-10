@@ -1,6 +1,6 @@
 # Template file for 'qt6-base'
 pkgname=qt6-base
-version=6.6.0
+version=6.6.2
 revision=1
 build_style=cmake
 configure_args="-DINSTALL_DATADIR=share/qt6
@@ -32,7 +32,7 @@ maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-only WITH Qt-GPL-exception-1.0, LGPL-3.0-only, GPL-2.0-or-later"
 homepage="https://www.qt.io"
 distfiles="https://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtbase-everywhere-src-${version}.tar.xz"
-checksum=039d53312acb5897a9054bd38c9ccbdab72500b71fdccdb3f4f0844b0dd39e0e
+checksum=b89b426b9852a17d3e96230ab0871346574d635c7914480a2a27f98ff942677b
 python_version=3
 
 if [ "$CROSS_BUILD" ]; then
