@@ -1,6 +1,6 @@
 # Template file for 'qt6-speech'
 pkgname=qt6-speech
-version=6.6.0
+version=6.6.2
 revision=1
 build_style=cmake
 hostmakedepends="perl pkg-config qt6-declarative-host-tools"
@@ -11,7 +11,7 @@ maintainer="John <me@johnnynator.dev>"
 license="(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND GPL-3.0-only with Qt-GPL-exception-1.0"
 homepage="https://www.qt.io"
 distfiles="https://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtspeech-everywhere-src-${version}.tar.xz"
-checksum=969bdbff826808f0cfd80e8f2e357f00174489f30d9f895390cf59814abe9f9c
+checksum=c023bb12403270dbc22aa8fb721b60132bc55504f8a306087785dd70c51d6ee3
 
 if [ "$XBPS_CHECK_PKGS" ]; then
 	configure_args="-DQT_BUILD_TESTS=ON"
