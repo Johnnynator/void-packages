@@ -1,17 +1,17 @@
 # Template file for 'ksmtp'
 pkgname=ksmtp
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- gettext kcoreaddons"
-makedepends="kmime-devel kio-devel"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools
+ gettext kf6-kcoreaddons"
+makedepends="kmime-devel kf6-kio-devel"
 short_desc="Job-based library to send email through an SMTP server"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://community.kde.org/KDE_PIM"
 distfiles="${KDE_SITE}/release-service/${version}/src/ksmtp-${version}.tar.xz"
-checksum=dd0698955b1ec0455246df69d2ff1a12643119702a60fab24294c6cac2ac1bc5
+checksum=0a9ffb32b5067c96d902e625d51a256fbb329f9814f0da42d3b51617b458a908
 make_check=no # XXX: requires smtp server?
 
 ksmtp-devel_package() {
@@ -20,7 +20,6 @@ ksmtp-devel_package() {
 	pkg_install() {
 		vmove usr/include
 		vmove usr/lib/cmake
-		vmove usr/lib/qt5/mkspecs
 		vmove "usr/lib/*.so"
 	}
 }
