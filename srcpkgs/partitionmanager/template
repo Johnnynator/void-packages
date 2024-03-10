@@ -1,13 +1,13 @@
 # Template file for 'partitionmanager'
 pkgname=partitionmanager
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="qt5-devel kdoctools kconfig qt5-qmake cmake python3
- extra-cmake-modules pkg-config gettext kcoreaddons"
-makedepends="qt5-devel kconfig-devel kpmcore-devel kdoctools-devel
- kservice-devel kio-devel kxmlgui-devel kiconthemes-devel kconfigwidgets-devel"
+hostmakedepends="qt6-base-devel kf6-kdoctools kf6-kconfig qt6-base
+ extra-cmake-modules pkg-config gettext kf6-kcoreaddons"
+makedepends="qt6-base-devel kf6-kconfig-devel kpmcore-devel kf6-kdoctools-devel
+ kf6-kservice-devel kf6-kio-devel kf6-kxmlgui-devel kf6-kiconthemes-devel kf6-kconfigwidgets-devel"
 depends="hicolor-icon-theme"
 short_desc="KDE utility that allows you to manage disks"
 maintainer="jambonmcyeah <jambonmcyeah@gmail.com>"
@@ -15,7 +15,7 @@ license="GPL-3.0-or-later"
 homepage="https://apps.kde.org/partitionmanager"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#partitionmanager"
 distfiles="${KDE_SITE}/release-service/${version}/src/partitionmanager-${version}.tar.xz"
-checksum=983adee6730f49bf17904129b5152d1092d3cc8f16cde045b6b18244ebd30834
+checksum=b2ec49165805bca5b806f66b4ec53dd4a98dd46633aed54e69f040a1df15a4ac
 
 if [ -n "$CROSS_BUILD" ]; then
 	configure_args+=" -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
