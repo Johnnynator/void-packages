@@ -1,11 +1,12 @@
 # Template file for 'palapeli'
 pkgname=palapeli
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools
- kconfig kcoreaddons gettext"
-makedepends="libkdegames-devel kdoctools"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools
+ kf6-kdoctools kf6-kconfig kf6-kcoreaddons gettext"
+makedepends="libkdegames-devel kf6-kdoctools-devel kf6-kcrash-devel
+ kf6-kio-devel kf6-knotifications-devel"
 depends="qhull"
 short_desc="Jigsaw puzzle game"
 maintainer="Adam Beckmeyer <adam_gpg@thebeckmeyers.xyz>"
@@ -13,4 +14,4 @@ license="GPL-2.0-or-later"
 homepage="https://kde.org/applications/games/palapeli"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#palapeli"
 distfiles="${KDE_SITE}/release-service/${version}/src/palapeli-${version}.tar.xz"
-checksum=faea7b9a18a4fc8fa4af2cca7994609bdb79039a9bd319cdc74fad55046b89d1
+checksum=d05de464663640859ccae11aca5adf5b5ed5cf551139cf685622d9c73dfab532
