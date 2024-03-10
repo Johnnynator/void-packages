@@ -1,18 +1,16 @@
 # Template file for 'libkdepim'
 pkgname=libkdepim
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- gettext kcoreaddons"
-makedepends="akonadi5-devel akonadi-contacts-devel kcmutils-devel
- kldap-devel akonadi-search-devel"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools gettext"
+makedepends="kf6-kcompletion-devel kf6-ki18n-devel"
 short_desc="Libraries for KDE PIM applications"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://community.kde.org/KDE_PIM"
 distfiles="${KDE_SITE}/release-service/${version}/src/libkdepim-${version}.tar.xz"
-checksum=6e1e2e7416a3cb1d9fdc41257ba034c40a55bf1d870d15c71a22f29adfb5db9f
+checksum=d412419d174fcbc5f6aa46831f2ca81718f0d8a79972935fa097c54b8f2ee7e0
 
 if [ "$CROSS_BUILD" ]; then
 	configure_args+=" -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
@@ -23,7 +21,6 @@ libkdepim-devel_package() {
 	short_desc+=" - development files"
 	pkg_install() {
 		vmove usr/include
-		vmove usr/lib/qt5/mkspecs
 		vmove usr/lib/cmake
 		vmove "usr/lib/*.so"
 	}
