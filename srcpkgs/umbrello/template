@@ -1,20 +1,21 @@
 # Template file for 'umbrello'
 pkgname=umbrello
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kcoreaddons kconfig kdoctools qt5-host-tools qt5-qmake"
-makedepends="kdelibs4support-devel ktexteditor-devel qt5-webkit-devel"
+hostmakedepends="extra-cmake-modules gettext kcoreaddons kconfig kdoctools
+ qt5-host-tools qt5-qmake"
+makedepends="qt5-devel qt5-svg-devel ktexteditor-devel"
 short_desc="UML modelling tool and code generator"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later, LGPL-2.0-or-later, GFDL-1.2-or-later"
 homepage="https://apps.kde.org/umbrello/"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#umbrello"
 distfiles="${KDE_SITE}/release-service/${version}/src/umbrello-${version}.tar.xz"
-checksum=4c404222ee5a41976f2c561220c6f74867e9828a0d09a36a8166b9ee1b64c780
+checksum=00cb941e68a10ef64d7d4db716bfcec068e1655d3d5520af97946ff33ded13c7
 python_version=3
 
 pre_configure() {
-	vsed -i CMakeLists.txt -e 's/# set default umbrello version/set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-suggest-override")/'
-	vsed -i CMakeLists.txt -e '/set(BUILD_UNITTESTS 1)/d'
+       vsed -i CMakeLists.txt -e 's/# set default umbrello version/set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-suggest-override")/'
+       vsed -i CMakeLists.txt -e '/set(BUILD_UNITTESTS 1)/d'
 }
