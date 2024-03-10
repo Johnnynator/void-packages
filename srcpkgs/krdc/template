@@ -1,26 +1,27 @@
 # Template file for 'krdc'
 pkgname=krdc
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
 configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3 freerdp
- kcoreaddons kdoctools kconfig gettext"
+hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools
+ kcoreaddons kconfig gettext freerdp"
 makedepends="kconfig-devel kcmutils-devel kdnssd-devel knotifyconfig-devel
  knotifications-devel kbookmarks-devel kiconthemes-devel kxmlgui-devel
  kcompletion-devel kwallet-devel kwidgetsaddons-devel ki18n-devel
- libvncserver-devel"
+ kactivities5-devel kdoctools-devel libvncserver-devel freerdp-devel
+ libssh-devel"
 depends="freerdp"
 short_desc="Remote Desktop Client supporting VNC and RDP"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later, GFDL-1.2-only, LGPL-2.1-or-later"
 homepage="https://kde.org/applications/en/internet/org.kde.krdc"
 distfiles="${KDE_SITE}/release-service/${version}/src/${pkgname}-${version}.tar.xz"
-checksum=c2c57cebb22a9201ce5d6c305654e485df1d0deaa17496a8d85fe19a80f059f4
+checksum=c80d31b2395e59bda15e7a760b1e1d414b364167911260892ae8e1f60632a261
 
 krdc-devel_package() {
 	short_desc+=" - development files"
-	depends="${sourcepkg}>=${version}_${revision}"
+	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
 		vmove usr/include
 		vmove "usr/lib/*.so"
