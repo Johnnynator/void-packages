@@ -1,20 +1,21 @@
 # Template file for 'konqueror'
 pkgname=konqueror
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-configure_args="-DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
-hostmakedepends="extra-cmake-modules python3 qt5-host-tools qt5-qmake kdoctools
-kcoreaddons kconfig gettext"
-makedepends="qt5-devel qt5-webengine-devel qt5-declarative-devel
- qt5-webchannel-devel qt5-location-devel kcmutils-devel kdelibs4support-devel
- karchive-devel khtml-devel kdesu-devel kactivities5-devel"
+configure_args="-DBUILD_WITH_QT6=ON -DDESKTOPTOJSON_EXECUTABLE=/usr/bin/desktoptojson"
+hostmakedepends="extra-cmake-modules python3 qt6-base qt6-tools kf6-kdoctools
+kf6-kcoreaddons kf6-kconfig gettext"
+makedepends="qt6-base-devel qt6-webengine-devel qt6-webchannel-devel
+ kf6-karchive-devel kf6-kdesu-devel kf6-kcrash-devel kf6-kdbusaddons-devel
+ kf6-kiconthemes-devel kf6-ktextwidgets-devel kf6-kparts-devel
+ kf6-kcmutils-devel plasma-activities-devel"
 short_desc="KDE File Manager & Web Browser"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://kde.org/applications/internet/org.kde.konqueror"
 distfiles="${KDE_SITE}/release-service/${version}/src/konqueror-${version}.tar.xz"
-checksum=84ab449f354bf76582a511a23717671c9c1b94c4199ca955c58914c4bd370cfa
+checksum=79631ea4521c87e4a86a6fd58a7440dec5abba72bd81572fc2afaec8b1b53641
 
 do_check() {
 	:
