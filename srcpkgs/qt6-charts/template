@@ -1,6 +1,6 @@
 # Template file for 'qt6-charts'
 pkgname=qt6-charts
-version=6.6.0
+version=6.6.2
 revision=1
 build_style=cmake
 hostmakedepends="perl qt6-declarative-host-tools"
@@ -10,7 +10,7 @@ maintainer="John <me@johnnynator.dev>"
 license="GPL-3.0-only"
 homepage="https://qt.io/"
 distfiles="http://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtcharts-everywhere-src-${version}.tar.xz"
-checksum=e6beabcdc70c7719818459d2b2db63d7b0b5adc5572b8802368b698f64292cf5
+checksum=b1486262ee07b4420b8cdd1525c01800186b15d4fee0669cf544fdd5e941f5f4
 
 pre_check() {
 	export QML2_IMPORT_PATH="$wrksrc/build/lib${XBPS_TARGET_WORDSIZE}/qt6/qml"
