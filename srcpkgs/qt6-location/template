@@ -1,6 +1,6 @@
 # Template file for 'qt6-location'
 pkgname=qt6-location
-version=6.6.0
+version=6.6.2
 revision=1
 build_style=cmake
 hostmakedepends="perl qt6-base qt6-declarative-host-tools"
@@ -10,7 +10,7 @@ maintainer="John <me@johnnynator.dev>"
 license="(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND GPL-3.0-only with Qt-GPL-exception-1.0"
 homepage="https://qt.io/"
 distfiles="http://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtlocation-everywhere-src-${version}.tar.xz"
-checksum=f5968be76108bf22af334b403027cf0a859284cb824250e728bb8daca2d70794
+checksum=9e25dcfeafecedb288e6011ebd70f6cf68b66204c4acfb97873483a755e5f415
 
 pre_check() {
 	export QML2_IMPORT_PATH="$wrksrc/build/lib${XBPS_TARGET_WORDSIZE}/qt6/qml"
