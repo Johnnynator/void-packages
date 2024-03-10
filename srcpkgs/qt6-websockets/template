@@ -1,6 +1,6 @@
 # Template file for 'qt6-websockets'
 pkgname=qt6-websockets
-version=6.6.0
+version=6.6.2
 revision=1
 build_style=cmake
 hostmakedepends="perl qt6-base qt6-declarative-host-tools"
@@ -12,7 +12,7 @@ maintainer="John <me@johnnynator.dev>"
 license="(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND GPL-3.0-only with Qt-GPL-exception-1.0"
 homepage="https://qt.io/"
 distfiles="http://download.qt.io/official_releases/qt/${version%.*}/${version}/submodules/qtwebsockets-everywhere-src-${version}.tar.xz"
-checksum=2e05b15c0c6e82c484cf3a4a39a3e3e484a6c8f72bc31ee5cf615d52d07df30e
+checksum=c0e6ea9bc8db4290bb43e683fb3d639055fe91258f357980eb6ef5abab4438f9
 
 do_check() {
 	cd build
