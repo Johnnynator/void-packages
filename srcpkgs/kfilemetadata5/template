@@ -1,13 +1,13 @@
 # Template file for 'kfilemetadata5'
 pkgname=kfilemetadata5
 version=5.115.0
-revision=1
+revision=2
 build_style=cmake
 hostmakedepends="kcoreaddons extra-cmake-modules pkg-config qt5-host-tools qt5-qmake
  gettext kcoreaddons python3"
 makedepends="karchive-devel ki18n-devel poppler-qt5-devel kcoreaddons-devel
  taglib-devel exiv2-devel ffmpeg-devel attr-devel ebook-tools-devel
- libqmobipocket-devel"
+ qt5-svg-devel qt5-wayland-devel"
 short_desc="Simple library for extracting the text and metadata"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
