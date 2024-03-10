@@ -1,10 +1,11 @@
 # Template file for 'libksane'
 pkgname=libksane
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext qt5-qmake qt5-host-tools"
-makedepends="qt5-devel sonnet-devel ki18n-devel ktexteditor-devel sane-devel
+configure_args="-DBUILD_WITH_QT6=ON"
+hostmakedepends="extra-cmake-modules gettext qt6-base"
+makedepends="qt6-base-devel kf6-ki18n-devel kf6-ktextwidgets-devel sane-devel
  ksanecore-devel"
 short_desc="Image scanning library"
 maintainer="travankor <travankor@tuta.io>"
@@ -12,7 +13,7 @@ license="LGPL-2.1-or-later"
 homepage="https://kde.org/applications/graphics"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#libksane"
 distfiles="${KDE_SITE}/release-service/${version}/src/libksane-${version}.tar.xz"
-checksum=deddff992193fdd5644c4b7b5ac60be34b775e7ad1bd444ea033b0a179242f6e
+checksum=8e8f59a5ac280ff7512c7712b4675f778fca3b80296fbbbdf8d8cf650b171ab5
 
 libksane-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} ksanecore-devel"
