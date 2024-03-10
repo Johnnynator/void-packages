@@ -1,15 +1,16 @@
 # Template file for 'kruler'
 pkgname=kruler
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kconfig kcoreaddons kdoctools
- pkg-config qt5-host-tools qt5-qmake"
-makedepends="kparts-devel"
+hostmakedepends="extra-cmake-modules gettext kf6-kconfig kf6-kcoreaddons
+ kf6-kdoctools pkg-config qt6-base qt6-tools"
+makedepends="kf6-kwindowsystem-devel kf6-kxmlgui-devel
+ kf6-kstatusnotifieritem-devel kf6-knotifications-devel"
 short_desc="Screen Ruler"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"
 homepage="https://www.kde.org/applications/graphics/kruler/"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#kruler"
 distfiles="${KDE_SITE}/release-service/${version}/src/kruler-${version}.tar.xz"
-checksum=1a6babd1175943a4fbb5d57a2eb7094d94b2aa7f82e88d92e9b8456fd2cf343e
+checksum=7fdc595f44b06743b4f3585259b7127cc212057af56e96aaded04eb7ac0fbcd5
