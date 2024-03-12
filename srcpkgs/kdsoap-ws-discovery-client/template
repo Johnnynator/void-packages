@@ -1,0 +1,24 @@
+# Template file for 'kdsoap-ws-discovery-client'
+pkgname=kdsoap-ws-discovery-client
+version=0.4.0
+revision=1
+build_style=cmake
+configure_args="-DQT_MAJOR_VERSION=6"
+hostmakedepends="extra-cmake-modules qt6-base"
+makedepends="KDSoap-qt6-devel qt6-base-devel"
+short_desc="WS-Discovery client library based on KDSoap (Qt6)"
+maintainer="Luciogi <lucigithubcommit@skiff.com>"
+license="GPL-3.0-or-later"
+homepage="https://invent.kde.org/libraries/kdsoap-ws-discovery-client"
+distfiles="${KDE_SITE}/${pkgname}/${pkgname}-${version}.tar.xz"
+checksum=2cd247c013e75f410659bac372aff93d22d71c5a54c059e137b9444af8b3427a
+
+kdsoap-ws-discovery-client-devel_package() {
+	short_desc+=" - Development files"
+	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
+	pkg_install() {
+	       vmove usr/include
+               vmove usr/lib/*.so
+               vmove usr/lib/cmake
+	}
+}
