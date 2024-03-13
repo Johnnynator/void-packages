@@ -1,15 +1,15 @@
 # Template file for 'kdialog'
 pkgname=kdialog
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kcoreaddons kdoctools python3
- qt5-host-tools qt5-qmake gettext"
-makedepends="kio-devel"
+hostmakedepends="extra-cmake-modules kf6-kcoreaddons kf6-kdoctools python3
+ qt6-base qt6-tools gettext"
+makedepends="kf6-kio-devel kf6-ktextwidgets-devel"
 short_desc="Utility for displaying dialog boxes from shell scripts"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"
 homepage="https://invent.kde.org/utilities/kdialog"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#kdialog"
 distfiles="${KDE_SITE}/release-service/${version}/src/kdialog-${version}.tar.xz"
-checksum=12c32014f396c9a347c89b1bf174e2e5922cc92c7142c36baa0babdd6c6da6dc
+checksum=774a1d1faa025b6882ef65e806d73a7d19560a560e9c1cdeacc0202b01f0bddd
