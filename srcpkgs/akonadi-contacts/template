@@ -1,20 +1,20 @@
 # Template file for 'akonadi-contacts'
 pkgname=akonadi-contacts
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kcoreaddons kcmutils"
-makedepends="kio-devel kcontacts-devel kmime-devel akonadi-mime-devel prison-devel
- libkleo-devel grantlee5-devel grantleetheme-devel"
+hostmakedepends="extra-cmake-modules gettext kf6-kcoreaddons kf6-kcmutils"
+makedepends="kf6-kio-devel kf6-kcontacts-devel kf6-prison-devel kf6-ktextwidgets-devel kf6-ktexttemplate-devel
+ libkleo-devel grantlee5-devel grantleetheme-devel kmime-devel akonadi-mime-devel"
 short_desc="Libraries and daemons to implement Contact Management in Akonadi"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later, GPL-2.0-or-later"
 homepage="https://community.kde.org/KDE_PIM/Akonadi"
 distfiles="${KDE_SITE}/release-service/${version}/src/akonadi-contacts-${version}.tar.xz"
-checksum=e7a4b37c6bb4dbdb074398a48050b3ea63b1ffd8b576f3efa9cef56759cf4251
+checksum=cafd9c2dc48e88dc9d07c86892ea54a33ee19bb231b92a76cfaf7ba7bb2c2e04
 
 if [ "$CROSS_BUILD" ];then
-	hostmakedepends+=" qt5-qmake qt5-host-tools python3 kconfig"
+	hostmakedepends+=" qt6-base qt6-tools python3 kf6-kconfig"
 fi
 
 akonadi-contacts-devel_package() {
@@ -22,7 +22,6 @@ akonadi-contacts-devel_package() {
 	short_desc+=" - development files"
 	pkg_install() {
 		vmove usr/include
-		vmove usr/lib/qt5/mkspecs
 		vmove usr/lib/cmake
 		vmove "usr/lib/*.so"
 	}
