@@ -1,19 +1,20 @@
 # Template file for 'skanlite'
 pkgname=skanlite
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-configure_args="-DBUILD_TESTING=OFF"
-hostmakedepends="extra-cmake-modules gettext kcoreaddons"
-makedepends="kio-devel libksane-devel"
+configure_args="-DBUILD_TESTING=OFF -DBUILD_WITH_QT6=ON"
+hostmakedepends="extra-cmake-modules gettext kf6-kcoreaddons"
+makedepends="libksane-devel kf6-kio-devel kf6-ki18n-devel kf6-kcoreaddons-devel
+ kf6-kxmlgui-devel"
 short_desc="Image Scanning Application"
 maintainer="travankor <travankor@tuta.io>"
 license="GPL-2.0-or-later"
 homepage="https://apps.kde.org/skanlite"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#skanlite"
 distfiles="${KDE_SITE}/release-service/${version}/src/skanlite-${version}.tar.xz"
-checksum=667aca4dc89798f5a76c62c8f781d21102381b61d433942802cadf931f080dba
+checksum=c15ee8defcfb05da1fd1deea2c9aaa3cc6fb32489794f571ec09dd8b4d938aa6
 
 if [ -n "$CROSS_BUILD" ]; then
-	hostmakedepends+=" kdoctools qt5-host-tools qt5-qmake"
+	hostmakedepends+=" kf6-kdoctools qt6-host qt6-base"
 fi
