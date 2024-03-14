@@ -1,0 +1,15 @@
+Bundled extra-cmake-module fails when cross-compiling
+---
+--- a/CMakeLists.txt	2023-12-17 08:52:04.000000000 +0100
++++ -	2024-03-23 22:52:13.438961294 +0100
+@@ -11,8 +11,9 @@
+ include(FindPkgConfig)
+ 
+ ###
++find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
++set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_SOURCE_DIR}/cmake/modules)
+ 
+-set(CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH}" "${PROJECT_SOURCE_DIR}/cmake/Modules")
+ include(GNUInstallDirs)
+ include(GenerateExportHeader)
+ include(CMakePackageConfigHelpers)
