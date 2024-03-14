@@ -1,0 +1,45 @@
+# Template file for 'akonadi'
+pkgname=akonadi
+version=24.02.0
+revision=1
+build_style=cmake
+build_helper="qemu"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools python3
+ shared-mime-info libxslt pkg-config gettext qt6-tools-devel
+ kf6-kconfig kf6-kcoreaddons"
+makedepends="qt6-base-devel qt6-plugin-mysql qt6-plugin-sqlite sqlite-devel
+ kaccounts-integration-devel qt6-tools-devel libxml2-devel
+ kf6-kcompletion-devel kf6-kconfigwidgets-devel kf6-kdbusaddons-devel
+ kf6-kiconthemes-devel kf6-kitemmodels-devel kf6-kio-devel"
+depends="shared-mime-info kaccounts-providers"
+checkdepends="dbus ${depends}"
+short_desc="PIM layer providing an asynchronous API to access PIM data"
+maintainer="John <me@johnnynator.dev>"
+license="LGPL-2.1-or-later"
+homepage="https://community.kde.org/KDE_PIM/Akonadi"
+distfiles="${KDE_SITE}/release-service/${version}/src/akonadi-${version}.tar.xz"
+checksum=a280cb508806c408a6e62d2f930403a83e4c3a7da10a8ef1e811854e5eb9061d
+conflicts="akonadi5<=23.08.5_1"
+
+pre_configure() {
+	if [ "$XBPS_TARGET_NO_ATOMIC8" ]; then
+		vsed -e "s;^\(target_link_libraries(.*\);\1 atomic;" -i src/server/CMakeLists.txt
+	fi
+}
+
+do_check() {
+	# failing tests are disabled - sqlite tests hang on futex
+	cd build
+	dbus-run-session ctest -E \
+		"(AkonadiServer-dbconfig|entitytreemodel|akonadixml-xmldocument|mimetypechecker|AkonadiControl-agenttype|.*sqlite.*)test"
+}
+
+akonadi-devel_package() {
+	short_desc+=" - development files"
+	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/cmake
+		vmove "usr/lib/*.so"
+	}
+}
