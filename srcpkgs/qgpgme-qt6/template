@@ -1,0 +1,41 @@
+# Template file for 'qgpgme-qt6'
+pkgname=qgpgme-qt6
+version=1.23.1
+revision=1
+build_style=gnu-configure
+configure_args="--enable-fd-passing
+ --with-libgpg-error-prefix=$XBPS_CROSS_BASE/usr
+ --with-libassuan-prefix=$XBPS_CROSS_BASE/usr
+ --enable-languages=qt6,cpp"
+hostmakedepends="gnupg pkg-config qt6-base qt6-tools swig"
+makedepends="libassuan-devel qt6-base-devel"
+checkdepends="which gnupg"
+short_desc="GnuPG Made Easy - Qt6 bindings"
+maintainer="Orphaned <orphan@voidlinux.org>"
+license="GPL-2.0-or-later, LGPL-2.1-or-later"
+homepage="https://www.gnupg.org/software/gpgme/index.html"
+changelog="https://git.gnupg.org/cgi-bin/gitweb.cgi?p=gpgme.git;a=blob_plain;f=NEWS;hb=HEAD"
+distfiles="https://www.gnupg.org/ftp/gcrypt/gpgme/gpgme-${version}.tar.bz2"
+checksum=a0c316f7ab7d3bfb01a8753c3370dc906e5b61436021f3b54ff1483b513769bd
+
+CXXFLAGS="-D_GLIBCXX_USE_C99_STDIO=1"
+
+if [ "$XBPS_TARGET_LIBC" = "musl" ]; then
+	configure_args+=" ac_cv_sys_file_offset_bits=no"
+elif [ "$XBPS_TARGET_WORDSIZE" = "32" ]; then
+	CFLAGS="-D_FILE_OFFSET_BITS=64 -DLARGEFILE_SOURCE=1"
+	CXXFLAGS+=" ${CFLAGS}"
+fi
+
+post_install() {
+	rm -r "${DESTDIR}"/usr/lib/{pkgconfig,cmake/Gpgmepp,libgpgme.*,libgpgmepp.*}
+	rm -r "${DESTDIR}"/usr/{include,bin,share}
+}
+qgpgme-qt6-devel_package() {
+	depends="gpgme-devel>=${version}_${revision} ${sourcepkg}>=${version}_${revision}"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/lib/cmake
+		vmove "usr/lib/*.so"
+	}
+}
