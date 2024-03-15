@@ -1,0 +1,34 @@
+# Template file for 'akonadi-contacts5'
+pkgname=akonadi-contacts5
+version=23.08.5
+revision=1
+build_style=cmake
+hostmakedepends="extra-cmake-modules gettext kcoreaddons kcmutils"
+makedepends="kio-devel kcontacts-devel kmime5-devel prison-devel
+ grantlee5-devel grantleetheme5-devel akonadi5-devel"
+short_desc="Libraries and daemons to implement Contact Management in Akonadi"
+maintainer="John <me@johnnynator.dev>"
+license="LGPL-2.0-or-later, GPL-2.0-or-later"
+homepage="https://community.kde.org/KDE_PIM/Akonadi"
+distfiles="${KDE_SITE}/release-service/${version}/src/akonadi-contacts-${version}.tar.xz"
+checksum=e7a4b37c6bb4dbdb074398a48050b3ea63b1ffd8b576f3efa9cef56759cf4251
+
+if [ "$CROSS_BUILD" ];then
+	hostmakedepends+=" qt5-qmake qt5-host-tools python3 kconfig"
+fi
+
+post_install() {
+	# Fix conflict with qt6 version
+	rm -r "${DESTDIR}"/usr/share/{akonadi,locale}
+}
+
+akonadi-contacts5-devel_package() {
+	depends="${sourcepkg}>=${version}_${revision} ${makedepends}"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/qt5/mkspecs
+		vmove usr/lib/cmake
+		vmove "usr/lib/*.so"
+	}
+}
