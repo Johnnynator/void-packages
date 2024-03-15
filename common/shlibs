@@ -3295,6 +3295,7 @@ libKPim6AkonadiAgentBase.so.6 akonadi-24.02.0_1
 libKPim6AkonadiPrivate.so.6 akonadi-24.02.0_1
 libKPim6AkonadiWidgets.so.6 akonadi-24.02.0_1
 libKPim6AkonadiCore.so.6 akonadi-24.02.0_1
+libKPim5TextEdit.so.5 kpimtextedit5-23.08.5_1
 libKPim6TextEdit.so.6 kpimtextedit-24.02.0_1
 libKPim5IdentityManagement.so.5 kidentitymanagement5-23.04.0_1
 libKPim5IdentityManagementWidgets.so.5 kidentitymanagement5-23.04.0_1
