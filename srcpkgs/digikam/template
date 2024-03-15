@@ -1,7 +1,7 @@
 # Template file for 'digikam'
 pkgname=digikam
 version=8.2.0
-revision=1
+revision=2
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules gettext pkg-config bison flex qt5-qmake
@@ -12,7 +12,7 @@ makedepends="qt5-devel libjpeg-turbo-devel qt5-plugin-mysql qt5-plugin-odbc
  kcoreaddons-devel kconfig-devel kservice-devel kwindowsystem-devel
  ksolid-devel ki18n-devel kio-devel kiconthemes-devel kfilemetadata5-devel
  knotifyconfig-devel knotifications-devel threadweaver-devel
- akonadi-contacts-devel libksane-devel kcalendarcore-devel tiff-devel
+ akonadi-contacts5-devel libksane-devel kcalendarcore-devel tiff-devel
  lcms2-devel qtav libopencv-devel liblqr-devel marble5-devel libgphoto2-devel
  lensfun-devel eigen jasper-devel MesaLib-devel glu-devel qt5-webchannel-devel
  kconfigwidgets-devel kwidgetsaddons-devel libheif-devel qt5-networkauth-devel"
