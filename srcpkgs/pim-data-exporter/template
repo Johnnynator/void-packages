@@ -1,18 +1,18 @@
 # Template file for 'pim-data-exporter'
 pkgname=pim-data-exporter
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kdoctools qt5-host-tools qt5-qmake
- gettext kcoreaddons kconfig"
+hostmakedepends="extra-cmake-modules kf6-kdoctools qt6-base qt6-tools
+ gettext kf6-kcoreaddons kf6-kconfig"
 makedepends="akonadi-notes-devel mailcommon-devel calendarsupport-devel
- messagelib-devel"
+ messagelib-devel kf6-kstatusnotifieritem-devel"
 short_desc="Import and export KDE PIM settings"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later"
 homepage="https://kontact.kde.org/"
 distfiles="${KDE_SITE}/release-service/${version}/src/${pkgname}-${version}.tar.xz"
-checksum=6c06e27af8db8dc12c23d6539d27a5b9b02529a723b1860c02870954d5a7bf2b
+checksum=5e64f4c2075185b2fd472abce7532817e9f4cf10f650f89347dee0b7bb038fbf
 
 do_check() {
 	broken="exportnotesjobinterfacetest"
