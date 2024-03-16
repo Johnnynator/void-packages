@@ -1,17 +1,17 @@
 # Template file for 'kontactinterface'
 pkgname=kontactinterface
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- gettext kcoreaddons"
-makedepends="kparts-devel"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools python3
+ gettext kf6-kcoreaddons"
+makedepends="kf6-kparts-devel"
 short_desc="Kontact Plugin Interface Library"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
 homepage="https://kontact.kde.org/"
 distfiles="${KDE_SITE}/release-service/${version}/src/kontactinterface-${version}.tar.xz"
-checksum=edf16d32fe8167b52943178dc02d8b713699ea06283913675cf90a35de58b2bf
+checksum=738583016cff01ec4d60688d3b32948b2bc9d94f55be766d414e8b4ccf7ee3ce
 
 kontactinterface-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision} ${makedepends}"
@@ -19,7 +19,6 @@ kontactinterface-devel_package() {
 	pkg_install() {
 		vmove usr/include
 		vmove usr/lib/cmake
-		vmove usr/lib/qt5/mkspecs
 		vmove "usr/lib/*.so"
 	}
 }
