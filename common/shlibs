@@ -509,7 +509,7 @@ libKPim6MessageList.so.6 messagelib-24.02.0_1
 libKPim6MessageCore.so.6 messagelib-24.02.0_1
 libKPim6WebEngineViewer.so.6 messagelib-24.02.0_1
 libKPim6MessageComposer.so.6 messagelib-24.02.0_1
-libKPim5CalendarUtils.so.5 kcalutils-23.04.0_1
+libKPim6CalendarUtils.so.6 kcalutils-24.02.0_1
 libKPim5KontactInterface.so.5 kontactinterface-23.04.0_1
 libKPim6KSieveUi.so.6 libksieve-24.02.0_1
 libKPim6KManageSieve.so.6 libksieve-24.02.0_1

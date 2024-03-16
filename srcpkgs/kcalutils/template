@@ -1,17 +1,17 @@
 # Template file for 'kcalutils'
 pkgname=kcalutils
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- gettext kcoreaddons kconfig"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools python3
+ gettext kf6-kcoreaddons kf6-kconfig"
 makedepends="kcalendarcore-devel kidentitymanagement-devel"
 short_desc="KDE calendar utility library"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
 homepage="https://community.kde.org/KDE_PIM"
 distfiles="${KDE_SITE}/release-service/${version}/src/kcalutils-${version}.tar.xz"
-checksum=9db6c7ddfaa94de33dce5caa2fd5a8a935a33774bddfc96706ed93d03f846a3d
+checksum=81767e15df2434fc43a5c7cb8bf6002ab3550ce34fd47c6dce5878f55b92b83f
 
 do_check() {
 	cd build
@@ -24,7 +24,6 @@ kcalutils-devel_package() {
 	pkg_install() {
 		vmove usr/include
 		vmove usr/lib/cmake
-		vmove usr/lib/qt5/mkspecs
 		vmove "usr/lib/*.so"
 	}
 }
