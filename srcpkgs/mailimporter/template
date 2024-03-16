@@ -1,9 +1,9 @@
 # Template file for 'mailimporter'
 pkgname=mailimporter
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kcoreaddons qt5-qmake qt5-host-tools python3
+hostmakedepends="extra-cmake-modules kf6-kcoreaddons qt6-base qt6-tools python3
  gettext"
 makedepends="libkdepim-devel pimcommon-devel"
 short_desc="Mail importer library"
@@ -11,7 +11,7 @@ maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://community.kde.org/KDE_PIM"
 distfiles="${KDE_SITE}/release-service/${version}/src/mailimporter-${version}.tar.xz"
-checksum=94972bdd03c9707cb5b3638c12b1c9c9c149762d6984ab8d0de29ba78ee0535a
+checksum=dd9d6b347e7607389d70155f5e60324e745fb9ba8e9f26eeeac918f0898e7595
 
 mailimporter-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"
@@ -19,7 +19,6 @@ mailimporter-devel_package() {
 	pkg_install() {
 		vmove usr/include
 		vmove usr/lib/cmake
-		vmove usr/lib/qt5/mkspecs
 		vmove "usr/lib/*.so"
 	}
 }
