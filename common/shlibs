@@ -4438,3 +4438,5 @@ force-stage.so.0.1 void-force-stage-0.1_1
 libliftoff.so.0 libliftoff-0.4.1_1
 libscfg.so libscfg-0.1.1_1
 libastyle.so.3 astyle-3.4.13_1
+libKPim6MimeTreeParserWidgets.so.6 mimetreeparser-24.02.0_1
+libKPim6MimeTreeParserCore.so.6 mimetreeparser-24.02.0_1

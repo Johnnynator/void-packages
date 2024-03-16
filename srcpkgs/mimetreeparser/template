@@ -1,0 +1,23 @@
+# Template file for 'mimetreeparser'
+pkgname=mimetreeparser
+version=24.02.0
+revision=1
+build_style=cmake
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools gettext"
+makedepends="kf6-kcalendarcore-devel kf6-kcodecs-devel kf6-ki18n-devel kf6-kwidgetsaddons-devel kmbox-devel kmime-devel libkleo-devel qt6-qt5compat-devel qt6-base-devel qt6-declarative-devel qt6-tools-devel"
+short_desc="Parser for MIME trees"
+maintainer="Luciogi <lucigithubcommit@skiff.com>"
+license="GPL-3.0-or-later"
+homepage="https://invent.kde.org/pim/mimetreeparser"
+distfiles="${KDE_SITE}/release-service/${version}/src/${pkgname}-${version}.tar.xz"
+checksum=5d0546c49e8fd5d639ba68ae0a790260aae5e1d068737587f2bdc5c110ff97ef
+
+mimetreeparser-devel_package() {
+	depends="${makepends} ${sourcepkg}>=${version}_${revision}"
+	short_desc+=" - development files"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/qt6/mkspecs
+		vmove "usr/lib/*.so"
+	}
+}
