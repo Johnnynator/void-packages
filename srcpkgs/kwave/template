@@ -1,6 +1,6 @@
 # Template file for 'kwave'
 pkgname=kwave
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules gettext kconfig kcoreaddons kdoctools
@@ -11,7 +11,7 @@ makedepends="alsa-lib-devel appstream-glib-devel audiofile-devel doxygen
  kdbusaddons-devel kdoctools-devel ki18n-devel kiconthemes-devel kio-devel
  kservice-devel ktexteditor-devel ktextwidgets-devel kxmlgui-devel libmad-devel
  libogg-devel librsvg-devel libsamplerate-devel libvorbis-devel opus-devel
- pulseaudio-devel qt5-multimedia-devel samurai"
+ pulseaudio-devel qt5-multimedia-devel samurai qt5-webengine-devel"
 depends="audiofile fftw hicolor-icon-theme id3lib lame libmad libsamplerate
  opus twolame"
 checkdepends="xvfb-run"
@@ -21,7 +21,7 @@ license="GPL-2.0-or-later"
 homepage="https://apps.kde.org/kwave"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#kwave"
 distfiles="${KDE_SITE}/release-service/${version}/src/${pkgname}-${version}.tar.xz"
-checksum=c6183a93e9e545265035c589ec7d059772507e493546d9b25117a520d2cfc408
+checksum=f5d4451c80560f5f943a8549da6282cbd8305b9cb8d6d748b434947cc5c8def9
 
 post_patch() {
 	vsed -i doc/CMakeLists.txt -i cmake/KwaveHandbook.cmake \
