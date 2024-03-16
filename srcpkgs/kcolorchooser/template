@@ -1,20 +1,20 @@
 # Template file for 'kcolorchooser'
 pkgname=kcolorchooser
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kcoreaddons gettext"
-makedepends="qt5-devel kxmlgui-devel"
+hostmakedepends="extra-cmake-modules kf6-kcoreaddons gettext"
+makedepends="qt6-base-devel kf6-kcoreaddons-devel kf6-ki18n-devel kf6-kxmlgui-devel"
 short_desc="KDE's Color Chooser"
 maintainer="travankor <travankor@tuta.io>"
 license="MIT"
 homepage="https://kde.org/applications/en/graphics/org.kde.kcolorchooser"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#kcolorchooser"
 distfiles="${KDE_SITE}/release-service/${version}/src/kcolorchooser-${version}.tar.xz"
-checksum=c62a78191f423b7774930165424165e8866c16189b941323da1321f79992bb21
+checksum=362736b6f50c0f6109b6ba058d14149a27e1691824bc6423e7186495da419123
 
 if [ "$CROSS_BUILD" ]; then
-	hostmakedepends+=" qt5-host-tools qt5-devel"
+	hostmakedepends+=" qt6-tools qt6-devel"
 fi
 
 post_install() {
