@@ -517,7 +517,7 @@ libKPim6KSieve.so.6 libksieve-24.02.0_1
 libKPim6KSieveCore.so.6 libksieve-24.02.0_1
 libKPim6MailImporterAkonadi.so.6 mailimporter-24.02.0_1
 libKPim6MailImporter.so.6 mailimporter-24.02.0_1
-libKPim5MailCommon.so.5 mailcommon-23.04.0_1
+libKPim6MailCommon.so.6 mailcommon-24.02.0_1
 libKPim5Tnef.so.5 ktnef-23.04.0_1
 libKPim5AkonadiCalendar.so.5 akonadi-calendar-23.04.0_1
 libKPim5CalendarSupport.so.5 calendarsupport-23.04.0_1
