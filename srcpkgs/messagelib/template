@@ -1,21 +1,21 @@
 # Template file for 'messagelib'
 pkgname=messagelib
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools python3
- gettext kcoreaddons kconfig"
-makedepends="akonadi-contacts-devel gpgmeqt-devel
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools python3
+ gettext kf6-kcoreaddons kf6-kconfig"
+makedepends="akonadi-contacts-devel qgpgme-qt6-devel
  kidentitymanagement-devel kmailtransport-devel kmbox-devel libgravatar-devel
- libkdepim-devel qt5-location-devel qt5-webchannel-devel qt5-webengine-devel
- qca-qt5-devel pimcommon-devel knewstuff-devel"
+ libkdepim-devel qt6-webchannel-devel qt6-webengine-devel
+ pimcommon-devel kf6-knewstuff-devel"
 checkdepends="procps-ng gnupg dbus"
 short_desc="KDE PIM messaging library"
 maintainer="John <me@johnnynator.dev>"
 license="GPL-2.0-or-later, LGPL-2.1-or-later"
 homepage="https://community.kde.org/KDE_PIM"
 distfiles="${KDE_SITE}/release-service/${version}/src/messagelib-${version}.tar.xz"
-checksum=da37af29e9a1a8d5947cbdc7ccfbdd749d3ef5257e4cc778eb8f0069fe50ddf8
+checksum=ff48df019bc3f9a6553219695a947e8303d1b56d7aa185b51f3f2497342e8f3d
 make_check_pre="dbus-run-session"
 
 #TODO: fix build without qca-qt5
@@ -56,7 +56,6 @@ messagelib-devel_package() {
 	short_desc+=" - development files"
 	pkg_install() {
 		vmove usr/include
-		vmove usr/lib/qt5/mkspecs
 		vmove usr/lib/cmake
 		vmove "usr/lib/*.so"
 	}
