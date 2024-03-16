@@ -1,18 +1,18 @@
 # Template file for 'korganizer'
 pkgname=korganizer
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt5-qmake qt5-host-tools kdoctools
- kcmutils kcoreaddons kconfig gettext"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools kf6-kdoctools
+ kf6-kcmutils kf6-kcoreaddons kf6-kconfig gettext"
 makedepends="akonadi-calendar-devel akonadi-notes-devel incidenceeditor-devel
- qt5-multimedia-devel kholidays-devel kontactinterface-devel"
+ qt6-multimedia-devel kf6-kholidays-devel kontactinterface-devel"
 short_desc="Calendar and scheduling Program"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later"
 homepage="https://kde.org/applications/en/office/org.kde.korganizer"
 distfiles="${KDE_SITE}/release-service/${version}/src/${pkgname}-${version}.tar.xz"
-checksum=c4a6be6aa61301e8d72187feb94ce98d0dac44eeba338ca07cb6d4d395cdedc1
+checksum=4251efce2860604db23aa0234b2fedabee22aea2f69379259bfec73b0cd00932
 
 do_check() {
 	cd build
