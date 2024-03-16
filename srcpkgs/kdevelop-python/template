@@ -1,6 +1,6 @@
 # Template file for 'kdevelop-python'
 pkgname=kdevelop-python
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
@@ -16,7 +16,7 @@ license="LGPL-2.0-or-later, GPL-2.0-or-later"
 homepage="https://www.kdevelop.org/"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#kdev-python"
 distfiles="${KDE_SITE}/release-service/${version}/src/kdev-python-${version}.tar.xz"
-checksum=7abf49e1bb30875599ab46731294edb3314583c0e17baf6b37472f7f6fde760a
+checksum=a94b097e0b17a070715a51b87fdf314566767eb9e535a2780edf35265d34ec2b
 python_version=3
 
 post_install() {
