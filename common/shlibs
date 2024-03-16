@@ -494,8 +494,8 @@ libKPim6AkonadiSearchXapian.so.6 akonadi-search-24.02.0_1
 libKPim6AkonadiSearchPIM.so.6 akonadi-search-24.02.0_1
 libKPim6AkonadiSearchCore.so.6 akonadi-search-24.02.0_1
 libKPim6Libkdepim.so.6 libkdepim-24.02.0_1
-libKPim5PimCommon.so.5 pimcommon-23.08.0_1
-libKPim5PimCommonAkonadi.so.5 pimcommon-23.08.0_1
+libKPim6PimCommon.so.6 pimcommon-24.02.0_1
+libKPim6PimCommonAkonadi.so.6 pimcommon-24.02.0_1
 libKPim5Gravatar.so.5 libgravatar-23.04.0_1
 libKSaneCore6.so.1 ksanecore-24.02.0_1
 libKSaneWidgets6.so.6 libksane-24.02.0_1
