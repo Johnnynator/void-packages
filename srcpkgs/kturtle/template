@@ -1,15 +1,15 @@
 # Template file for 'kturtle'
 pkgname=kturtle
-version=23.08.5
+version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules gettext kcoreaddons kdoctools
- pkg-config qt5-host-tools qt5-qmake"
-makedepends="kparts-devel knewstuff-devel knotifyconfig-devel"
+hostmakedepends="extra-cmake-modules gettext kf6-kcoreaddons kf6-kdoctools
+ pkg-config qt6-base qt6-tools"
+makedepends="qt6-qt5compat-devel qt6-svg-devel kf6-kcrash-devel kf6-kio-devel kf6-knewstuff-devel kf6-ktextwidgets-devel kf6-ki18n-devel kf6-kcoreaddons-devel kf6-kxmlgui-devel"
 short_desc="Educational Programming Environment"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later, GFDL-1.2-only"
 homepage="https://www.kde.org/applications/education/kturtle/"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#kturtle"
 distfiles="${KDE_SITE}/release-service/${version}/src/kturtle-${version}.tar.xz"
-checksum=e423b61140eab5bf75b1ba3d3d68fb5b8937bd19799f0125db5bfb96c9420dd6
+checksum=acad4a5245bd88570fa472780e578bc065e33c00ad72c2fa2e0fc0a232872cf0
