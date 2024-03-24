@@ -3,9 +3,9 @@ pkgname=kcalutils
 version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt6-base qt6-tools python3
- gettext kf6-kcoreaddons kf6-kconfig"
-makedepends="kcalendarcore-devel kidentitymanagement-devel"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools gettext"
+makedepends="kf6-kcalendarcore-devel kidentitymanagement-devel
+ kf6-ktexttemplate-devel"
 short_desc="KDE calendar utility library"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.0-or-later"
