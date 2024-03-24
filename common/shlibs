@@ -2755,7 +2755,6 @@ libsignon-plugins.so.1 signond-8.58_1
 libsignon-qt5.so.1 signond-8.58_1
 libsignon-plugins-common.so.1 signond-8.58_1
 libsignon-extension.so.1 signond-8.58_1
-libsignon-qt6.so.1 signond-qt6-8.61_1
 libsignon-plugins.so.1 signond-8.61_2
 libsignon-qt6.so.1 signond-8.61_2
 libsignon-plugins-common.so.1 signond-8.61_2
