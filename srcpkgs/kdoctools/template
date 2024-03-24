@@ -1,9 +1,10 @@
 # Template file for 'kdoctools'
 pkgname=kdoctools
 version=5.115.0
-revision=2
+revision=1
 build_style=cmake
 build_helper=qemu
+configure_args="-DINSTALL_INTERNAL_TOOLS=ON"
 hostmakedepends="gettext kcoreaddons extra-cmake-modules perl perl-URI
  qt5-host-tools qt5-qmake"
 makedepends="ki18n-devel karchive-devel libxml2-devel libxslt-devel
@@ -17,6 +18,7 @@ distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname}-${version}.tar.xz"
 checksum=51e90910f75caf45334961a881082a06c52f292103f1975a5d0a13f39d2fe243
 
 if [ "$CROSS_BUILD" ]; then
+	configure_args+=" -DDOCBOOKL10NHELPER_EXECUTABLE=/usr/bin/docbookl10nhelper"
 	hostmakedepends+=" kdoctools-devel"
 fi
 
@@ -25,9 +27,10 @@ pre_check() {
 }
 
 kdoctools-devel_package() {
-	short_desc+=" - development files"
+	short_desc+=" - development"
 	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
 	pkg_install() {
+		vmove usr/bin/docbookl10nhelper
 		vmove usr/lib/cmake
 		vmove usr/include
 		vmove "usr/lib/*.so"
