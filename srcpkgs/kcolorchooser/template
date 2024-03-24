@@ -3,7 +3,8 @@ pkgname=kcolorchooser
 version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kf6-kcoreaddons gettext"
+hostmakedepends="extra-cmake-modules gettext
+ qt6-base qt6-tools"
 makedepends="qt6-base-devel kf6-kcoreaddons-devel kf6-ki18n-devel kf6-kxmlgui-devel"
 short_desc="KDE's Color Chooser"
 maintainer="travankor <travankor@tuta.io>"
@@ -12,10 +13,6 @@ homepage="https://kde.org/applications/en/graphics/org.kde.kcolorchooser"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#kcolorchooser"
 distfiles="${KDE_SITE}/release-service/${version}/src/kcolorchooser-${version}.tar.xz"
 checksum=362736b6f50c0f6109b6ba058d14149a27e1691824bc6423e7186495da419123
-
-if [ "$CROSS_BUILD" ]; then
-	hostmakedepends+=" qt6-tools qt6-devel"
-fi
 
 post_install() {
 	vlicense COPYING
