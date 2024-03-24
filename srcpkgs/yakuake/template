@@ -3,7 +3,9 @@ pkgname=yakuake
 version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kf6-kconfig kf6-kcoreaddons qt6-tools gettext"
+configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools gettext
+ kf6-kconfig-devel"
 makedepends="kf6-knewstuff-devel kf6-knotifyconfig-devel kf6-kparts-devel
  $(vopt_if wayland kwayland-devel) kf6-kstatusnotifieritem-devel"
 depends="konsole"
