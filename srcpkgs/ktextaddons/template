@@ -3,11 +3,12 @@ pkgname=ktextaddons
 version=1.5.3
 revision=2
 build_style=cmake
-configure_args="-DBUILD_WITH_QT6=ON"
-hostmakedepends="extra-cmake-modules qt6-base qt6-tools
- kf6-kcoreaddons kf6-kconfig gettext"
-makedepends="kf6-kxmlgui-devel kf6-syntax-highlighting-devel kf6-kio-devel kf6-sonnet-devel
- qtkeychain-qt6-devel qt6-speech-devel"
+configure_args="-DBUILD_WITH_QT6=ON -DKF6_HOST_TOOLING=/usr/lib/cmake"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools gettext
+ kf6-kconfig-devel"
+# XXX: tts
+makedepends="kf6-kxmlgui-devel kf6-syntax-highlighting-devel kf6-kio-devel
+ kf6-sonnet-devel qtkeychain-qt6-devel qt6-speech-devel"
 checkdepends="speech-dispatcher"
 short_desc="Various text handling addon"
 maintainer="John <me@johnnynator.dev>"
@@ -15,9 +16,6 @@ license="LGPL-2.0-or-later, GPL-2.0-or-later"
 homepage="https://invent.kde.org/libraries/ktextaddons"
 distfiles="${KDE_SITE}/${pkgname}/${pkgname}-${version}.tar.xz"
 checksum=8a52db8abfa8a9d68d2d291fb0f8be20659fd7899987b4dcafdf2468db0917dc
-
-#do_check() {
-#}
 
 ktextaddons-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"
