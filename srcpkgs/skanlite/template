@@ -4,7 +4,8 @@ version=24.02.0
 revision=1
 build_style=cmake
 configure_args="-DBUILD_TESTING=OFF -DBUILD_WITH_QT6=ON"
-hostmakedepends="extra-cmake-modules gettext kf6-kcoreaddons"
+hostmakedepends="extra-cmake-modules gettext qt6-base qt6-tools
+ kf6-kdoctools"
 makedepends="libksane-devel kf6-kio-devel kf6-ki18n-devel kf6-kcoreaddons-devel
  kf6-kxmlgui-devel"
 short_desc="Image Scanning Application"
@@ -14,7 +15,3 @@ homepage="https://apps.kde.org/skanlite"
 changelog="https://kde.org/announcements/changelogs/gear/${version}/#skanlite"
 distfiles="${KDE_SITE}/release-service/${version}/src/skanlite-${version}.tar.xz"
 checksum=c15ee8defcfb05da1fd1deea2c9aaa3cc6fb32489794f571ec09dd8b4d938aa6
-
-if [ -n "$CROSS_BUILD" ]; then
-	hostmakedepends+=" kf6-kdoctools qt6-host qt6-base"
-fi
