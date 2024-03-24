@@ -5,8 +5,8 @@ revision=1
 build_style=cmake
 hostmakedepends="extra-cmake-modules intltool qt6-tools
  kf6-kpackage pkg-config kf6-kcoreaddons libaccounts-qt-devel signond-devel"
-makedepends="kf6-kparts-devel kaccounts-integration-devel glib-devel
- libaccounts-qt-devel signond-devel"
+makedepends="kf6-kparts-devel kf6-kpackage-devel kaccounts-integration-devel
+ glib-devel libaccounts-qt-devel signond-devel"
 short_desc="KDE Accounts Providers"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"
