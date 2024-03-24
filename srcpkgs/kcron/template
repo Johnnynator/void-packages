@@ -3,10 +3,11 @@ pkgname=kcron
 version=24.02.0
 revision=1
 build_style=cmake
-configure_args="-DKF5_HOST_TOOLING=/usr/lib/cmake"
-hostmakedepends="extra-cmake-modules gettext kcoreaddons kdoctools
- kauth pkg-config qt5-host-tools qt5-qmake kcmutils-devel"
-makedepends="kf6-kio-devel kf6-kconfigwidgets-devel kf6-kauth-devel kf6-kcoreaddons-devel kf6-ki18n-devel kf6-kio-devel kf6-kcmutils-devel"
+configure_args="-DKF6_HOST_TOOLING=/usr/lib/cmake"
+hostmakedepends="extra-cmake-modules gettext qt6-base qt6-tools
+ kf6-kcmutils-devel"
+makedepends="kf6-kio-devel kf6-kconfigwidgets-devel kf6-kauth-devel
+ kf6-kcoreaddons-devel kf6-ki18n-devel kf6-kio-devel kf6-kcmutils-devel"
 short_desc="KDE Configure and schedule tasks"
 maintainer="Piotr Wójcik <chocimier@tlen.pl>"
 license="GPL-2.0-or-later"
