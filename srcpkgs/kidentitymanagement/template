@@ -3,10 +3,11 @@ pkgname=kidentitymanagement
 version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt6-base qt6-tools pkg-config gettext"
-makedepends="qt6-base-devel 
-kf6-kcoreaddons-devel kf6-kcompletion-devel kf6-ktextwidgets-devel
- kf6-kxmlgui-devel kf6-kio-devel kirigami-addons-devel kpimtextedit-devel"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools qt6-declarative-host-tools
+ pkg-config gettext"
+makedepends="qt6-base-devel kf6-kcoreaddons-devel kf6-kcompletion-devel
+ kf6-ktextwidgets-devel kf6-kxmlgui-devel kf6-kio-devel kirigami-addons-devel
+ kpimtextedit-devel"
 short_desc="KDE PIM libraries"
 maintainer="John <me@johnnynator.dev>"
 license="LGPL-2.1-or-later"
