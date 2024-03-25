@@ -6,7 +6,7 @@ build_style=cmake
 configure_args="-DBUILD_TESTING=OFF"
 hostmakedepends="extra-cmake-modules kf6-kcoreaddons qt6-base qt6-tools pkg-config gettext"
 makedepends="libxml2-devel qt6-base-devel grantlee5-devel xapian-core-devel
- $(vopt_if webengine 'qt6-webengine-devel') kf6-kconfig-devel kf6-kdoctools-devel kf6-ki18n-devel
+ qt6-webengine-devel kf6-kconfig-devel kf6-kdoctools-devel kf6-ki18n-devel
  kf6-kio-devel kf6-knewstuff-devel kf6-kservice-devel kf6-kxmlgui-devel
  kf6-kwindowsystem-devel kf6-kguiaddons-devel kf6-kwidgetsaddons-devel
  kf6-karchive-devel kf6-kcoreaddons-devel kf6-kbookmarks-devel
@@ -18,10 +18,7 @@ homepage="https://kde.org/applications/en/system/org.kde.Help"
 distfiles="${KDE_SITE}/release-service/${version}/src/${pkgname}-${version}.tar.xz"
 checksum=f98291801e83a3aea756ce6375c89646cedd715696f68ca90c5a5738719290c6
 
-build_options="webengine"
-
 if [ "$CROSS_BUILD" ]; then
-	hostmakedepends+=" kf6-kconfig kf6-kdoctools python3"
 	configure_args+=" -DXAPIAN_LIBRARIES=${XBPS_CROSS_BASE}/usr/lib/libxapian.so
 	 -DXAPIAN_INCLUDE_DIR=${XBPS_CROSS_BASE}/usr/include -DXAPIAN_FOUND=TRUE"
 fi
