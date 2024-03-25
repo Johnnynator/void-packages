@@ -11,7 +11,7 @@ maintainer="Helmut Pozimski <helmut@pozimski.eu>"
 license="GPL-2.0-or-later"
 homepage="https://www.kde.org/applications/graphics/"
 distfiles="${KDE_SITE}/release-service/${version}/src/libkdcraw-${version}.tar.xz"
-checksum=ab1080e449ff468032b7ba5f203fba1cdca3ab9958c4f9b5451ba0e2c0978f11
+checksum=d13724b6d7587240421098796606d63f7bf552bea1625829482baf2df99aab1a
 
 libkdcraw5-devel_package() {
 	depends="${sourcepkg}>=${version}_${revision}"
