@@ -3,11 +3,10 @@ pkgname=knotes
 version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules qt6-base qt6-tools libxslt
- kf6-kcoreaddons kf6-kdoctools kf6-kconfig gettext kf6-kcmutils"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools libxslt gettext"
 makedepends="akonadi-notes-devel kcalutils-devel kf6-kdnssd-devel
- kf6-knotifyconfig-devel kontactinterface-devel pimcommon-devel grantleetheme-devel
- ktextaddons-devel"
+ kf6-knotifyconfig-devel kontactinterface-devel pimcommon-devel
+ grantleetheme-devel ktextaddons-devel kf6-kstatusnotifieritem-devel"
 short_desc="Popup notes"
 maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later, GFDL-1.2-only"
