@@ -4,8 +4,7 @@ version=24.02.0
 revision=1
 build_style=cmake
 # XXX KolabLibraries, Kolabxml
-hostmakedepends="extra-cmake-modules python3 kf6-kdoctools kdesignerplugin
- gettext qt6-base qt6-tools"
+hostmakedepends="extra-cmake-modules gettext qt6-base qt6-tools"
 makedepends="akonadi-calendar-devel akonadi-notes-devel kf6-knotifyconfig-devel
  pimcommon-devel kdav-devel libkgapi-devel kmbox-devel
  qt6-networkauth-devel qca-qt6-devel qt6-webengine-devel
