@@ -3,10 +3,9 @@ pkgname=mailcommon
 version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kconfig libxslt qt6-base qt6-tools
- gettext python3 kgendesignerplugin"
-makedepends="mailimporter-devel messagelib-devel kdesignerplugin-devel
- pimcommon-devel libkleo-devel qt6-multimedia-devel phonon-devel kf6-kcontacts-devel"
+hostmakedepends="extra-cmake-modules libxslt qt6-base qt6-tools gettext"
+makedepends="mailimporter-devel messagelib-devel pimcommon-devel
+ libkleo-devel qt6-multimedia-devel phonon-devel kf6-kcontacts-devel"
 checkdepends="dbus"
 short_desc="KDE PIM library providing support for mail applications"
 maintainer="John <me@johnnynator.dev>"
