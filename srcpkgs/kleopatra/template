@@ -3,8 +3,10 @@ pkgname=kleopatra
 version=24.02.0
 revision=1
 build_style=cmake
-hostmakedepends="extra-cmake-modules kf6-kdoctools qt6-base qt6-tools kf6-kcoreaddons gettext kf6-kconfig"
-makedepends="kf6-kcmutils-devel AppStream kf6-kitemmodels-devel qgpgme-qt6-devel gpgmeqt-devel libkleo-devel kmime-devel kf6-kstatusnotifieritem-devel kf6-ktextwidgets-devel akonadi-mime-devel mimetreeparser-devel"
+hostmakedepends="extra-cmake-modules qt6-base qt6-tools gettext"
+makedepends="kf6-kcmutils-devel AppStream kf6-kitemmodels-devel qgpgme-qt6-devel
+ gpgmeqt-devel libkleo-devel kmime-devel kf6-kstatusnotifieritem-devel
+ kf6-ktextwidgets-devel akonadi-mime-devel mimetreeparser-devel kmbox-devel"
 depends="gnupg>=2"
 checkdepends="dbus gnupg"
 short_desc="Certificate Manager and Unified Crypto GUI"
