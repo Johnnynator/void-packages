@@ -3,13 +3,14 @@ pkgname=kf6-kio
 version=6.0.0
 revision=1
 build_style=cmake
+configure_args="$(vopt_bool designerplugin BUILD_DESIGNERPLUGIN)"
 hostmakedepends="extra-cmake-modules qt6-tools qt6-base
  gettext kf6-kdoctools"
 makedepends="kf6-karchive-devel kf6-kauth-devel kf6-kbookmarks-devel
  kf6-kservice-devel kf6-solid-devel kf6-kcrash-devel kf6-kdbusaddons-devel
  kf6-kcompletion-devel kf6-kiconthemes-devel kf6-kitemviews-devel
  kf6-kjobwidgets-devel kf6-kwindowsystem-devel kf6-kwallet-devel
- kf6-kded-devel qt6-qt5compat-devel qt6-tools-devel acl-devel"
+ kf6-kded-devel qt6-qt5compat-devel acl-devel"
 checkdepends="dbus"
 short_desc="KDE Network transparent access to files and data"
 maintainer="John <me@johnnynator.dev>"
@@ -17,6 +18,19 @@ license="LGPL-2.1-or-later"
 homepage="https://invent.kde.org/frameworks/kio"
 distfiles="${KDE_SITE}/frameworks/${version%.*}/${pkgname#kf6-}-${version}.tar.xz"
 checksum=4951adf043299e463803cc63ed33d5261b81bff969eb189dc13350f495cb4b42
+
+build_options="designerplugin"
+build_options_default=""
+
+if [ -z "$CROSS_BUILD" ]; then
+	build_options_default="designerplugin"
+fi
+
+if [ "$build_option_designerplugin" ]; then
+	makedepends+=" qt6-tools-devel"
+	nocross="yes"
+fi
+
 
 do_check() {
 	cd build
@@ -47,5 +61,8 @@ kf6-kio-devel_package() {
 		vmove usr/include
 		vmove usr/lib/cmake
 		vmove "usr/lib/libKF6KIO*.so"
+		if [ "$build_option_designerplugin" ]; then
+			vmove usr/lib/qt6/plugins/designer
+		fi
 	}
 }
