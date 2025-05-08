@@ -1,13 +1,13 @@
 # Template file for 'bmake'
 pkgname=bmake
-version=20250120
+version=20250414
 revision=1
 short_desc="Portable version of the NetBSD make build tool"
 maintainer="Leah Neukirchen <leah@vuxu.org>"
 license="BSD-3-Clause"
 homepage="https://www.crufty.net/help/sjg/bmake.html"
 distfiles="https://www.crufty.net/ftp/pub/sjg/bmake-${version}.tar.gz"
-checksum=c0a5549b132fe38580e7bdd3bf4ef6d96164e176d1ac3e7a32522ff0d32643a2
+checksum=43258a0b819f3e362dd66c05b8212ea977606945f3887ba1b6ad612affabc9aa
 python_version=3
 CFLAGS="-D_LARGE_FILE_SOURCE=1 -D_FILE_OFFSET_BITS=64"
 

@@ -1,0 +1,18 @@
+# Template file for 'python3-narwhals'
+pkgname=python3-narwhals
+version=1.38.0
+revision=1
+build_style=python3-pep517
+hostmakedepends="hatchling"
+depends="python3"
+short_desc="Lightweight, extensible compatibility layer between dataframes"
+maintainer="Andrew J. Hesford <ajh@sideband.org>"
+license="MIT"
+homepage="https://narwhals-dev.github.io/narwhals/"
+distfiles="${PYPI_SITE}/n/narwhals/narwhals-${version}.tar.gz"
+checksum=0a356a21ad00de0db0e631332a823a6a6755544bd10b8e68a02d75029c71392e
+make_check=no # archive includes no tests
+
+post_install() {
+	vlicense LICENSE.md
+}

@@ -1,6 +1,6 @@
 # Template file for 'codeberg-cli'
 pkgname=codeberg-cli
-version=0.4.7
+version=0.4.11
 revision=1
 build_style=cargo
 build_helper=qemu
@@ -12,7 +12,7 @@ license="AGPL-3.0-or-later"
 homepage="https://codeberg.org/Aviac/codeberg-cli"
 changelog="https://codeberg.org/Aviac/codeberg-cli/raw/branch/main/CHANGELOG.md"
 distfiles="https://codeberg.org/Aviac/codeberg-cli/archive/v${version}.tar.gz"
-checksum=a8d1356faab84076f14977652dabbfcad4411f49beb4d11a1bc0ee8936bd1d6c
+checksum=15e637ebf3cbac0bfc4175939753db14f3536c8fb8b1ef57da3f93b14553f73c
 
 post_install() {
 	vlicense LICENSE
