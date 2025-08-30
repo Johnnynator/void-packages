@@ -1,8 +1,8 @@
 # Template file for 'ghc'
 pkgname=ghc
 # Keep this synchronized with http://www.stackage.org/lts
-version=9.0.2
-revision=2
+version=9.10.2
+revision=1
 build_style=gnu-configure
 hostmakedepends="automake docbook-xsl ghc-bin libxslt libnuma-devel
  ncurses-devel python3-Sphinx python3-setuptools"
@@ -13,7 +13,7 @@ maintainer="Orphaned <orphan@voidlinux.org>"
 license="BSD-3-Clause"
 homepage="http://www.haskell.org/ghc/"
 distfiles="http://www.haskell.org/ghc/dist/${version%[!0-9]}/${pkgname}-${version%[!0-9]}-src.tar.xz"
-checksum=140e42b96346322d1a39eb17602bcdc76e292028ad4a69286b230bab188a9197
+checksum=55fd40a005575ac6b33ea928beda81e8c56ffea354b6ac474ee9f9911f23a8de
 nocross=yes # this is conditionally unset for cross bindist
 nodebug=yes # work around assembler error "Fatal error: duplicate .debug_line sections"
 _bindir="/usr/lib/${pkgname}-${version}/bin"
