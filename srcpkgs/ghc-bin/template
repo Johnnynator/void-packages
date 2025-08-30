@@ -1,6 +1,6 @@
 # Template file for 'ghc-bin'
 pkgname=ghc-bin
-version=9.0.2
+version=9.10.2
 revision=1
 archs="i686 x86_64* ppc64le* ppc64 aarch64*"
 hostmakedepends="perl libffi libnuma"
@@ -15,8 +15,8 @@ noshlibprovides=yes
 conflicts="ghc>=0 ghc-doc>=0"
 case "$XBPS_TARGET_MACHINE" in
 x86_64)
-	distfiles="https://downloads.haskell.org/ghc/${version%[!0-9]}/ghc-${version}-x86_64-deb9-linux.tar.xz"
-	checksum=805f5628ce6cec678ba77ff48c924831ebdf75ec2c66368e8935a618913a150e
+	distfiles="https://downloads.haskell.org/ghc/${version%[!0-9]}/ghc-${version}-x86_64-deb10-linux.tar.xz"
+	checksum=5c7cb932fc4265b0b813c936080cfe8a1ba136d75126257f29bd8f7a062194de
 	;;
 x86_64-musl)
 	# create with "make binary-dist"
@@ -24,8 +24,8 @@ x86_64-musl)
 	checksum=e21eaddeffcd5de7abe43b1f3982a3bc2c5b5f408d2574857cb2b0368106e12c
 	;;
 i686)
-	distfiles="https://downloads.haskell.org/ghc/${version%[!0-9]}/ghc-${version}-i386-deb9-linux.tar.xz"
-	checksum=fdeb9f8928fbe994064778a8e1e85bb1a58a6cd3dd7b724fcc2a1dcfda6cad47
+	distfiles="https://downloads.haskell.org/ghc/${version%[!0-9]}/ghc-${version}-i386-deb10-linux.tar.xz"
+	checksum=99cfceb568da5f2741c3203d602da2be78287f84f8a3456a06b5c8549e5f0a83
 	;;
 ppc64le)
 	distfiles="https://repo-default.voidlinux.org/distfiles/ghc-${version}-powerpc64le-void-linux.tar.xz"
@@ -40,13 +40,13 @@ ppc64)
 	checksum=6eb8684fdbede0cded7e3f7b93574b968f5f66dd2fcd4ec30ac5f0c402af6602
 	;;
 aarch64)
-	distfiles="https://repo-default.voidlinux.org/distfiles/ghc-${version}-aarch64-void-linux.tar.xz"
+	distfiles="https://downloads.haskell.org/ghc/${version}/ghc-${version}-aarch64-deb10-linux.tar.xz"
 	checksum=44a20a896246dce64392b7d0feedd0a28a9d733245a803e95dbe4b4b7e15b4fd
 	depends+=" llvm"
 	;;
 aarch64-musl)
-	distfiles="https://repo-default.voidlinux.org/distfiles/ghc-${version}-aarch64-void-linux-musl.tar.xz"
-	checksum=de98e2ff33a25cb32a28c738066fecacb736a33cac12688876eec4eb96d88607
+	distfiles="https://downloads.haskell.org/ghc/${version}/ghc-${version}-aarch64-alpine3_18-linux.tar.xz"
+	checksum=15fd860629276fb0119a6a0d9061e5af5d6d81230a2b88fc43498e937b5006e2
 	depends+=" llvm"
 	;;
 *)
@@ -59,13 +59,13 @@ do_configure() {
 }
 
 do_install() {
-	ln -sf /usr/lib/libncursesw.so.6 libtinfo.so.5
+	#ln -sf /usr/lib/libncursesw.so.6 libtinfo.so.5
 	export LD_LIBRARY_PATH=$PWD:$LD_LIBRARY_PATH
 
 	make install DESTDIR="$DESTDIR"
 
 	# Fake libtinfo into rpath of ghc:
-	ln -sf /usr/lib/libncursesw.so.6 \
-		$DESTDIR/usr/lib/ghc-${version%[!0-9]}/rts/libtinfo.so.5
-	vlicense LICENSE
+	#ln -sf /usr/lib/libncursesw.so.6 \
+	#	$DESTDIR/usr/lib/ghc-${version%[!0-9]}/rts/libtinfo.so.5
+	#vlicense LICENSE
 }
