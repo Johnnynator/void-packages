@@ -1,13 +1,13 @@
 # Template file for 'zabbix'
 pkgname=zabbix
-version=6.2.2
+version=7.0.9
 revision=1
 build_style=gnu-configure
-configure_args="--with-gnutls --with-libcurl --with-libxml2=yes --with-net-snmp
+configure_args="--with-openssl --with-libcurl --with-libxml2=yes --with-net-snmp
  --with-mysql --enable-server --enable-ipv6 --with-ssh2 --enable-agent
- --enable-proxy --with-libpcre2"
-hostmakedepends="automake libtool pkg-config which"
-makedepends="gnutls-devel libcurl-devel libxml2-devel libevent-devel
+ --enable-agent2 --enable-proxy --with-libpcre2"
+hostmakedepends="automake libtool pkg-config go"
+makedepends="openssl-devel libcurl-devel libxml2-devel libevent-devel
  libmariadbclient-devel net-snmp-devel pcre2-devel"
 depends="fping mariadb"
 short_desc="IT Infrastructure components availability and performance monitoring"
@@ -15,12 +15,14 @@ maintainer="Orphaned <orphan@voidlinux.org>"
 license="GPL-2.0-or-later"
 homepage="https://www.zabbix.com"
 changelog="https://www.zabbix.com/rn/rn${version}"
-distfiles="https://cdn.zabbix.com/zabbix/sources/oldstable/${version%.*}/zabbix-${version}.tar.gz"
-checksum=f0e7a9abb0f65d700f531253b91c31165077a9c94769cc8d238a423ada852773
+distfiles="https://cdn.zabbix.com/zabbix/sources/stable/${version%.*}/zabbix-${version}.tar.gz"
+checksum=8d7755576f30b5d6099ff5e3574549fc248229c017f9753828565174125069f6
 conf_files="/etc/zabbix_server.conf"
 system_accounts="_zabbix_server"
 system_groups="_zabbix_server"
 make_dirs="/var/log/zabbix-server 0750 _zabbix_server _zabbix_server"
+make_check=no # No test files r8n
+nopie_files="/usr/bin/zabbix_agent2"
 
 if [ "$CROSS_BUILD" ]; then
 	# configure scripts is bad at checking, problably runs code instead of
@@ -65,6 +67,22 @@ zabbix-agent_package() {
 		vmove usr/share/man/man8/zabbix_agentd.8
 		vmove etc/zabbix_agentd.conf
 		vsv zabbix-agent
+	}
+}
+
+
+zabbix-agent2_package() {
+	make_dirs="/var/log/zabbix-agentd 0750 _zabbix_agent _zabbix_agent"
+	system_accounts="_zabbix_agent"
+	system_groups=_zabbix_agent
+	short_desc="Zabbix Network Monitoring Agent"
+	conf_files="/etc/zabbix_agent2.conf"
+	pkg_install() {
+		vmove usr/bin/zabbix_agent2
+		vmove usr/share/man/man8/zabbix_agent2.8
+		vmove etc/zabbix_agent2.conf
+		vmove etc/zabbix_agent2.d
+		vsv zabbix-agent2
 	}
 }
 
